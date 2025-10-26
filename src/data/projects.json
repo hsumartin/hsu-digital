@@ -1,0 +1,28 @@
+[
+  {
+    "titel": "KI-Atlas Stadt Zürich",
+    "jahr": "laufend",
+    "rollen": [
+      "Konzeption",
+      "Methodik"
+    ],
+    "tech": [
+      "Prompting",
+      "Governance",
+      "ZüriA"
+    ]
+  },
+  {
+    "titel": "Geodaten-Suchmaske (QGIS)",
+    "jahr": "2024",
+    "rollen": [
+      "Konzeption",
+      "Umsetzung"
+    ],
+    "tech": [
+      "QGIS",
+      "SQL",
+      "Excel"
+    ]
+  }
+]
