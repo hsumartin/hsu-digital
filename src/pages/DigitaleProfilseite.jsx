@@ -19,22 +19,35 @@ export default function DigitaleProfilseite() {
   return (
     <main className="min-h-screen bg-background text-text">
       {/* Hero */}
-      <section className="bg-gradient-to-b from-primary to-[#0e223c] text-white">
-        <div className="max-w-5xl mx-auto px-6 py-16">
-          <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">Martin Hsu</h1>
-          <div className="mt-2 h-1 w-24 bg-accent/90 rounded-full glow-gold"></div>
-          <p className="mt-6 text-lg max-w-3xl opacity-95">
-            Product Owner & Systemgestalter für digitale Verwaltungsprozesse, KI-Integration und datenbasierte Innovation.
-          </p>
-          <p className="mt-2 max-w-3xl text-white/80">
-            Ich gestalte Schnittstellen zwischen Fachlichkeit, Technologie und Strategie – mit Fokus auf Klarheit, Effizienz und Verantwortungsbewusstsein.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button className="bg-accent text-primary hover:shadow-glow-gold">Kontakt aufnehmen</Button>
-            <a href="#projekte" className="px-4 py-2 rounded-md border border-white/20 hover:border-accent/70 transition">Projekte ansehen</a>
-          </div>
-        </div>
-      </section>
+<section className="bg-gradient-to-b from-primary to-[#0e223c] text-white">
+  <div className="max-w-5xl mx-auto px-6 py-16 flex flex-col sm:flex-row sm:items-center sm:space-x-8">
+    
+{/* Profilfoto */}
+<img
+  src="/profile.jpg"
+  alt="Profilfoto von Martin Hsu"
+  className="w-32 h-32 rounded-full object-cover photo-gold-animate mb-6 sm:mb-0"
+/>
+
+    {/* Textbereich */}
+    <div>
+      <h1 className="text-4xl sm:text-5xl font-heading font-semibold tracking-tight text-appear">
+  Martin Hsu
+</h1>
+      <div className="mt-2 h-1 w-24 bg-accent/90 rounded-full glow-gold"></div>
+      <p className="mt-6 text-lg max-w-3xl opacity-95 font-sans text-appear-delayed">
+  Product Owner & Systemgestalter für digitale Verwaltungsprozesse, KI-Integration und datenbasierte Innovation.
+</p>
+      <p className="mt-2 max-w-3xl text-white/80">
+        Ich gestalte Schnittstellen zwischen Fachlichkeit, Technologie und Strategie – mit Fokus auf Klarheit, Effizienz und Verantwortungsbewusstsein.
+      </p>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <Button className="bg-accent text-primary hover:shadow-glow-gold">Kontakt aufnehmen</Button>
+        <a href="#projekte" className="px-4 py-2 rounded-md border border-white/20 hover:border-accent/70 transition">Projekte ansehen</a>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Über mich */}
       <section className="max-w-5xl mx-auto px-6 py-12 space-y-4">

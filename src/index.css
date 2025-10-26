@@ -11,3 +11,44 @@
 }
 
 a { text-underline-offset: 3px; }
+/* Sanfte Gold-Glow-Animation beim Seitenaufbau */
+@keyframes goldFade {
+  0% {
+    filter: grayscale(30%) brightness(0.9) contrast(1);
+    box-shadow: 0 0 0 rgba(212,176,102,0);
+  }
+  60% {
+    filter: grayscale(25%) brightness(1.05) contrast(1.1);
+    box-shadow: 0 0 14px rgba(212,176,102,0.35);
+  }
+  100% {
+    filter: grayscale(20%) brightness(1.08) contrast(1.15);
+    box-shadow: 0 0 10px rgba(212,176,102,0.25);
+  }
+}
+
+.photo-gold-animate {
+  animation: goldFade 2.2s ease-out forwards;
+  border: 2px solid rgba(212,176,102,0.5);
+  transition: filter 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 9999px;
+}
+
+.photo-gold-animate:hover {
+  filter: brightness(1.15) contrast(1.2);
+  box-shadow: 0 0 18px rgba(212,176,102,0.55);
+}
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.text-appear {
+  animation: fadeInText 1.8s ease-out forwards;
+}
+
+.text-appear-delayed {
+  animation: fadeInText 1.8s ease-out forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
