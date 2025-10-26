@@ -26,7 +26,7 @@ export default function DigitaleProfilseite() {
 <img
   src="/profile.jpg"
   alt="Profilfoto von Martin Hsu"
-  className="w-32 h-32 rounded-full object-cover photo-gold-animate mb-6 sm:mb-0"
+  className="w-36 h-36 rounded-full object-cover photo-gold-animate mb-6 sm:mb-0"
 />
 
     {/* Textbereich */}
