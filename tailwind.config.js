@@ -15,7 +15,13 @@ export default {
         'glow-gold-strong': '0 0 18px rgba(212,176,102,0.6)',
         'glow-turquoise': '0 0 10px rgba(6,182,212,0.35)',
         'glow-turquoise-strong': '0 0 20px rgba(6,182,212,0.55)',
-      }
+      },
+
+      // ✨ Fonts hinzugefügt
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
+        heading: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+      },
     },
   },
   plugins: [],
