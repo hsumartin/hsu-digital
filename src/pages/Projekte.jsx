@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Layout from "../Layout.jsx";
 import Breadcrumbs from "../components/Breadcrumbs.jsx";
 import { Card, CardContent } from "../components/ui/card.jsx";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Projekte() {
   const tabs = ["Digitalisierung", "KI / GPT", "GIS / BIM"];
@@ -10,6 +10,11 @@ export default function Projekte() {
 
   const projekte = {
     Digitalisierung: [
+      {
+        titel: "Power Platform – Prozessdigitalisierung",
+        beschreibung:
+          "Entwicklung von Fachanwendungen mit der Power Platform (Power Apps / Automate), inkl. Anbindung an SharePoint und GIS-Services.",
+      },
       {
         titel: "Dokumenten-Automation (DCP)",
         beschreibung:
@@ -34,6 +39,11 @@ export default function Projekte() {
         beschreibung:
           "Aufbau einer geoverknüpften Suchmaske zur Ansprechpartner-Suche nach Gebietszuständigkeit – Integration QGIS und SQL.",
       },
+      {
+        titel: "BIM-Daten im Baubewilligungsverfahren",
+        beschreibung:
+          "Analyse, wie modellbasierte Daten im Prüfprozess verwendet werden können – Fokus auf Qualität und Verständlichkeit im BBV.",
+      },
     ],
   };
 
@@ -41,6 +51,17 @@ export default function Projekte() {
     <Layout>
       <Breadcrumbs />
 
+      {/* Farbiger Seitenheader */}
+      <div className="relative w-full bg-primary text-white py-10 px-6 rounded-2xl shadow-md mb-10">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="text-3xl font-semibold tracking-tight">Projekte</h1>
+          <p className="text-white/80 text-sm mt-2">
+            Eine Auswahl aktueller Digitalisierungsinitiativen und Tools.
+          </p>
+        </div>
+      </div>
+
+      {/* Inhalte */}
       <section id="projekte" className="space-y-6">
         <div className="flex items-end justify-between">
           <h2 className="text-2xl font-semibold text-primary">Projekte</h2>

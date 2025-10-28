@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../Layout.jsx";
 import Breadcrumbs from "../components/Breadcrumbs.jsx";
@@ -25,6 +26,17 @@ export default function Beitraege() {
     <Layout>
       <Breadcrumbs />
 
+      {/* Farbiger Seitenheader */}
+      <div className="relative w-full bg-primary text-white py-10 px-6 rounded-2xl shadow-md mb-10">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="text-3xl font-semibold tracking-tight">Beiträge</h1>
+          <p className="text-white/80 text-sm mt-2">
+            Fachliche Impulse, Gedanken und Analysen zur digitalen Verwaltung.
+          </p>
+        </div>
+      </div>
+
+      {/* Übersicht */}
       <section id="beitraege" className="space-y-6">
         <h2 className="text-2xl font-semibold text-primary">Beiträge</h2>
 
