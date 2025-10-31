@@ -1,5 +1,0 @@
-.glow-gold { box-shadow: 0 0 10px rgba(212,176,102,0.4); transition: box-shadow 0.3s ease; }
-.glow-gold:hover { box-shadow: 0 0 18px rgba(212,176,102,0.6); }
-
-.glow-turquoise { box-shadow: 0 0 10px rgba(6,182,212,0.35); transition: box-shadow 0.3s ease; }
-.glow-turquoise:hover { box-shadow: 0 0 20px rgba(6,182,212,0.55); }

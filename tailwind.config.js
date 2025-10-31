@@ -1,26 +1,38 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
-        primary: '#0a192f',
-        accent: '#d4b066',
-        future: '#06b6d4',
-        background: '#f9fafb',
-        text: '#111827',
+        navy: {
+          900: "#0a1424", // Primärfläche
+          800: "#111a2f", // Tiefe / Overlay
+          700: "#1a2743", // Gradient-Ende
+        },
+        gold: {
+          500: "#d1a954", // Hauptakzent
+          400: "#e2b765", // Hover / Linien
+          300: "#E8C97F", // Highlights
+        },
+        neutral: {
+          50: "#F5F7FA",  // Text auf Dunkel
+          200: "#E9ECF2", // Sekundärtext
+        },
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       boxShadow: {
-        'glow-gold': '0 0 10px rgba(212,176,102,0.4)',
-        'glow-gold-strong': '0 0 18px rgba(212,176,102,0.6)',
-        'glow-turquoise': '0 0 10px rgba(6,182,212,0.35)',
-        'glow-turquoise-strong': '0 0 20px rgba(6,182,212,0.55)',
+        gold: "0 0 20px rgba(209,169,84,0.2)", // sanfter Schimmer
       },
-
-      // ✨ Fonts hinzugefügt
+      transitionTimingFunction: {
+        "soft": "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
-        heading: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ["Inter", "Poppins", "sans-serif"],
       },
     },
   },

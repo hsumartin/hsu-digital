@@ -10,7 +10,7 @@ export default function Breadcrumbs() {
     <nav aria-label="Breadcrumb" className="text-sm text-gray-500 mb-6">
       <ol className="flex flex-wrap items-center gap-1">
         <li>
-          <Link to="/" className="hover:text-accent transition-colors">
+          <Link to="/" className="hover:text-gold-500 transition-colors">
             Start
           </Link>
         </li>
@@ -29,7 +29,7 @@ export default function Breadcrumbs() {
               ) : (
                 <Link
                   to={routeTo}
-                  className="hover:text-accent transition-colors"
+                  className="hover:text-gold-500 transition-colors"
                 >
                   {label}
                 </Link>
