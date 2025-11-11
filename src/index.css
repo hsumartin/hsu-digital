@@ -1,0 +1,461 @@
+/* ============================================================
+   🌟 Martin Hsu · WebImpact Designer System (Final)
+   Struktur: Fonts → Tailwind Base → Layers → Custom Sections
+============================================================ */
+
+/* === Fonts === */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@import "./styles/video-frame.css";
+
+/* === Tailwind Core === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   🧩 @layer base – Global System Foundation
+   (Scroll, Selection, Typografie, Scrollbars)
+============================================================ */
+@layer base {
+    html, body, #root {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto; /* normaler globaler Scroll */
+    scrollbar-gutter: stable; /* verhindert Layoutsprünge */
+    scrollbar-width: none;
+  }
+
+  /* Wird durch ArticleDetail.jsx dynamisch gesetzt */
+  body.modal-open {
+    overflow: hidden; /* globalen Scroll komplett deaktivieren */
+  }
+
+  body.modal-closed {
+    overflow-y: auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-surface-base text-text-primary font-sans leading-relaxed antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold-500/30 text-neutral-100;
+  }
+
+/* === Unsichtbarer Scrollbar, aber funktionaler Scroll === */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.scrollbar-thin {
+  scrollbar-width: none; /* Firefox */
+}
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-700/30 rounded-full transition-all duration-300;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gold-400/30;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+/* ============================================================
+   📱 Mobile Typografie & Spacing Optimierung
+   ============================================================ */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-[1.7rem] leading-tight mb-4;
+  }
+  h2 {
+    @apply text-[1.35rem] leading-snug mb-3;
+  }
+  h3 {
+    @apply text-[1.15rem] leading-snug mb-2;
+  }
+  p {
+    @apply text-[1rem] leading-relaxed text-neutral-300 mb-5;
+  }
+  article, section {
+    @apply px-5 py-5 space-y-5;
+  }
+  ul, ol {
+    @apply pl-5 space-y-2;
+  }
+}
+
+  /* Typografie */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-[Poppins] tracking-tight text-gold-400;
+  }
+
+  h1 {
+  @apply text-4xl md:text-5xl font-semibold mb-6;
+}
+h2 {
+  @apply text-3xl md:text-4xl font-semibold text-gold-300 mb-5;
+}
+h3 {
+  @apply text-2xl font-medium text-gold-300/90 mb-4;
+}
+  h4, h5, h6 {
+    @apply text-xl font-medium text-gold-300 mb-3;
+  }
+p {
+  @apply text-neutral-300 leading-[1.75] mb-6 font-sans;
+  }
+
+  /* Lists */
+  ul, ol {
+    @apply ml-6 my-5 space-y-2 text-neutral-300;
+  }
+
+  li::marker {
+    color: theme("colors.gold.400");
+  }
+
+  /* Links */
+  a {
+    @apply text-gold-400 hover:text-gold-300 transition-colors duration-300 underline-offset-2;
+  }
+
+  /* Figures & Captions */
+  figure {
+    @apply my-10;
+  }
+
+  figcaption {
+    @apply text-sm md:text-base text-neutral-400 italic text-center mt-3;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply font-serif italic text-neutral-300 border-l-2 border-gold-400/40 pl-4 my-6;
+  }
+
+  /* Code / Inline Elements */
+  code {
+    @apply bg-neutral-800/60 text-gold-300 font-mono px-1.5 py-0.5 rounded-md text-sm;
+  }
+
+/* ========================================
+   BASE EXTENSIONS FOR ARTICLE LAYOUTS
+   ======================================== */
+.article-content .prose img {
+  @apply w-[75%] mx-auto rounded-xl shadow-[0_0_40px_-10px_rgba(255,215,0,0.1)]
+         transition-transform duration-700 ease-[0.25,1,0.3,1]
+         hover:scale-[1.015] hover:brightness-105;
+}
+
+/* Optional: volle Breite nur für Hero- oder Header-Bilder */
+.article-content .prose .hero-img {
+  @apply w-full max-h-[420px] object-cover rounded-2xl mb-8;
+}
+}
+
+/* ============================================================
+   🎨 @layer components – Designsystem Toolkit
+   (Buttons, Links, Badges, Cards, Utilities)
+============================================================ */
+@layer components {
+  /* Buttons */
+  .btn-gold {
+    @apply inline-flex items-center justify-center
+           rounded-lg border border-gold-500 bg-gold-500
+           text-navy-900 font-semibold tracking-wide
+           px-5 py-2.5 text-sm md:text-base
+           shadow-gold transition-all duration-500 ease-smooth
+           hover:bg-gold-400 hover:shadow-gold-xl hover:-translate-y-[1px]
+           active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center
+           rounded-lg border border-gold-500/50 bg-transparent
+           text-gold-400 font-medium tracking-wide
+           px-5 py-2.5 text-sm md:text-base
+           transition-all duration-500 ease-smooth
+           hover:bg-gold-500/10 hover:border-gold-500 hover:text-gold-300;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center
+           rounded-lg text-gold-400 hover:text-gold-300
+           transition-colors duration-300;
+  }
+
+  /* Links */
+  .link-gold {
+    @apply text-gold-400 font-medium transition-colors duration-300;
+  }
+  .link-gold:hover {
+    @apply text-gold-300;
+  }
+
+  .link-muted {
+    @apply text-neutral-400 hover:text-gold-400 transition-colors duration-300;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-3 py-1
+           text-[10px] font-medium uppercase tracking-widest
+           rounded-full border transition-all duration-300;
+  }
+
+  .badge-gold {
+    @apply badge bg-gold-500/10 text-gold-400 border-gold-500/30;
+  }
+
+  .badge-dark {
+    @apply badge bg-navy-800 text-neutral-300 border-neutral-700;
+  }
+
+  .badge-outline {
+    @apply badge border-gold-500/30 text-gold-400;
+  }
+
+  /* Cards */
+  .card {
+    @apply block rounded-2xl border border-neutral-800/40
+           bg-gradient-to-b from-navy-900/40 to-navy-950/60
+           backdrop-blur-sm transition-all duration-500 ease-smooth;
+  }
+
+  .card-hover {
+    @apply hover:shadow-[0_8px_32px_-12px_rgba(209,169,84,0.25)]
+           hover:-translate-y-[2px];
+  }
+
+  /* Utilities */
+  .subtitle {
+    @apply text-neutral-400 text-sm md:text-base leading-relaxed;
+  }
+
+  .section-title {
+    @apply text-gold-400 font-semibold text-xl md:text-2xl tracking-tight mb-6;
+  }
+
+  /* ============================================================
+     🪶 Textsystem – Typografische Semantik
+  ============================================================ */
+  .text-body {
+    @apply text-text-primary/90 leading-relaxed text-base md:text-lg;
+  }
+
+  .text-meta {
+    @apply text-text-secondary text-sm tracking-wide uppercase;
+  }
+
+  .text-quote {
+    @apply text-text-secondary italic border-l-2 border-gold-400/30 pl-4;
+  }
+
+  .text-hero {
+    @apply text-text-primary/95 text-xl md:text-2xl leading-[1.6];
+  }
+
+  /* Diagramm-Styles (kleiner & ruhig) */
+  .diagram-figure {
+    @apply my-6 text-center;
+  }
+  .diagram {
+    @apply inline-block w-full h-auto rounded-2xl;
+    max-width: 560px;            /* zentrale Breitenbegrenzung */
+  }
+  .diagram-caption {
+    @apply mt-2 text-sm text-neutral-400;
+  }
+  /* =========================================================
+     🔆 GOLD EFFECT UTILITIES – konsistente Leucht- & Farbklassen
+     ========================================================= */
+
+  /* Grund-Glow – dezentes Goldlicht */
+  .gold-glow {
+    @apply text-gold-300 drop-shadow-[0_0_6px_rgba(255,215,0,0.25)];
+  }
+
+  /* Hover-Version – stärkerer, klarer Lichtimpuls */
+  .gold-glow-hover {
+    @apply hover:text-gold-300 hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.5)];
+  }
+
+  /* Optional – „Active“- oder Fokus-Variante (Buttons, Icons) */
+  .gold-glow-active {
+    @apply text-gold-100 drop-shadow-[0_0_12px_rgba(255,230,100,0.6)];
+  }
+
+  /* Rahmen-Glow (für Cards / Container) */
+  .gold-border {
+    @apply border border-gold-400/20 hover:border-gold-400/40 transition-all duration-300;
+  }
+
+  /* ============================================================
+     ✨ Typografie-Hierarchie – Semantic Text System
+     ============================================================ */
+
+  /* Hero- & Abschnittsüberschriften */
+  .heading-1 {
+    @apply text-4xl md:text-5xl font-semibold leading-tight tracking-tight;
+  }
+
+  /* Subheadline / Einleitungstext */
+  .subhead {
+    @apply text-lg md:text-xl leading-relaxed text-neutralLight;
+  }
+
+  /* Lauftext / Fließtext */
+  .body-text {
+    @apply text-base md:text-lg leading-relaxed text-neutralLight/90;
+  }
+
+  /* Textblock-Zentrierung */
+  .text-block {
+    @apply max-w-3xl mx-auto text-center;
+  }
+
+  /* Varianten über data-Attribute */
+  .diagram[data-size="xs"] { max-width: 420px; }
+  .diagram[data-size="sm"] { max-width: 480px; }
+  .diagram[data-size="lg"] { max-width: 680px; }
+
+  /* WICHTIG: Überschreibt deine globale .prose img Regel nur für Diagramme */
+  .prose img.diagram {
+    box-shadow: none;            /* optional: den globalen Glow entfernen */
+    transform: none;             /* kein Hover-Zoom für Diagramme */
+  }
+}
+
+/* ============================================================
+   🧱 Custom Sections & Motion Styles
+============================================================ */
+
+/* --- Gold Fade Animation --- */
+@keyframes goldFade {
+  0% { filter: grayscale(30%) brightness(0.9); box-shadow: 0 0 0 rgba(212,176,102,0); }
+  60% { filter: grayscale(25%) brightness(1.05); box-shadow: 0 0 14px rgba(212,176,102,0.35); }
+  100% { filter: grayscale(20%) brightness(1.08); box-shadow: 0 0 10px rgba(212,176,102,0.25); }
+}
+
+.photo-gold-animate {
+  animation: goldFade 2.2s ease-out forwards;
+  border: 2px solid rgba(212,176,102,0.5);
+  border-radius: 9999px;
+  transition: filter 0.5s ease, box-shadow 0.5s ease;
+}
+
+.photo-gold-animate:hover {
+  filter: brightness(1.15) contrast(1.2);
+  box-shadow: 0 0 18px rgba(212,176,102,0.55);
+}
+
+/* --- Text Fade Animation --- */
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.text-appear { animation: fadeInText 1.8s ease-out forwards; }
+.text-appear-delayed {
+  animation: fadeInText 1.8s ease-out forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+/* --- Section Layout --- */
+.section {
+  @apply py-16 md:py-20 px-6 md:px-12;
+  padding-inline: max(6vw, 1.5rem);
+}
+
+/* --- Background Grid --- */
+.bg-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(17,24,39,0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* --- Glow & Border Utilities --- */
+.shadow-glow-gold { box-shadow: 0 0 10px rgba(212,176,102,0.45); }
+.border-gradient { border-image: linear-gradient(to right,#d4b066,#b79244) 1; }
+
+/* --- Fade In --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.7s ease-out both; }
+
+/* --- Hero Section --- */
+.hero {
+  @apply relative text-white text-center py-24 md:py-32;
+  background: radial-gradient(ellipse at center,rgba(10,25,47,1)0%,rgba(10,25,47,0.85)60%,rgba(10,25,47,0.6)100%);
+}
+.hero h1 { @apply text-4xl md:text-5xl font-sans text-white mb-2; }
+.hero h2 { @apply text-2xl md:text-3xl text-gold-400 mb-4; }
+.hero p { @apply text-neutral-200 text-lg md:text-xl max-w-2xl mx-auto; }
+
+/* --- Footer Divider --- */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(212,176,102,0.15) 0%, rgba(212,176,102,0.6) 50%, rgba(212,176,102,0.15) 100%);
+  box-shadow: 0 0 6px rgba(212,176,102,0.25);
+}
+
+/* --- Hero Lightfield & Flow Lines --- */
+.hero-lightfield {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%,rgba(212,176,102,0.15),transparent 70%);
+  pointer-events: none;
+}
+
+.section-separator {
+  height: 2px;
+  background: linear-gradient(90deg,rgba(212,176,102,0)0%,rgba(212,176,102,0.8)50%,rgba(212,176,102,0)100%);
+  filter: blur(1px);
+  animation: flowLine 5s linear infinite;
+  background-size: 200% auto;
+}
+
+@keyframes flowLine {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+/* --- Pulse Animation --- */
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 18px rgba(209,169,84,0.25); }
+  50% { transform: scale(1.01); box-shadow: 0 0 25px rgba(209,169,84,0.35); }
+}
+.animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+
+/* ============================================================
+   🪶 Container Standard für Hauptbereiche (Beiträge / Projekte / Graph)
+============================================================ */
+.container-section {
+  @apply relative max-w-6xl mx-auto rounded-xl 
+         bg-[#141722]/55 border border-gold-400/10 
+         backdrop-blur-sm p-10 
+         shadow-gold-soft 
+         transition-all duration-500 
+         hover:border-gold-400/20 hover:shadow-gold-xl;
+}

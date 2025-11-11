@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* --- Basis --- */
+    "target": "ESNext",                 
+    "module": "ESNext",
+    "jsx": "react-jsx",                 
+    "moduleResolution": "bundler",      
+    "allowJs": true,                    
+    "resolveJsonModule": true,
+
+    /* --- Typsicherheit --- */
+    "strict": false,                     
+    "noImplicitAny": false,              
+    "noUnusedLocals": false,             
+    "noUnusedParameters": false,         
+    "forceConsistentCasingInFileNames": true,
+
+    /* --- Komfort --- */
+    "esModuleInterop": true,            
+    "skipLibCheck": true,               
+    "isolatedModules": true,            
+    "noEmit": true,                     
+
+    /* --- Pfade / Struktur --- */
+    "baseUrl": ".",                     
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* --- Output (optional, falls du buildest) --- */
+    "outDir": "dist"
+  },
+  "include": ["src", "tailwind.config.js"],
+  "exclude": ["node_modules", "dist"]
+}

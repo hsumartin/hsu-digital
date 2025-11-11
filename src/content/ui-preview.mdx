@@ -1,0 +1,128 @@
+---
+title: "UI Styleboard – WebImpact Designer System"
+slug: "ui-preview"
+canonicalUrl: "https://martinhsu.digital/ui-preview"
+---
+
+import Figure from "../components/Figure.jsx";
+import Caption from "../components/Caption.jsx";
+import TeaserCard from "../components/TeaserCard.jsx";
+
+# 🎨 UI-Preview – Systemübersicht
+
+> Diese Vorschau zeigt das visuelle Vokabular des WebImpact-Designsystems.  
+> Sie dient als **Referenz für Stil-, Typografie- und Komponentenabgleich**.
+
+---
+
+## 🧩 Buttons
+
+<div className="flex flex-wrap gap-4 my-6">
+  <button className="btn-gold">Primärer Button</button>
+  <button className="btn-outline">Sekundärer Button</button>
+  <button className="btn-ghost">Ghost-Button</button>
+</div>
+
+---
+
+## 🏷️ Badges
+
+<div className="flex flex-wrap gap-3 my-6">
+  <span className="badge-gold">Gold</span>
+  <span className="badge-dark">Dark</span>
+  <span className="badge-outline">Outline</span>
+</div>
+
+---
+
+## 📦 Cards
+
+<div className="grid md:grid-cols-2 gap-8 my-8">
+  <div className="card card-hover p-6">
+    <h3 className="section-title">Card Title</h3>
+    <p className="subtitle">
+      Beispiel für die Systemtypografie in einer Card.  
+      Harmonische Text- und Hintergrundbalance in Navy-Gold.
+    </p>
+    <button className="btn-outline mt-4">Mehr erfahren</button>
+  </div>
+
+  <div className="card card-hover p-6">
+    <h3 className="section-title">Hover-Interaktion</h3>
+    <p className="subtitle">
+      Beim Überfahren entsteht ein sanfter goldener Schatten (Apple-ähnliche Tiefe).
+    </p>
+    <button className="btn-gold mt-4">Aktion</button>
+  </div>
+</div>
+
+---
+
+## ✨ Typografie
+
+### Heading Levels
+
+<h1>H1 – Hero Title / Whitepaper Intro</h1>
+<h2>H2 – Abschnittstitel</h2>
+<h3>H3 – Untertitel oder Modulüberschrift</h3>
+
+### Absatz und Textfluss
+
+<p>
+  Dies ist ein normaler Absatztext mit Systemtypografie.  
+  Die Lesbarkeit basiert auf **ruhigem Kontrast**, optimierter `line-height`  
+  und harmonischem `letter-spacing`.  
+  <a href="#" className="link-gold">Inline-Link Beispiel</a>  
+  wirkt als eleganter Akzent.
+</p>
+
+---
+
+## 🖼️ Figure & Caption
+
+<Figure>
+  <img src="/images/whitepaper/stack-poster.png" alt="Stack Visualisierung" className="rounded-xl" />
+  <Caption>Beispiel-Abbildung mit <strong>goldenem Caption-Ton</strong> für wissenschaftlich-ästhetische Darstellungen.</Caption>
+</Figure>
+
+---
+
+## 🧠 TeaserCard Beispiel
+
+<TeaserCard
+  title="Vom Tool zur Denkarchitektur"
+  deck="Wie KI Denken sichtbar macht"
+  href="/beitraege/denkarchitektur"
+  img="/images/articles/KI-Denkarchitektur.png"
+  alt="Visualisierung der Denkarchitektur"
+/>
+
+---
+
+## 🔆 Motion-Demo
+
+<div className="flex flex-col items-center gap-6 my-12">
+  <img src="/images/whitepaper/promptpilot-state.png"
+       className="photo-gold-animate w-64 h-64 object-cover rounded-full" 
+       alt="Beispiel-Animation" />
+  <p className="subtitle text-center">
+    GoldFade-Animation: sanftes Aufglühen für heroische Bildanteile.
+  </p>
+</div>
+
+---
+
+## ⚡ Farbwerte & Tokens
+
+| Variable | Farbe | Beispiel |
+|-----------|--------|-----------|
+| `gold-500` | #d4b066 | <span className="inline-block w-6 h-6 rounded-full bg-[#d4b066] border border-neutral-700"></span> |
+| `navy-900` | #0a192f | <span className="inline-block w-6 h-6 rounded-full bg-[#0a192f] border border-neutral-700"></span> |
+| `neutral-300` | #d1d5db | <span className="inline-block w-6 h-6 rounded-full bg-[#d1d5db] border border-neutral-700"></span> |
+
+---
+
+## 📘 Systemhinweis
+
+> Dieses Styleboard dient als visuelle Referenz für Artikel-, Projekt- und UI-Detailseiten.  
+> Es kann bei Bedarf erweitert werden, z. B. mit modalen Komponenten oder interaktiven States.

@@ -1,0 +1,11 @@
+# robots.txt for martinhsu.digital
+User-agent: *
+Allow: /
+
+# Disallow technische Build-Ordner
+Disallow: /assets/
+Disallow: /icons/
+Disallow: /videos/
+
+# Sitemap Hinweis
+Sitemap: https://martinhsu.digital/sitemap.xml
