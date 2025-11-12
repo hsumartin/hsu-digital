@@ -12,6 +12,7 @@ import ScrollContainer from "../components/ScrollContainer.jsx";
 import ProgressIndicator from "../components/ProgressIndicator.jsx";
 import ScrollToTopButton from "../components/ScrollToTopButton.jsx";
 import CloseButton from "../components/CloseButton.jsx";
+import Header from "../components/Header";
 
 // 🧠 MDX-Komponenten-Mapping
 const components = {
@@ -113,6 +114,7 @@ React.useEffect(() => {
     return (
       <>
         <MetaTags frontmatter={frontmatter} type="article" />
+        <Header />
         <main className="min-h-screen bg-gradient-to-b from-navy-950 via-navy-900/95 to-surface-overlay
                  text-text-primary transition-theme duration-700">
 {/* 🖼️ Hero-Image nur in Standalone */}

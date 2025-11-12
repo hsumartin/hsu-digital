@@ -37,6 +37,11 @@ export default function ModalFrame({ children, onClose }) {
           transition={{ duration: 0.35, ease: [0.25, 1, 0.3, 1] }}
           onClick={(e) => e.stopPropagation()} // verhindert Schließen beim Klick im Fenster
         >
+  {/* ⬇️ Hier einfügen */}
+  <div className="absolute top-4 right-4">
+    <CloseButton onClick={onClose} />
+  </div>
+
           {children}
         </motion.div>
       </motion.div>

@@ -47,94 +47,19 @@ vercel.json                         # Deployment-Konfiguration (Vercel)
 ### Vertikale Harmonie
 Header 170 px · Body 190 px → Gesamthöhe 360 px (≈ 1 : 1.12)
 
-// tailwind.config.js
-extend: {
-  height: {
-    "card-header": "170px",
-    "card-body": "190px",
-  },
-  minHeight: {
-    "card-body": "180px",
-  },
-  spacing: {
-    "card-gap": "24px",
-    "section-gap": "96px",
-  },
-}
-
 ### Typografische Skala
 - **H1:** 2.25 rem / 1.2 · 600  
 - **H2:** 1.5 rem / 1.3 · 500  
 - **Body:** 1 rem / 1.6 · 400  
 - **Meta:** 0.75 rem italic / 1.4  
 
-fontSize: {
-  base: ["1rem", "1.6"],
-  h1: ["2.25rem", "1.2"],
-  h2: ["1.5rem", "1.3"],
-  meta: ["0.75rem", "1.4"],
-}
-
 ### Farbpalette
 Gold `#D1A954` / Navy `#10131F` – Neutral `#EDEBE7`  
 Ruhige Kontraste, edle Tiefenwirkung.
 
-colors: {
-  navy: {
-    950: "#0B0E17",
-    900: "#10131F",
-    800: "#171C2A",
-    700: "#1F2537",
-  },
-  gold: {
-    400: "#D1A954",
-    300: "#E7C97A",
-  },
-  neutral: {
-    100: "#EDEBE7",
-    400: "#A6A9B0",
-  },
-}
-
-Primär: gold-400 (Highlights, Linien, Titel)
-Sekundär: navy-900/950 (Flächen, Hintergründe)
-Neutral: neutral-100/400 (Lesetext, Icons)
-
-Vertikaler Rhythmus (Spacing Takt)
-Basis-Schritte:
-8 px · 12 px · 20 px · 32 px · 52 px · 84 px
-
-<section class="py-20 md:py-32">
-  <div class="grid gap-card-gap md:gap-12">…</div>
-</section>
-
 ### Signature-Details
 Goldlinie `via-gold-400/20` · rounded-lg · hover-lift · shadow-pulse  
 → architektonische Ruhe und subtile Spannung.
-
-| Element          | Regel                                                              | Zweck                  |
-| ---------------- | ------------------------------------------------------------------ | ---------------------- |
-| **Goldlinie**    | `bg-gradient-to-r from-transparent via-gold-400/20 to-transparent` | Trennung Header / Body |
-| **Card-Corner**  | `rounded-lg`                                                       | sanfte Ruhe im Raster  |
-| **Hover-Lift**   | `hover:-translate-y-[2px] transition-all duration-500 ease-smooth` | feine Spannung         |
-| **Shadow-Pulse** | `hover:shadow-[0_0_32px_-10px_rgba(209,169,84,0.25)]`              | Lichttiefe im Goldton  |
-
-<div className="flex flex-col rounded-lg border border-navy-700/60 overflow-hidden">
-  <header className="relative h-card-header">
-    <img src="..." className="absolute inset-0 w-full h-full object-cover opacity-90" />
-    <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-navy-800/40 to-transparent" />
-  </header>
-
-  <div className="h-[1px] bg-gradient-to-r from-transparent via-gold-400/20 to-transparent" />
-
-  <main className="p-card-padding min-h-card-body bg-navy-950/60 backdrop-blur-sm">
-    <p className="text-base text-neutral-100 leading-snug mb-3">…</p>
-    <footer className="mt-2 pt-2 border-t border-navy-700/50 text-meta text-right text-neutral-400/80">
-      <span className="italic">Martin Hsu</span>
-      <span className="ml-2 text-neutral-500/70">· 5. Nov. 2025</span>
-    </footer>
-  </main>
-</div>
 
 ---
 
