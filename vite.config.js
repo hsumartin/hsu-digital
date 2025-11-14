@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import mdx from "@mdx-js/rollup";
-import ssr from "vite-plugin-ssr/plugin";
 import path from "path";
 
 export default defineConfig({
@@ -11,11 +10,10 @@ export default defineConfig({
       jsxImportSource: "react",
       providerImportSource: "@mdx-js/react",
     }),
-    ssr(), // aktiviert SSR/SSG
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+    '/~': path.resolve(__dirname, 'src')
     },
   },
   build: {

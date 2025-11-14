@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollLock } from "../hooks/useScrollLock";
+import CloseButton from './CloseButton';
 
 /**
  * ModalFrame.jsx
@@ -38,7 +39,7 @@ export default function ModalFrame({ children, onClose }) {
           onClick={(e) => e.stopPropagation()} // verhindert Schließen beim Klick im Fenster
         >
   {/* ⬇️ Hier einfügen */}
-  <div className="absolute top-4 right-4">
+  <div className="absolute top-4 right-4 z-10">
     <CloseButton onClick={onClose} />
   </div>
 

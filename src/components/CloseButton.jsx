@@ -5,7 +5,7 @@ const CloseButton = ({ onClick }) => {
     <button
       onClick={onClick}
       aria-label="Close"
-      className="absolute top-4 right-4 text-neutral-400 hover:text-neutral-100 transition-transform duration-500 hover:scale-110 hover:opacity-90 animate-pulse-slow"
+      className="text-neutral-400 hover:text-neutral-100 transition-transform duration-500 hover:scale-110 hover:opacity-90"
     >
       ✕
     </button>

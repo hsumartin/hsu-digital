@@ -16,7 +16,7 @@ Kontakt: [kontakt@martinhsu.digital](mailto:kontakt@martinhsu.digital)
 # Abhängigkeiten installieren
 npm install
 
-# Lokale Vorschau (http://localhost:5173)
+# Lokale Vorschau (http://localhost:4173)
 npm run dev
 
 # Produktion bauen
@@ -92,8 +92,8 @@ Deployment läuft automatisch bei jedem Push auf den `main`-Branch.
 
 ## 👤 Kontakt
 
-- E-Mail: `martin.hsu@gmx.net`
-- LinkedIn: später ergänzen
+- E-Mail: `kontakt@martinhsu.digital`
+- LinkedIn: `https://www.linkedin.com/in/martinhsu-digital`
 - Standort: Zürich
 
 © 2025 Martin Hsu
