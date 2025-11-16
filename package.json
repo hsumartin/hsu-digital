@@ -6,10 +6,13 @@
   "engines": {
     "node": "22.x"
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build && node prerender.js",
-    "preview": "vite preview"
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "prerender": "node prerender.js",
+  "build:full": "npm run build && npm run prerender",
+  "preview": "vite preview",
+  "serve": "npx serve dist"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
