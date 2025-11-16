@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
+import HighlightCarousel from "../components/HighlightCarousel";
 import { projects } from "../data/projects";
 import { articles } from "../api/articles";
 import { motion } from "framer-motion";
@@ -8,7 +9,6 @@ import GraphBackground from "../components/GraphBackground";
 import GraphCard from "../components/GraphCard.jsx";
 import LinkArrow from "../components/LinkArrow";
 import { nodes as graphItems } from "../data/graph";
-
 
 export default function Home() {
   const latestProjects = Array.isArray(projects) ? projects.slice(0, 3) : [];
@@ -130,6 +130,21 @@ export default function Home() {
         </div>
 {/* untere Linie – Übergang zu Beiträgen */}
   <div className="absolute bottom-0 left-1/3 w-1/3 h-[1px] bg-gradient-to-r from-transparent via-gold-400/10 to-transparent" />
+</section>
+{/* === TRENNLINIE + TITEL === */}
+<div className="relative flex items-center my-12">
+  <div className="flex-grow border-t border-gold-400/30" />
+  <span className="mx-4 text-gold-400 uppercase tracking-wider text-base font-medium">
+    Aktuelle Themen
+  </span>
+  <div className="flex-grow border-t border-gold-400/30" />
+</div>
+
+{/* === HIGHLIGHT CAROUSEL === */}
+<section className="relative z-10 py-16 px-4 md:px-0">
+  <div className="container-section">
+    <HighlightCarousel />
+  </div>
 </section>
 {/* === ZITATBLOCK – ÜBERGANG GEDANKE → BEITRÄGE === */}
 <section className="relative max-w-3xl mx-auto py-14 md:py-16 text-center border-t border-neutral-800/40">

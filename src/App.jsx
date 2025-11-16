@@ -18,6 +18,7 @@ import GraphDetail from "./pages/GraphDetail.jsx";
 import Contact from "./pages/Contact.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Impressum from "./pages/Impressum";
+import ScrollToTopButtonGlobal from "./components/ScrollToTopButtonGlobal";
 
 /* ---------------------------------------------------------------------------
   🔹 Smooth Scroll Component
@@ -47,7 +48,7 @@ export default function App() {
 
       {/* 🟡 Header (Navigation) */}
       <Header />
-
+<ScrollToTopButtonGlobal />
       {/* 🔵 Hauptinhalt mit Routing */}
       <main className="min-h-screen bg-surface-base text-text-primary pt-16 md:pt-20 transition-theme duration-500">
         <Routes>
