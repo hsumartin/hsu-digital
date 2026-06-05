@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="720" viewBox="0 0 1700 720" role="img" aria-labelledby="title desc">
+<title id="title">GPT-Stack Entwicklungspfad</title>
+<desc id="desc">Entwicklung von einzelnen Custom GPTs über den GPT-Stack zu Modellvariation, Meta-Governance und lokalem KI-Ökosystem.</desc>
+<rect width="100%" height="100%" fill="#FBFCFD"></rect>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2B6895"></path></marker><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"></feDropShadow></filter></defs>
+<text x="850.0" y="70.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#0A1424">Entwicklungspfad des GPT-Stacks</text>
+<text x="850.0" y="103.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#6B7280">Vom einzelnen Custom GPT zur übertragbaren Agenten- und Portfolioarchitektur</text>
+<path d="M 135 370 C 350 250, 520 475, 735 355 S 1120 260, 1305 370 S 1515 458, 1580 345" fill="none" stroke="#CAD6DF" stroke-width="6" stroke-linecap="round"></path>
+<path d="M 217.0 370.0 C 263.5 305.0, 263.5 375.0, 310.0 310.0" fill="none" stroke="#C9A94B" stroke-width="2.2" opacity="0.55" marker-end="url(#arrow)"></path>
+<path d="M 454.0 310.0 C 501.0 311.0, 501.0 381.0, 548.0 382.0" fill="none" stroke="#2B6895" stroke-width="2.2" opacity="0.55" marker-end="url(#arrow)"></path>
+<path d="M 692.0 382.0 C 739.0 309.0, 739.0 379.0, 786.0 306.0" fill="none" stroke="#C9A94B" stroke-width="2.2" opacity="0.55" marker-end="url(#arrow)"></path>
+<path d="M 930.0 306.0 C 977.0 309.0, 977.0 379.0, 1024.0 382.0" fill="none" stroke="#2B6895" stroke-width="2.2" opacity="0.55" marker-end="url(#arrow)"></path>
+<path d="M 1168.0 382.0 C 1215.0 312.0, 1215.0 382.0, 1262.0 312.0" fill="none" stroke="#C9A94B" stroke-width="2.2" opacity="0.55" marker-end="url(#arrow)"></path>
+<path d="M 1406.0 312.0 C 1447.0 306.0, 1447.0 376.0, 1488.0 370.0" fill="none" stroke="#2B6895" stroke-width="2.2" opacity="0.55" marker-end="url(#arrow)"></path>
+<g filter="url(#shadow)">
+<rect x="50" y="292" width="190" height="156" rx="28" fill="#FFFFFF" stroke="#D4DEE6" stroke-width="1.4"></rect>
+<circle cx="145" cy="328" r="23" fill="#C9A94B"></circle>
+<text x="145.0" y="336.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">1</text>
+<text x="145.0" y="365.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Einzelne</text>
+<text x="145.0" y="387.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Custom GPTs</text>
+<text x="145.0" y="417.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Was kann ein</text>
+<text x="145.0" y="434.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">einzelnes GPT leisten?</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="287" y="232" width="190" height="156" rx="28" fill="#FFFFFF" stroke="#D4DEE6" stroke-width="1.4"></rect>
+<circle cx="382" cy="268" r="23" fill="#2B6895"></circle>
+<text x="382.0" y="276.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">2</text>
+<text x="382.0" y="305.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">GPT-Stack als</text>
+<text x="382.0" y="327.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Rollenarchitektur</text>
+<text x="382.0" y="357.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Funktionen trennen</text>
+<text x="382.0" y="374.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">und verbinden</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="525" y="304" width="190" height="156" rx="28" fill="#FFFFFF" stroke="#D4DEE6" stroke-width="1.4"></rect>
+<circle cx="620" cy="340" r="23" fill="#1F4F73"></circle>
+<text x="620.0" y="348.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">3</text>
+<text x="620.0" y="377.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Modellvariation</text>
+<text x="620.0" y="399.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">und Evaluation</text>
+<text x="620.0" y="429.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Welches Modell passt</text>
+<text x="620.0" y="446.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">zu welcher Rolle?</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="763" y="228" width="190" height="156" rx="28" fill="#FFFFFF" stroke="#D4DEE6" stroke-width="1.4"></rect>
+<circle cx="858" cy="264" r="23" fill="#C9A94B"></circle>
+<text x="858.0" y="272.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">4</text>
+<text x="858.0" y="301.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Meta-</text>
+<text x="858.0" y="323.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Governance</text>
+<text x="858.0" y="353.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Konsistenz und</text>
+<text x="858.0" y="370.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Redundanz prüfen</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1001" y="304" width="190" height="156" rx="28" fill="#FFFFFF" stroke="#D4DEE6" stroke-width="1.4"></rect>
+<circle cx="1096" cy="340" r="23" fill="#2B6895"></circle>
+<text x="1096.0" y="348.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">5</text>
+<text x="1096.0" y="377.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Agenten-</text>
+<text x="1096.0" y="399.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">architektur</text>
+<text x="1096.0" y="429.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Rollen technisch</text>
+<text x="1096.0" y="446.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">orchestrieren</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1239" y="234" width="190" height="156" rx="28" fill="#FFFFFF" stroke="#D4DEE6" stroke-width="1.4"></rect>
+<circle cx="1334" cy="270" r="23" fill="#1F4F73"></circle>
+<text x="1334.0" y="278.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">6</text>
+<text x="1334.0" y="307.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Lokales KI-</text>
+<text x="1334.0" y="329.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Ökosystem</text>
+<text x="1334.0" y="359.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">offline-fähig und</text>
+<text x="1334.0" y="376.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">datenschutzorientiert</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1465" y="292" width="190" height="156" rx="28" fill="#FFFFFF" stroke="#D4DEE6" stroke-width="1.4"></rect>
+<circle cx="1560" cy="328" r="23" fill="#C9A94B"></circle>
+<text x="1560.0" y="336.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">7</text>
+<text x="1560.0" y="365.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Portfolio und</text>
+<text x="1560.0" y="387.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0A1424">Demonstration</text>
+<text x="1560.0" y="417.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Wirkung, Website,</text>
+<text x="1560.0" y="434.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="450" fill="#6B7280">Whitepaper, Demos</text>
+</g>
+<rect x="260" y="600" width="1180" height="58" rx="29" fill="#EAF2F7" stroke="#D0E0EA"></rect>
+<text x="850.0" y="623.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" font-weight="650" fill="#1F4F73">Die Architektur bleibt konstant. Rollen, Modelle und Ausführungsformen können schrittweise variieren.</text>
+<text x="850.0" y="646.0" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#6B7280">Damit wird der GPT-Stack zur Brücke zwischen heutiger Custom-GPT-Nutzung und späterer agentischer Orchestrierung.</text>
+</svg>
