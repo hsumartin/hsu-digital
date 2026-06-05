@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Brand: ink ── */
+  --color-ink: #0C0F14;
+  --color-ink-soft: #0F1520;
+  --color-ink-medium: #132030;
+
+  /* ── Brand: paper ── */
+  --color-paper: #F5F4F0;
+  --color-paper-soft: #F8F7F3;
+  --color-paper-light: #F4F1EC;
+
+  /* ── Text ── */
+  --color-text: #EDE9E3;
+  --color-text-muted: #6E7A85;
+  --color-text-faint: #3A4450;
+
+  /* ── Gold ── */
+  --color-gold-200: #F0E1B5;
+  --color-gold-400: #D8BB6A;
+  --color-gold-500: #C9A94B;
+  --color-gold-600: #A88E3D;
+
+  /* ── Blue ── */
+  --color-blue-300: #BFD8EA;
+  --color-blue-600: #5A97C4;
+  --color-blue-700: #3F7FAE;
+  --color-blue-800: #2B6895;
+  --color-blue-900: #183B55;
+  --color-blue-950: #102636;
+
+  /* ── Stone ── */
+  --color-stone-50: #F8F7F3;
+  --color-stone-100: #F0EEE8;
+  --color-stone-200: #E5E1D8;
+  --color-stone-300: #C9C7C1;
+  --color-stone-700: #343B48;
+  --color-stone-800: #202632;
+  --color-stone-900: #151922;
+  --color-stone-950: #0E1116;
+
+  /* ── Categorical (graph only) ── */
+  --color-cat-ugz: #C9A94B;
+  --color-cat-arch: #2B6895;
+  --color-cat-ki: #5A9E7A;
+  --color-cat-tag: #3A4450;
+
+  /* ── Fonts ── */
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* ── Letter spacing ── */
+  --tracking-wider-2: 0.12em;
+  --tracking-wider-3: 0.18em;
+  --tracking-widest-2: 0.22em;
+
+  /* ── Max widths ── */
+  --width-page: 88rem;
+  --width-prose: 72rem;
+  --width-narrow: 56rem;
+}
