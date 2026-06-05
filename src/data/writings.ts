@@ -71,7 +71,7 @@ export const writings: WritingIndex[] = [
       'GPT-Stack, USE+ Framework und PromptPilot als System: Denkprozesse werden sichtbar, strukturierbar und steuerbar. Der Schwerpunkt liegt auf Methode statt Werkzeugkatalog.',
     tags: ['Systemdenken', 'PromptPilot', 'Denkmodell'],
     featured: false,
-    hasDetail: false,
+    hasDetail: true,
   },
 ];
 
@@ -126,9 +126,27 @@ export const kiGovernanceDetail: WritingDetail = {
   ],
 };
 
+export const denkarchitekturDetail: WritingDetail = {
+  ...writings[3],
+  subtitle: 'Wie KI Denken sichtbar macht',
+  lead: 'KI entfaltet ihr Potenzial nicht im einzelnen Prompt, sondern in der Architektur des Denkens. Der GPT-Stack, das USE+ Framework™ und der PromptPilot machen Denkprozesse sichtbar, strukturierbar und steuerbar — Grundlage für reproduzierbare Erkenntnis statt zufälliger Outputs.',
+  record: [
+    { key: 'Kategorie', value: 'Whitepaper' },
+    { key: 'Version', value: 'April 2026' },
+    { key: 'Prinzip', value: 'Denken sichtbar machen' },
+    { key: 'Artefakte', value: 'Stack-Poster · USE+-Zyklus · PromptPilot · Agenten-Loop' },
+    { key: 'Wirkt in', value: 'Systemdenken · PromptPilot · Agentik' },
+  ],
+  abstractText: [
+    'KI entfaltet ihr Potenzial nicht im einzelnen Prompt, sondern in der Architektur des Denkens. Der GPT-Stack, das USE+ Framework™ und der PromptPilot machen Denkprozesse sichtbar, strukturierbar und steuerbar — Grundlage für reproduzierbare Erkenntnis statt zufälliger Outputs.',
+    'Wert: Kohärenz statt Fragmentierung; Reproduzierbarkeit statt Zufall; schnellere Lernkurven. Ziel ist eine Denkökologie — ein Netzwerk aus Menschen, GPTs und Agenten, das Erkenntnis organisiert.',
+  ],
+};
+
 export function getWritingDetail(slug: string): WritingDetail | null {
   if (slug === 'gpt-stack') return gptStackDetail;
   if (slug === 'decision-layer') return decisionLayerDetail;
   if (slug === 'ki-governance') return kiGovernanceDetail;
+  if (slug === 'denkarchitektur') return denkarchitekturDetail;
   return null;
 }

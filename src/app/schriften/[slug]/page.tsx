@@ -4,6 +4,7 @@ import { getWritingDetail } from '@/data/writings';
 import GptStackDossier from '@/components/writings/dossiers/GptStackDossier';
 import DecisionLayerDossier from '@/components/writings/dossiers/DecisionLayerDossier';
 import KiGovernanceDossier from '@/components/writings/dossiers/KiGovernanceDossier';
+import DenkarchitekturDossier from '@/components/writings/dossiers/DenkarchitekturDossier';
 
 export const dynamicParams = false;
 
@@ -12,6 +13,7 @@ export function generateStaticParams() {
     { slug: 'gpt-stack' },
     { slug: 'decision-layer' },
     { slug: 'ki-governance' },
+    { slug: 'denkarchitektur' },
   ];
 }
 
@@ -42,6 +44,7 @@ export default async function SchriftenDetailPage({
   if (slug === 'gpt-stack') return <GptStackDossier writing={writing} />;
   if (slug === 'decision-layer') return <DecisionLayerDossier writing={writing} />;
   if (slug === 'ki-governance') return <KiGovernanceDossier writing={writing} />;
+  if (slug === 'denkarchitektur') return <DenkarchitekturDossier writing={writing} />;
 
   notFound();
 }

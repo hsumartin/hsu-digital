@@ -7,6 +7,8 @@ interface WritingFigureProps {
   caption: string;
   width?: number;
   height?: number;
+  /** Optional CSS max-height in px; image will be constrained with object-contain */
+  maxHeight?: number;
 }
 
 export default function WritingFigure({
@@ -16,6 +18,7 @@ export default function WritingFigure({
   caption,
   width = 1500,
   height = 900,
+  maxHeight,
 }: WritingFigureProps) {
   return (
     <figure className="my-10 border border-stone-200 bg-[#FBFAF7] overflow-auto">
@@ -29,8 +32,12 @@ export default function WritingFigure({
           alt={label}
           width={width}
           height={height}
-          className="block w-full h-auto"
-          style={{ minWidth: 540 }}
+          className="block w-full"
+          style={
+            maxHeight
+              ? { maxHeight, objectFit: 'contain', height: 'auto', minWidth: 540 }
+              : { height: 'auto', minWidth: 540 }
+          }
           unoptimized
         />
       </div>
