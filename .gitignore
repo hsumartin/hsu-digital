@@ -1,0 +1,205 @@
+# -----------------------------------------------------------------------------
+# .gitignore fuer Next.js / Tailwind / Website-Projekt
+# Ziel: lokale Artefakte, Secrets, AI-Tool-Sitzungsdaten, Build-Outputs,
+# Handoff-Dateien und generierte Dateien nicht versehentlich committen.
+# Hinweis: .gitignore ist nur eine Schutzschicht. Es ersetzt keine
+# Dependency-Pruefung, keine Secret-Scanner und keine sichere CI/CD-Konfiguration.
+# -----------------------------------------------------------------------------
+
+# System- & Editor-Dateien
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+.history/
+
+# Node / Package Manager
+node_modules/
+.pnp/
+.pnp.js
+.pnpm-store/
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Build- und Framework-Artefakte
+.next/
+out/
+build/
+dist/
+.turbo/
+.vercel/
+.netlify/
+.wrangler/
+.cache/
+.parcel-cache/
+.vite/
+.swc/
+
+# TypeScript / Lint / Tool-Caches
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Umgebungsvariablen und lokale Konfiguration
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+.local.env
+*.local
+
+# Package-Registry- und Publish-Tokens
+.npmrc
+.pnpmrc
+.yarnrc.yml
+.npm-token
+.npmrc.local
+
+# Secrets, Keys, Zertifikate, Service-Accounts
+secrets/
+secret/
+private/
+credentials/
+*.secret
+*.secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+id_rsa*
+id_ed25519*
+*.ppk
+*credentials*.json
+*service-account*.json
+*service_account*.json
+firebase-adminsdk*.json
+google-application-credentials*.json
+
+# Cloud-, Deployment- und lokale CLI-Konfigurationen
+.aws/
+.azure/
+.gcloud/
+.firebase/
+.supabase/
+vercel.env*
+netlify.env*
+
+# MCP / lokale Agenten- und AI-Tool-Konfigurationen
+# Diese Dateien koennen lokale Pfade, Tokens, Projektkontext oder interne Prompts enthalten.
+.claude/
+.cursor/
+.continue/
+.codex/
+.windsurf/
+.aider*
+.roo/
+.kilocode/
+.mcp.json
+mcp.json
+*.mcp.json
+!mcp.example.json
+!*.mcp.example.json
+
+# Lokale Claude-Code- oder Handoff-Anweisungen, sofern sie nicht bewusst Teil des Repos sein sollen
+anweisung.md
+Anweisung.md
+ANWEISUNG.md
+claude.local.md
+CLAUDE.local.md
+
+# Logs und Debug-Dateien
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Test-, Coverage- und Browser-Artefakte
+coverage/
+.nyc_output/
+reports/
+screenshots/
+playwright-report/
+test-results/
+blob-report/
+**/.local-chromium/
+**/chrome-win/
+**/puppeteer/.local-chromium/
+
+# Security-Scanner-Ausgaben, nicht die Scanner-Konfiguration selbst
+trivy-results.*
+semgrep-results.*
+zizmor-results.*
+.sarif/
+*.sarif
+
+# Temporäre Dateien und Backups
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+~$*
+
+# Archive und lokale Exporte
+*.gz
+*.zip
+*.tar
+*.tgz
+*.7z
+*.rar
+archive/
+_archives/
+exports/
+
+# Lokale Datenbanken und Dumps
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.dump
+*.sql
+*.sql.gz
+
+# Projekt-Handoff, alte Prototypen und lokale Referenzen
+# Nur aktiv lassen, wenn diese Inhalte nicht Teil des oeffentlichen Repos sein sollen.
+_legacy/
+_handoff/
+handoff/
+design_handoff_portfolio/
+reference/
+
+# Scripts: Quellskripte NICHT pauschal ignorieren.
+# Gerade Skripte muessen bei Supply-Chain-Risiken sichtbar pruefbar bleiben.
+# Nur generierte Script-Outputs ignorieren.
+scripts/graphs-out/
+scripts/**/output/
+scripts/**/tmp/
+
+# Autogenerierte Graphen/Daten fuer Visualisierungen
+public/graphs/*-autogen.json
+public/graphs/autogen*/
+src/data/graphs/autogen*/
+
+# Absichtlich NICHT ignorieren:
+# package.json
+# package-lock.json / pnpm-lock.yaml / yarn.lock / bun.lockb
+# .github/workflows/
+# scripts/ als Quellordner
+# vercel.json, next.config.*, tailwind.config.*, tsconfig.json
