@@ -52,7 +52,7 @@ export const projects: ProjectIndex[] = [
     artifacts: 'Layerstruktur · Suchlogik · Prozessbezug',
     category: 'ugz',
     featured: true,
-    hasDetail: false,
+    hasDetail: true,
   },
   {
     slug: 'sound-to-form',
@@ -136,7 +136,26 @@ export const civitasflowDetail: ProjectDetail = {
     'CivitasFlow wird als abstrahierte Portfolio-Fallstudie geführt. Interne Bezeichnungen, reale Daten und vertrauliche Abläufe werden nicht dargestellt.',
 };
 
+export const gisSuchfunktionDetail: ProjectDetail = {
+  ...projects[1],
+  subtitle: 'Geodatenbasierte Zuständigkeitslogik im Baubewilligungsverfahren',
+  lead: 'Räumliche Zuständigkeiten im Baubewilligungsverfahren in eine geodatenbasierte, prüfbare und nachführbare Struktur überführt — publiziert im Geodatenkatalog der Stadt Zürich.',
+  record: [
+    { key: 'Status', value: 'Publiziert', gold: true },
+    { key: 'Domäne', value: 'GIS · Baubewilligung' },
+    { key: 'Rolle', value: 'Konzeption · Umsetzung · QS' },
+    { key: 'Werkzeuge', value: 'QGIS · SQL · GeoPackage' },
+    { key: 'Systemtyp', value: 'Geodatenstruktur' },
+    { key: 'Artefakte', value: 'Architektur · Prozessmodell' },
+    { key: 'Ergebnis', value: 'Geodatenkatalog Zürich' },
+    { key: 'Kontext', value: 'Öffentliche Verwaltung' },
+  ],
+  abstractText:
+    'Die GIS-gestützte Suchfunktion übersetzt organisatorische Zuständigkeitslogik in eine räumlich abfragbare Datenstruktur. Zuständigkeiten im Baubewilligungsverfahren werden geodatenbasiert, auf mehreren räumlichen Ebenen (Stadtgrenze, Stadtkreise, Quartiere, Gebäude) prüfbar und zentral nachführbar gemacht. Das Ergebnis ist im Geodatenkatalog der Stadt Zürich publiziert.',
+};
+
 export function getProjectDetail(slug: string): ProjectDetail | null {
   if (slug === 'civitasflow') return civitasflowDetail;
+  if (slug === 'gis-suchfunktion') return gisSuchfunktionDetail;
   return null;
 }
