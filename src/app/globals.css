@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+/* Nav status badge pulse — decorative only */
+.nav-pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-gold-500);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-500) 18%, transparent);
+  animation: nav-pulse 3s ease-in-out infinite;
+}
+
+@keyframes nav-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%       { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-pulse-dot { animation: none; }
+}
+
 @theme {
   /* ── Brand: ink ── */
   --color-ink: #0C0F14;
