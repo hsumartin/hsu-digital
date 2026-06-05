@@ -2,11 +2,17 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getWritingDetail } from '@/data/writings';
 import GptStackDossier from '@/components/writings/dossiers/GptStackDossier';
+import DecisionLayerDossier from '@/components/writings/dossiers/DecisionLayerDossier';
+import KiGovernanceDossier from '@/components/writings/dossiers/KiGovernanceDossier';
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [{ slug: 'gpt-stack' }];
+  return [
+    { slug: 'gpt-stack' },
+    { slug: 'decision-layer' },
+    { slug: 'ki-governance' },
+  ];
 }
 
 export async function generateMetadata({
@@ -33,5 +39,9 @@ export default async function SchriftenDetailPage({
   const writing = getWritingDetail(slug);
   if (!writing) notFound();
 
-  return <GptStackDossier writing={writing} />;
+  if (slug === 'gpt-stack') return <GptStackDossier writing={writing} />;
+  if (slug === 'decision-layer') return <DecisionLayerDossier writing={writing} />;
+  if (slug === 'ki-governance') return <KiGovernanceDossier writing={writing} />;
+
+  notFound();
 }
