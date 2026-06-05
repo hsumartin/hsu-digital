@@ -67,7 +67,7 @@ export const projects: ProjectIndex[] = [
     artifacts: 'Prozesskette · Amplitudengraph · Formgenerierung',
     category: 'arch',
     featured: false,
-    hasDetail: false,
+    hasDetail: true,
   },
   {
     slug: 'algorithmische-waerme',
@@ -82,22 +82,7 @@ export const projects: ProjectIndex[] = [
     artifacts: 'Versuchsreihe · Werkzeugkette · Materialreaktion',
     category: 'arch',
     featured: false,
-    hasDetail: false,
-  },
-  {
-    slug: 'ohnesorg',
-    title: 'Erinnerung als räumliche Eskalation',
-    context: 'Ohnesorg-Denkmal',
-    domain: 'Erinnerung · Raumdramaturgie · Konzept',
-    kicker: 'Architektur',
-    status: 'Entwurf',
-    tags: ['Architektur', 'Erinnerung'],
-    description:
-      'Ein Erinnerungsort wird als sequenzielle Raumdramaturgie verstanden. Architektur erzeugt Annäherung, Verdichtung, Konfrontation und Reflexion.',
-    artifacts: 'Raumsequenz · Akte · Städtebauliche Setzung',
-    category: 'arch',
-    featured: false,
-    hasDetail: false,
+    hasDetail: true,
   },
   {
     slug: 'mittenmang',
@@ -112,7 +97,22 @@ export const projects: ProjectIndex[] = [
     artifacts: 'Grünband · Städtebauliche Setzung · Strategie',
     category: 'arch',
     featured: false,
-    hasDetail: false,
+    hasDetail: true,
+  },
+  {
+    slug: 'ohnesorg',
+    title: 'Erinnerung als räumliche Eskalation',
+    context: 'Ohnesorg-Denkmal',
+    domain: 'Erinnerung · Raumdramaturgie · Konzept',
+    kicker: 'Architektur',
+    status: 'Entwurf',
+    tags: ['Architektur', 'Erinnerung'],
+    description:
+      'Ein Erinnerungsort wird als sequenzielle Raumdramaturgie verstanden. Architektur erzeugt Annäherung, Verdichtung, Konfrontation und Reflexion.',
+    artifacts: 'Raumsequenz · Akte · Städtebauliche Setzung',
+    category: 'arch',
+    featured: false,
+    hasDetail: true,
   },
 ];
 
@@ -154,8 +154,84 @@ export const gisSuchfunktionDetail: ProjectDetail = {
     'Die GIS-gestützte Suchfunktion übersetzt organisatorische Zuständigkeitslogik in eine räumlich abfragbare Datenstruktur. Zuständigkeiten im Baubewilligungsverfahren werden geodatenbasiert, auf mehreren räumlichen Ebenen (Stadtgrenze, Stadtkreise, Quartiere, Gebäude) prüfbar und zentral nachführbar gemacht. Das Ergebnis ist im Geodatenkatalog der Stadt Zürich publiziert.',
 };
 
+export const soundToFormDetail: ProjectDetail = {
+  ...projects[2],
+  subtitle: 'Klang als architektonischer Generierungsprozess',
+  lead: 'Audiodaten aus Hans Zimmers Komposition Why Do We Fall werden in Blender als Amplitudengraphen extrahiert, in Rhino 3D zu Schichtgeometrie übereinandergelegt und in Maya animiert — Musik als geometrischer Datensatz.',
+  record: [
+    { key: 'Status', value: 'Studie', gold: true },
+    { key: 'Kontext', value: 'MAYA-Workshop · TU Braunschweig' },
+    { key: 'Jahr', value: '2014/15' },
+    { key: 'Werkzeuge', value: 'Blender · Rhino 3D · Maya · V-Ray' },
+    { key: 'Systemtyp', value: 'Generativer Prozess' },
+    { key: 'Artefakte', value: 'Amplitudenanalyse · Geometrie · Rendering' },
+    { key: 'Betreuung', value: 'Zaha Hadid Architects' },
+    { key: 'Institut', value: 'Institut für Mediales Entwerfen' },
+  ],
+  abstractText:
+    'Sound to Form untersucht Klang als geometrischen Datensatz. Hans Zimmers Komposition Why Do We Fall wird in Blender als zeitbasierte Amplitudenkurve extrahiert, als Schichtebenen in Rhino 3D übereinandergelegt und zu einem dreidimensionalen Objekt gefügt. Die vertikale Entwicklung folgt dem emotionalen Spannungsbogen der Musik — von gedrückter Grundlage zu aufsteigender Verdichtung, zur zackigen Gipfelform.',
+};
+
+export const algorithmischeWaermeDetail: ProjectDetail = {
+  ...projects[3],
+  subtitle: 'Wachs als reaktives Medium zwischen digitaler Steuerung und physischem Verhalten',
+  lead: 'Vier Versuchsanordnungen mit einem UR5-Industrieroboterarm erkunden Wachs als Material an der Grenze zwischen algorithmischer Steuerung und eigenständiger physikalischer Reaktion.',
+  record: [
+    { key: 'Status', value: 'Experiment', gold: true },
+    { key: 'Kontext', value: 'Institute of Media Design' },
+    { key: 'Jahr', value: '2016' },
+    { key: 'Werkzeuge', value: 'UR5 · Rhino · Grasshopper · Python' },
+    { key: 'Systemtyp', value: 'Materialstudie' },
+    { key: 'Artefakte', value: 'Versuchsreihe · Prozessdokumentation' },
+    { key: 'Format', value: 'Seminar · Freier Entwurf' },
+    { key: 'Zusammenarbeit', value: 'Gruppenarbeit' },
+  ],
+  abstractText:
+    'Vier Versuchsanordnungen mit einem UR5-Industrieroboterarm befragen Wachs als Material zwischen digitaler Steuerung und physikalischer Eigenlogik. Thermische Erosion durch Heissluft, Gusslogik über programmierte Bewegungspfade, mechanische Kreisbewegung während des Erstarrens und analoger Thermoschock durch Eis: Jeder Versuch offenbart eine andere Eigenschaft. Das Wachs antwortet, setzt Grenzen und schreibt seinen eigenen Zustand in die Form ein.',
+};
+
+export const ohnesorgDetail: ProjectDetail = {
+  ...projects[5],
+  subtitle: 'Erinnerungsdenkmal an die Tötung Benno Ohnesorgs, Berlin 1967',
+  lead: 'Das Denkmal übersetzt den historischen Ablauf des 2. Juni 1967 in eine sequenzielle Raumdramaturgie nach dem Freytag-Schema. Fünf Akte führen den Besucher von der Enge des Eingangs bis zum Raum der Stille — Architektur als körperlich erfahrbare Erzählung.',
+  record: [
+    { key: 'Status', value: 'Entwurf', gold: true },
+    { key: 'Kontext', value: 'Bachelorthesis TU Braunschweig' },
+    { key: 'Jahr', value: '2017/18' },
+    { key: 'Betreuung', value: 'Prof. Matthias Karch' },
+    { key: 'Systemtyp', value: 'Raumdramaturgie' },
+    { key: 'Artefakte', value: 'Pläne · Schnitte · Renderings' },
+    { key: 'Material', value: 'Corten · Beton · Licht' },
+    { key: 'Lage', value: 'Krumme Strasse, Berlin' },
+  ],
+  abstractText:
+    'Erinnerung als räumliche Eskalation übersetzt den historischen Ablauf des 2. Juni 1967 in eine fünfaktige Raumdramaturgie. Das Denkmal ist in den Sockel eines aufgeständerten Wohngebäudes an der Krummen Strasse eingeschrieben und führt vier Ebenen in den Hinterhof hinab. Corten, Beton und gezielt eingesetztes Licht erzeugen Annäherung, Verdichtung, Konfrontation und Reflexion — Architektur als körperlich erfahrbare Erzählung eines historischen Moments.',
+};
+
+export const mittenmangDetail: ProjectDetail = {
+  ...projects[4],
+  subtitle: 'Grüne Welle — Ein städtebaulicher Entwurf in Hamburg',
+  lead: 'Die Gruppe verweigert die Beschränkung auf das zugewiesene Areal und fragt nach dem grösseren räumlichen Zusammenhang. Ein unterbrochenes Grünband wird zur Leitidee: eine begehbare Brückenstruktur verbindet drei Stadtgebiete.',
+  record: [
+    { key: 'Status', value: 'Entwurf', gold: true },
+    { key: 'Kontext', value: 'ISU · TU Braunschweig' },
+    { key: 'Ort', value: 'Hamburg Hafenrand' },
+    { key: 'Jahr', value: '2015/16' },
+    { key: 'Systemtyp', value: 'Städtebaulicher Entwurf' },
+    { key: 'Artefakte', value: 'Analysekarte · Lageplan' },
+    { key: 'Format', value: 'Gruppenarbeit' },
+    { key: 'Massstab', value: '1:1000' },
+  ],
+  abstractText:
+    'Mittenmang beginnt mit einer Verweigerung: Die Gruppe lehnt die Beschränkung auf das zugewiesene Areal ab und analysiert den grösseren räumlichen Zusammenhang. Ein unterbrochenes Grünband zieht sich fragmentiert durch mehrere Hamburger Stadtteile. Die Leitidee — eine begehbare Brückenstruktur als urbaner Landschaftsraum für Fussgänger und Radfahrer — war stark. Was fehlte, war die mittlere Ebene: die räumliche Strategie. Das Projekt ist heute auch eine Reflexion über den Unterschied zwischen Konzeptebene und operativer Umsetzbarkeit.',
+};
+
 export function getProjectDetail(slug: string): ProjectDetail | null {
   if (slug === 'civitasflow') return civitasflowDetail;
   if (slug === 'gis-suchfunktion') return gisSuchfunktionDetail;
+  if (slug === 'sound-to-form') return soundToFormDetail;
+  if (slug === 'algorithmische-waerme') return algorithmischeWaermeDetail;
+  if (slug === 'ohnesorg') return ohnesorgDetail;
+  if (slug === 'mittenmang') return mittenmangDetail;
   return null;
 }

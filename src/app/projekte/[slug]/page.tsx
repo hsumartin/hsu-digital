@@ -10,11 +10,22 @@ import MatrixTable from '@/components/projects/MatrixTable';
 import ProjectConnections from '@/components/projects/ProjectConnections';
 import ProjectNextNav from '@/components/projects/ProjectNextNav';
 import { getProjectDetail, ProjectDetail } from '@/data/projects';
+import SoundToFormDossier from '@/components/projects/dossiers/SoundToFormDossier';
+import AlgorithmischeWaermeDossier from '@/components/projects/dossiers/AlgorithmischeWaermeDossier';
+import OhnesorgDossier from '@/components/projects/dossiers/OhnesorgDossier';
+import MittenmangDossier from '@/components/projects/dossiers/MittenmangDossier';
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [{ slug: 'civitasflow' }, { slug: 'gis-suchfunktion' }];
+  return [
+    { slug: 'civitasflow' },
+    { slug: 'gis-suchfunktion' },
+    { slug: 'sound-to-form' },
+    { slug: 'algorithmische-waerme' },
+    { slug: 'ohnesorg' },
+    { slug: 'mittenmang' },
+  ];
 }
 
 export async function generateMetadata({
@@ -41,9 +52,11 @@ export default async function ProjectDetailPage({
   const project = getProjectDetail(slug);
   if (!project) notFound();
 
-  if (slug === 'gis-suchfunktion') {
-    return <GisDossier project={project} />;
-  }
+  if (slug === 'gis-suchfunktion') return <GisDossier project={project} />;
+  if (slug === 'sound-to-form') return <SoundToFormDossier project={project} />;
+  if (slug === 'algorithmische-waerme') return <AlgorithmischeWaermeDossier project={project} />;
+  if (slug === 'ohnesorg') return <OhnesorgDossier project={project} />;
+  if (slug === 'mittenmang') return <MittenmangDossier project={project} />;
 
   return (
     <PageShell>
@@ -758,6 +771,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
 
           <ProjectNextNav
             prev={{ label: 'CivitasFlow', kicker: 'Featured · Fachsystem', href: '/projekte/civitasflow' }}
+            next={{ label: 'Sound to Form', kicker: 'Computational', href: '/projekte/sound-to-form' }}
           />
         </div>
       </div>

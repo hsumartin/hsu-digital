@@ -8,6 +8,8 @@ interface FigurePlateProps {
   darkInset?: boolean;
   width?: number;
   height?: number;
+  /** Optional CSS max-height in px; image will be constrained and use object-contain */
+  maxHeight?: number;
 }
 
 export default function FigurePlate({
@@ -18,6 +20,7 @@ export default function FigurePlate({
   darkInset = false,
   width = 680,
   height = 408,
+  maxHeight,
 }: FigurePlateProps) {
   return (
     <figure className="my-12 border border-stone-200 bg-[#FBFAF7]">
@@ -31,7 +34,12 @@ export default function FigurePlate({
           alt={label}
           width={width}
           height={height}
-          className="block w-full h-auto"
+          className="block w-full"
+          style={
+            maxHeight
+              ? { maxHeight, objectFit: 'contain', height: 'auto' }
+              : { height: 'auto' }
+          }
           unoptimized
         />
       </div>
