@@ -27,6 +27,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://martinhsu.digital'),
   title: 'Martin Hsu — Digitalisierung · Verwaltung · KI',
   description:
     'Portfolio von Martin Hsu — Informationsarchitekt an der Schnittstelle von öffentlicher Verwaltung, GIS und KI.',

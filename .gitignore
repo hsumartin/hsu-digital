@@ -197,9 +197,24 @@ public/graphs/*-autogen.json
 public/graphs/autogen*/
 src/data/graphs/autogen*/
 
+# Legacy-Quelldateien und lokale Migrationsreferenzen
+# Diese Dateien sind lokale Altquellen und sollen nicht ins Repository committet werden.
+# Produktive Assets liegen in public/uploads/ und public/assets/ (nicht ignoriert).
+/Portfolio Martin Hsu.html
+/datenschutz.html
+/impressum.html
+/themen.html
+/ueber-mich.html
+/diagrams/
+/gedanken/
+/projekte/
+/uploads/
+
 # Absichtlich NICHT ignorieren:
 # package.json
 # package-lock.json / pnpm-lock.yaml / yarn.lock / bun.lockb
 # .github/workflows/
 # scripts/ als Quellordner
 # vercel.json, next.config.*, tailwind.config.*, tsconfig.json
+# public/uploads/
+# public/assets/
