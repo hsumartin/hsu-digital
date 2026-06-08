@@ -8,31 +8,31 @@ interface TimelineEntry {
 
 const ENTRIES: TimelineEntry[] = [
   {
-    year: '2012 — 2018',
-    title: 'Architekturstudium',
+    year: '2012–2019',
+    title: 'Architektur als Denkgrundlage',
     place: 'TU Braunschweig · Institute of Media and Design',
-    text: 'Systemisches Denken, Raumlogik und parametrisches Entwerfen. Abschluss mit einer Bachelorthesis über Erinnerungsarchitektur als räumliche Dramaturgie. Experimentelle Projekte an der Schnittstelle von Algorithmus, Material und Raum.',
+    text: 'Architektur hat das Denken in Raum, Massstab, Struktur und Sequenz geprägt. Aus Studium, Bachelorthesis und experimentellen Projekten entstand eine Grundhaltung: Komplexität ordnen, Zusammenhänge sehen, Systemen Form geben.',
     accent: 'gold',
   },
   {
-    year: 'Ab 2018',
-    title: 'Umwelt- & Gesundheitsschutz Zürich',
+    year: '2023–2025',
+    title: 'Verwaltung als Realitätsprüfung',
     place: 'Stadt Zürich · Digitalisierung & Fachapplikationen',
-    text: 'Digitale Prozesse in der öffentlichen Verwaltung. Anforderungsmanagement, GIS-Datenmodellierung, Product-Owner-nahe Funktion bei der Entwicklung und Einführung digitaler Fachsysteme. Schnittstelle zwischen Fachbereich, IT und Politik.',
+    text: 'Die Arbeit in der öffentlichen Verwaltung zeigte, wie digitale Systeme unter realen organisatorischen, rechtlichen und fachlichen Bedingungen funktionieren müssen. Anforderungen, GIS-Datenmodellierung, Schnittstellenlogik, Zuständigkeiten und Product-Owner-nahe Verantwortung machten Gestaltung überprüfbar.',
     accent: 'gold',
   },
   {
     year: 'Heute',
-    title: 'KI · Systemarchitektur · Digitale Transformation',
+    title: 'KI als Denk- und Arbeitsarchitektur',
     place: 'martinhsu.digital',
-    text: 'Fokus auf KI-Systeme, die in der Praxis funktionieren — transparent, kontrollierbar, datenschutzkonform. Lokale Agentenarchitekturen, Human-in-the-loop-Systeme und strukturierte Wissensorganisation für regulierte Umgebungen.',
+    text: 'Architekturdenken, Verwaltungsdigitalisierung, Product Ownership, GIS und KI verbinden sich zu einer systemischen Arbeitsweise. Fokus: verantwortbare digitale Strukturen, KI-gestützte Wissensorganisation und kontrollierbare Systeme mit Human-in-the-loop.',
     accent: 'blue',
   },
 ];
 
 export default function Timeline() {
   return (
-    <ol className="relative pl-8 list-none" aria-label="Werdegang">
+    <ol className="relative pl-8 list-none" aria-label="Entwicklungslinie">
       {/* Vertikale Linie */}
       <div
         aria-hidden="true"

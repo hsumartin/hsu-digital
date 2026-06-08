@@ -3,7 +3,7 @@ import Chip from '@/components/ui/Chip';
 const FELDER = [
   {
     num: '01',
-    title: 'Digital Process Design',
+    title: 'Digitale Prozessgestaltung',
     text: 'Analyse und Neustrukturierung digitaler Arbeitsprozesse auf Basis von Systemlogik und Datenströmen.',
   },
   {
@@ -13,22 +13,22 @@ const FELDER = [
   },
   {
     num: '03',
-    title: 'AI-assisted Workflow Optimization',
+    title: 'KI-gestützte Workflow-Optimierung',
     text: 'Integration intelligenter Modelle in Arbeitsprozesse zur Steigerung von Effizienz und Präzision.',
   },
   {
     num: '04',
-    title: 'Knowledge Systems',
+    title: 'Wissenssysteme & Ontologien',
     text: 'Aufbau semantischer Strukturen und Ontologien zur Wissensvernetzung und Entscheidungsunterstützung.',
   },
   {
     num: '05',
-    title: 'BIM Management',
+    title: 'BIM-Management',
     text: 'Strategische Steuerung von Building Information Modeling in Planung, Bau und Betrieb.',
   },
   {
     num: '06',
-    title: 'Data-Driven Architecture',
+    title: 'Datengetriebene Architektur',
     text: 'Verknüpfung von Bauwerksinformationen, Simulation und Entscheidungsmodellen in Echtzeit.',
   },
 ] as const;

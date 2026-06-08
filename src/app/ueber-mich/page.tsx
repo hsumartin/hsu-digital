@@ -42,29 +42,33 @@ export default function UeberMichPage() {
                 Struktur, Prozesse in Bewegung und Daten in Bedeutung zu überführen.
               </p>
 
-              {/* Digital-Intelligence-Collaboration-Block */}
+              {/* Mensch · System · KI-Block */}
               <div className="mt-8 border border-stone-200 bg-[#F8F7F3] p-10">
-                <p className="font-mono text-[0.65rem] tracking-[0.2em] uppercase text-gold-600 mb-4">
+                <p className="font-mono text-[0.65rem] tracking-[0.2em] uppercase text-gold-600 mb-1">
+                  Mensch · System · KI
+                </p>
+                <p className="font-mono text-[0.62rem] tracking-[0.12em] text-stone-400 mb-4">
                   Digital Intelligence Collaboration
                 </p>
                 <p className="text-[0.95rem] leading-[1.8] text-stone-600 font-light max-w-[44rem]">
                   Ich verstehe Digitalisierung als kollaborativen Prozess zwischen Mensch,
-                  System und künstlicher Intelligenz. Technologie ist für mich kein
-                  Werkzeug, sondern ein Partner in der Erkenntnis und Gestaltung. Mein
-                  Ansatz integriert konzeptuelles Denken, KI-basierte Analyse und
-                  menschliche Intuition — mit dem Ziel, nachhaltige Strukturen und
-                  zukunftsfähige Prozesse zu entwickeln.
+                  System und künstlicher Intelligenz. Diese Haltung beschreibe ich als{' '}
+                  <em>Digital Intelligence Collaboration</em>: nicht KI als Ersatz, sondern
+                  als Zusammenspiel von menschlicher Urteilskraft, Systemlogik und
+                  maschineller Analyse. Mein Ansatz verbindet konzeptuelles Denken,
+                  KI-gestützte Analyse und menschliche Urteilskraft mit dem Ziel, tragfähige
+                  Strukturen und zukunftsfähige Prozesse zu entwickeln.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ── Werdegang ───────────────────────────────────────────────────── */}
-        <section aria-labelledby="werdegang-heading" className={SECTION_CLS}>
+        {/* ── Entwicklungslinie ───────────────────────────────────────────── */}
+        <section aria-labelledby="entwicklung-heading" className={SECTION_CLS}>
           <div className={GRID_CLS}>
-            <h2 id="werdegang-heading" className={STICKY_HEAD}>
-              Werdegang
+            <h2 id="entwicklung-heading" className={STICKY_HEAD}>
+              Entwicklungs&shy;linie
             </h2>
             <Timeline />
           </div>
@@ -84,12 +88,12 @@ export default function UeberMichPage() {
         <div
           className="py-20 px-[clamp(1.5rem,6vw,6rem)] border-t border-blue-900 bg-blue-800 text-center"
         >
-          <blockquote className="font-serif italic text-[clamp(1.4rem,3vw,2.2rem)] leading-[1.35] tracking-[-0.015em] text-[#F4F2EC] max-w-[52rem] mx-auto">
-            «Die Zukunft ist kein Zufall, sondern das Ergebnis bewusster Verknüpfung von
-            Intelligenz, Struktur und Gestaltung.»
-          </blockquote>
+          <p className="font-serif italic text-[clamp(1.4rem,3vw,2.2rem)] leading-[1.35] tracking-[-0.015em] text-[#F4F2EC] max-w-[52rem] mx-auto">
+            Zukunft entsteht dort, wo Intelligenz, Struktur und Gestaltung bewusst
+            miteinander verbunden werden.
+          </p>
           <p className="font-mono text-[0.65rem] tracking-[0.18em] uppercase text-gold-200 mt-6">
-            Martin Hsu
+            Leitsatz
           </p>
         </div>
 
