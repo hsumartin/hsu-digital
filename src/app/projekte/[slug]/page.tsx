@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import ScrollProgress from '@/components/ueber-mich/ScrollProgress';
 import PageShell from '@/components/layout/PageShell';
 import ProjectHeader from '@/components/projects/ProjectHeader';
 import ProjectRecord from '@/components/projects/ProjectRecord';
@@ -52,13 +53,15 @@ export default async function ProjectDetailPage({
   const project = getProjectDetail(slug);
   if (!project) notFound();
 
-  if (slug === 'gis-suchfunktion') return <GisDossier project={project} />;
-  if (slug === 'sound-to-form') return <SoundToFormDossier project={project} />;
-  if (slug === 'algorithmische-waerme') return <AlgorithmischeWaermeDossier project={project} />;
-  if (slug === 'ohnesorg') return <OhnesorgDossier project={project} />;
-  if (slug === 'mittenmang') return <MittenmangDossier project={project} />;
+  if (slug === 'gis-suchfunktion') return <><ScrollProgress /><GisDossier project={project} /></>;
+  if (slug === 'sound-to-form') return <><ScrollProgress /><SoundToFormDossier project={project} /></>;
+  if (slug === 'algorithmische-waerme') return <><ScrollProgress /><AlgorithmischeWaermeDossier project={project} /></>;
+  if (slug === 'ohnesorg') return <><ScrollProgress /><OhnesorgDossier project={project} /></>;
+  if (slug === 'mittenmang') return <><ScrollProgress /><MittenmangDossier project={project} /></>;
 
   return (
+    <>
+    <ScrollProgress />
     <PageShell>
       {/* 01 Header */}
       <ProjectHeader
@@ -423,6 +426,7 @@ export default async function ProjectDetailPage({
         </div>
       </div>
     </PageShell>
+    </>
   );
 }
 

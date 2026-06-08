@@ -52,13 +52,13 @@ export default function KontaktSection() {
             </p>
             <div className="flex flex-col items-start gap-5 mt-10">
               <a
-                href="mailto:mail@martinhsu.digital"
+                href="mailto:kontakt@martinhsu.digital"
                 className="font-serif text-[1.5rem] text-[#F4F2EC] no-underline border-b border-[rgba(244,242,236,0.3)] pb-[3px] transition-colors duration-200 hover:text-gold-200 hover:border-gold-200"
               >
-                mail@martinhsu.digital
+                kontakt@martinhsu.digital
               </a>
               <a
-                href="mailto:mail@martinhsu.digital"
+                href="mailto:kontakt@martinhsu.digital"
                 className="inline-flex items-center gap-2 text-[0.84rem] tracking-[0.03em] font-medium
                            px-[1.6rem] py-[0.78rem] rounded-full no-underline
                            bg-gold-500 text-[#1A1404] border border-gold-500

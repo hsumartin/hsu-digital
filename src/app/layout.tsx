@@ -3,6 +3,7 @@ import { Instrument_Serif, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google
 import './globals.css';
 import SiteNav from '@/components/nav/SiteNav';
 import SiteFooter from '@/components/layout/SiteFooter';
+import BackToTopButton from '@/components/common/BackToTopButton';
 
 const instrumentSerif = Instrument_Serif({
   weight: ['400'],
@@ -50,6 +51,7 @@ export default function RootLayout({
         <SiteNav />
         {children}
         <SiteFooter />
+        <BackToTopButton />
       </body>
     </html>
   );

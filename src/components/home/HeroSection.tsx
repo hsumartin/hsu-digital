@@ -60,12 +60,12 @@ export default function HeroSection() {
           <div className="font-mono text-[0.7rem] tracking-[0.14em] text-text-muted">
             <b className="text-gold-600 font-medium">MH</b> / Index
           </div>
-          <div className="mt-5 mb-6 w-12 h-12 rounded-sm overflow-hidden border border-stone-200">
+          <div className="mt-5 mb-6 w-16 h-16 rounded-sm overflow-hidden border border-stone-200">
             <Image
               src="/uploads/DSC_7508_4a.jpg"
               alt="Martin Hsu"
-              width={48}
-              height={48}
+              width={64}
+              height={64}
               className="w-full h-full object-cover grayscale-[15%] contrast-[1.02]"
               priority
             />

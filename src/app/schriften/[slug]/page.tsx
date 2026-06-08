@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getWritingDetail } from '@/data/writings';
+import ScrollProgress from '@/components/ueber-mich/ScrollProgress';
 import GptStackDossier from '@/components/writings/dossiers/GptStackDossier';
 import DecisionLayerDossier from '@/components/writings/dossiers/DecisionLayerDossier';
 import KiGovernanceDossier from '@/components/writings/dossiers/KiGovernanceDossier';
@@ -41,10 +42,10 @@ export default async function SchriftenDetailPage({
   const writing = getWritingDetail(slug);
   if (!writing) notFound();
 
-  if (slug === 'gpt-stack') return <GptStackDossier writing={writing} />;
-  if (slug === 'decision-layer') return <DecisionLayerDossier writing={writing} />;
-  if (slug === 'ki-governance') return <KiGovernanceDossier writing={writing} />;
-  if (slug === 'denkarchitektur') return <DenkarchitekturDossier writing={writing} />;
+  if (slug === 'gpt-stack') return <><ScrollProgress /><GptStackDossier writing={writing} /></>;
+  if (slug === 'decision-layer') return <><ScrollProgress /><DecisionLayerDossier writing={writing} /></>;
+  if (slug === 'ki-governance') return <><ScrollProgress /><KiGovernanceDossier writing={writing} /></>;
+  if (slug === 'denkarchitektur') return <><ScrollProgress /><DenkarchitekturDossier writing={writing} /></>;
 
   notFound();
 }

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import ScrollProgress from '@/components/ueber-mich/ScrollProgress';
 import ArchitectureOfThinkingDossier from '@/components/writings/dossiers/en/ArchitectureOfThinkingDossier';
 
 export const metadata: Metadata = {
@@ -11,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function ArchitectureOfThinkingPage() {
-  return <ArchitectureOfThinkingDossier />;
+  return <><ScrollProgress /><ArchitectureOfThinkingDossier /></>;
 }

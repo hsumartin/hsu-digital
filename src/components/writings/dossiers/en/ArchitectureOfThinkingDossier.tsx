@@ -778,8 +778,8 @@ export default function ArchitectureOfThinkingDossier() {
                 For conversations about GPT Stack, USE+ Framework™, PromptPilot, and system architecture for structured AI thinking.
               </p>
               <div className="flex flex-col gap-3 mt-4">
-                <a href="mailto:martin.hsu@martinhsu.digital" className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[#F5F4F0] no-underline border-b border-[rgba(244,242,236,0.22)] pb-[0.35rem]">
-                  martin.hsu@martinhsu.digital
+                <a href="mailto:kontakt@martinhsu.digital" className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[#F5F4F0] no-underline border-b border-[rgba(244,242,236,0.22)] pb-[0.35rem]">
+                  kontakt@martinhsu.digital
                 </a>
               </div>
             </div>
