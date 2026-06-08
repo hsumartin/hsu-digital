@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import PageShell from '@/components/layout/PageShell';
 import WritingHeader from '@/components/writings/WritingHeader';
 import WritingRecord from '@/components/writings/WritingRecord';
@@ -12,7 +13,7 @@ const P = ({ children }: { children: React.ReactNode }) => (
   <p className="text-[1rem] leading-[1.85] text-stone-700 font-light mb-[1.25rem]">{children}</p>
 );
 const BQ = ({ children }: { children: React.ReactNode }) => (
-  <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.6] text-stone-900">
+  <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
     {children}
   </blockquote>
 );
@@ -93,6 +94,14 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
 
       <div className="max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
         <WritingRecord items={writing.record} />
+        <p className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-stone-400 mt-[0.9rem]">
+          <Link
+            href="/en/whitepaper/architecture-of-thinking"
+            className="text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
+          >
+            Englische Whitepaper-Fassung
+          </Link>
+        </p>
       </div>
 
       <div className="grid grid-cols-[220px_1fr] gap-16 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.8rem] pb-24 max-[960px]:grid-cols-1 max-[960px]:gap-10">
@@ -432,6 +441,15 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
           <WritingNextNav
             prev={{ label: 'KI-Governance', kicker: 'Position', href: '/schriften/ki-governance' }}
           />
+
+          <p className="font-mono text-[0.62rem] tracking-[0.08em] text-stone-400 mt-6 pt-6 border-t border-stone-100">
+            <Link
+              href="/en/whitepaper/architecture-of-thinking"
+              className="text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
+            >
+              Englische Whitepaper-Fassung
+            </Link>
+          </p>
         </div>
       </div>
     </PageShell>

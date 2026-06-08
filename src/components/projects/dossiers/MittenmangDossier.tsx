@@ -102,7 +102,7 @@ export default function MittenmangDossier({ project }: { project: ProjectDetail 
                 Die Idee war stark. Die Umsetzung offenbarte ein strukturelles Problem, das erst
                 im Rückblick klar benennbar wurde.
               </p>
-              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.55] text-stone-900">
+              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
                 Zwischen der Konzeptidee und dem konkreten Entwurf fehlte eine mittlere Ebene:
                 die räumliche Strategie.
               </blockquote>

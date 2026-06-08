@@ -104,7 +104,19 @@ export default function SchriftenPage() {
             <SectionLabel num="02">Vollständiger Schriftenkatalog</SectionLabel>
             <div className="flex flex-col gap-[0.4rem]">
               {catalog.map((w) => (
-                <WritingIndexCard key={w.slug} writing={w} />
+                <div key={w.slug}>
+                  <WritingIndexCard writing={w} />
+                  {w.slug === 'denkarchitektur' && (
+                    <p className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-stone-400 mt-[0.45rem] pl-[0.1rem]">
+                      <Link
+                        href="/en/whitepaper/architecture-of-thinking"
+                        className="text-blue-700 no-underline border-b border-blue-700/20 pb-[2px] hover:border-blue-700/60 transition-colors"
+                      >
+                        Englische Whitepaper-Fassung
+                      </Link>
+                    </p>
+                  )}
+                </div>
               ))}
             </div>
           </div>

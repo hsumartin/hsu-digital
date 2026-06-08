@@ -120,7 +120,7 @@ export default function GptStackDossier({ writing }: { writing: WritingDetail })
                 funktionale Rolle. Die Folgen sind inkonsistente Antworten, unklare
                 Qualitätsmassstäbe und schwer prüfbare Ergebnisse.
               </p>
-              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.55] text-stone-900">
+              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
                 Das Problem ist kein Modellproblem. Es ist ein Architekturproblem.
               </blockquote>
               <p className="text-[1rem] leading-[1.82] text-stone-700 font-light">
@@ -210,7 +210,7 @@ export default function GptStackDossier({ writing }: { writing: WritingDetail })
                 vom Stack in funktionale Schritte aufgeteilt: Kontextklärung, Strukturierung,
                 Erstellung, Prüfung, Reflexion und Überführung.
               </p>
-              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.55] text-stone-900">
+              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
                 Kein einzelner Schritt übernimmt alles. Qualität entsteht durch das Zusammenspiel
                 der Cluster.
               </blockquote>
@@ -277,7 +277,7 @@ export default function GptStackDossier({ writing }: { writing: WritingDetail })
                 Prompts oder Tools erklärt, sondern über Struktur, Rollen, Schnittstellen und
                 Verantwortung.
               </p>
-              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.55] text-stone-900">
+              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
                 Qualität entsteht nicht durch Modellstärke allein, sondern durch die Struktur, in
                 der Modelle eingesetzt werden.
               </blockquote>

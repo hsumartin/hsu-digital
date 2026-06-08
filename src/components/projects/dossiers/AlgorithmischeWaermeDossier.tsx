@@ -106,7 +106,7 @@ export default function AlgorithmischeWaermeDossier({ project }: { project: Proj
                 verhält sich heisses, flüssiges Wachs unter verschiedenen physischen Eingriffen?
                 Welche Spuren hinterlässt Energie in einem instabilen, phasenändernden Stoff?
               </p>
-              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.55] text-stone-900">
+              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
                 Das Wachs ist kein passives Substrat. Es antwortet, setzt Grenzen und schreibt
                 seinen eigenen Zustand in die Form ein.
               </blockquote>

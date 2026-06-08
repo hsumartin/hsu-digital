@@ -546,7 +546,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
                 war es, diese Logik in eine geodatenbasierte, prüfbare und nachführbare Struktur zu
                 überführen.
               </p>
-              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.55] text-stone-900">
+              <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
                 Von organisatorischer Zuständigkeit zu räumlich nachvollziehbarer und direkt
                 abfragbarer Systemlogik.
               </blockquote>

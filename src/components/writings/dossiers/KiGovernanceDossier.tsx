@@ -13,7 +13,7 @@ const P = ({ children }: { children: React.ReactNode }) => (
   <p className="text-[1rem] leading-[1.85] text-stone-700 font-light mb-[1.25rem]">{children}</p>
 );
 const BQ = ({ children }: { children: React.ReactNode }) => (
-  <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.1rem] italic leading-[1.6] text-stone-900">
+  <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
     {children}
   </blockquote>
 );
