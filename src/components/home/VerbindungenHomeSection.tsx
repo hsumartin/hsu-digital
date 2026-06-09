@@ -196,7 +196,7 @@ export default function VerbindungenHomeSection() {
         </p>
         <SectionLabel num="05">Verbindungen</SectionLabel>
 
-        <div className="grid gap-12 items-end mb-6" style={{ gridTemplateColumns: '1.4fr 1fr' }}>
+        <div className="grid-2col-intro gap-8 md:gap-12 items-end mb-6">
           <h2 className="font-serif font-normal text-[clamp(2.1rem,4vw,3.1rem)] leading-[1.28] tracking-[-0.01em] max-w-[18ch] pb-[0.04em]">
             Alles hängt{' '}
             <em className="italic text-gold-600">zusammen.</em>
@@ -210,10 +210,7 @@ export default function VerbindungenHomeSection() {
         </div>
 
         {/* Graph wrapper */}
-        <div
-          className="grid border border-stone-200 bg-[#FBFAF7]"
-          style={{ gridTemplateColumns: '1fr 320px' }}
-        >
+        <div className="grid-graph-home border border-stone-200 bg-[#FBFAF7]">
           {/* SVG stage */}
           <div
             className="relative min-w-0 border-r border-stone-200 bg-paper-soft"
@@ -303,7 +300,7 @@ export default function VerbindungenHomeSection() {
           </div>
 
           {/* Readout panel */}
-          <div className="flex flex-col px-6 py-[1.6rem]">
+          <div className="flex flex-col px-6 py-[1.6rem] border-t border-stone-200 md:border-t-0 md:border-l md:border-stone-200">
             <div className="font-mono text-[0.6rem] tracking-[0.16em] uppercase text-blue-800 mb-3">
               {readout.kind}
             </div>

@@ -80,7 +80,7 @@ export default function SystemeProjekteSection() {
         <div className="max-w-[90rem] mx-auto">
           <SectionLabel num="02">Systeme &amp; Projekte</SectionLabel>
 
-          <div className="grid gap-10 items-end pb-10" style={{ gridTemplateColumns: '1.5fr 1fr' }}>
+          <div className="grid-2col-intro-wide gap-8 md:gap-10 items-end pb-8 md:pb-10">
             <h2 className="font-serif font-normal text-[clamp(2rem,3.8vw,3rem)] leading-[1.22] tracking-[-0.01em] max-w-[18ch] pb-[0.04em]">
               Erst gebaut.{' '}
               <em className="italic text-gold-600">Dann behauptet.</em>
@@ -141,13 +141,12 @@ export default function SystemeProjekteSection() {
             {CASES.map(({ num, tag, badge, title, href, diagram, anatomy, relevanz, chips }) => (
               <article
                 key={num}
-                className="border border-stone-200 bg-[#FBFAF7] grid"
-                style={{ gridTemplateColumns: '300px 1fr' }}
+                className="grid-case-card border border-stone-200 bg-[#FBFAF7]"
               >
                 {/* Dark diagram plate */}
                 <div
                   className="relative flex items-center justify-center p-[1.4rem] min-h-[230px]
-                             border-r border-stone-200"
+                             border-b border-stone-200 lg:border-b-0 lg:border-r lg:border-stone-200"
                   style={{ background: '#0F1D2E' }}
                 >
                   <span
@@ -199,8 +198,7 @@ export default function SystemeProjekteSection() {
                     {anatomy.map(({ key, value, bold }) => (
                       <div
                         key={key}
-                        className="grid gap-5 py-[0.72rem] border-b border-stone-200"
-                        style={{ gridTemplateColumns: '8.5rem 1fr' }}
+                        className="grid-anatomy-row gap-3 sm:gap-5 py-[0.72rem] border-b border-stone-200"
                       >
                         <span className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-gold-600 pt-[0.18rem]">
                           {key}
@@ -248,8 +246,7 @@ export default function SystemeProjekteSection() {
         className="bg-blue-800 text-[#F4F2EC] px-[clamp(1.5rem,4vw,4rem)] py-12"
         aria-label="Herkunft des Denkens"
       >
-        <div className="max-w-[90rem] mx-auto grid gap-10 items-center"
-             style={{ gridTemplateColumns: '1fr 1.4fr' }}>
+        <div className="grid-2col-herkunft max-w-[90rem] mx-auto gap-8 md:gap-10 items-center">
           <div>
             <div className="font-mono text-[0.66rem] tracking-[0.2em] uppercase text-gold-200 mb-[0.9rem]">
               Herkunft des Denkens
@@ -273,11 +270,8 @@ export default function SystemeProjekteSection() {
           </div>
 
           <div
-            className="grid gap-px border border-[rgba(244,242,236,0.16)]"
-            style={{
-              gridTemplateColumns: 'repeat(3, 1fr)',
-              background: 'rgba(244,242,236,0.16)',
-            }}
+            className="grid-3col-origins gap-px border border-[rgba(244,242,236,0.16)]"
+            style={{ background: 'rgba(244,242,236,0.16)' }}
           >
             {ORIGINS.map(({ type, name, desc, href }) => (
               <Link

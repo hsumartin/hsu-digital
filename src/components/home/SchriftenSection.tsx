@@ -103,7 +103,7 @@ export default function SchriftenSection() {
         </p>
         <SectionLabel num="04">Schriften</SectionLabel>
 
-        <div className="grid gap-12 items-end mb-[3.4rem]" style={{ gridTemplateColumns: '1.4fr 1fr' }}>
+        <div className="grid-2col-intro gap-8 md:gap-12 items-end mb-[2.5rem] md:mb-[3.4rem]">
           <h2 className="font-serif font-normal text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.28] tracking-[-0.01em] max-w-[20ch] pb-[0.04em]">
             Denkmodelle,{' '}
             <em className="italic text-gold-600">keine Publikationen.</em>
@@ -147,11 +147,10 @@ export default function SchriftenSection() {
           {SCHRIFTEN.map(({ id, type, year, title, prinzip, body, wirktIn, href }) => (
             <div
               key={id}
-              className="grid border-b border-stone-200 last:border-b-0 transition-colors duration-200 hover:bg-paper-soft"
-              style={{ gridTemplateColumns: '172px 1fr 250px' }}
+              className="grid-schriften-row border-b border-stone-200 last:border-b-0 transition-colors duration-200 hover:bg-paper-soft"
             >
               {/* Category col */}
-              <div className="px-[1.4rem] py-6 border-r border-stone-200">
+              <div className="px-[1.4rem] py-6 border-b border-stone-200 md:border-b-0 md:border-r md:border-stone-200">
                 <div className="font-mono text-[0.66rem] tracking-[0.14em] text-blue-800 mb-[0.9rem]">{id}</div>
                 <span className="inline-block font-mono text-[0.58rem] tracking-[0.1em] uppercase border border-[rgba(43,104,149,0.30)] bg-[rgba(43,104,149,0.05)] rounded-full px-[0.65rem] py-[0.22rem] text-blue-800 mb-3">
                   {type}
@@ -171,7 +170,7 @@ export default function SchriftenSection() {
               </div>
 
               {/* Connection col */}
-              <div className="flex flex-col px-6 py-6 border-l border-stone-200">
+              <div className="flex flex-col px-6 py-6 border-t border-stone-200 md:border-t-0 md:border-l md:border-stone-200">
                 <div className="font-mono text-[0.58rem] tracking-[0.12em] uppercase text-text-muted mb-3">
                   Wirkt in
                 </div>
@@ -208,8 +207,8 @@ export default function SchriftenSection() {
             drei Prinzipien.
           </p>
           <div
-            className="grid gap-px border border-stone-200"
-            style={{ gridTemplateColumns: 'repeat(3, 1fr)', background: '#D6D2C8' }}
+            className="grid-3col gap-px border border-stone-200"
+            style={{ background: '#D6D2C8' }}
           >
             {PRINCIPLES.map(({ title, em, tags, inactive = [] }) => (
               <div key={title} className="bg-[#FBFAF7] p-[1.6rem]">

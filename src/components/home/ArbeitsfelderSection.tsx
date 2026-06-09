@@ -58,7 +58,7 @@ export default function ArbeitsfelderSection() {
         </p>
         <SectionLabel num="01">Arbeitsfelder</SectionLabel>
 
-        <div className="grid gap-12 mb-12" style={{ gridTemplateColumns: '1.4fr 1fr' }}>
+        <div className="grid-2col-intro gap-8 md:gap-12 mb-8 md:mb-12">
           <h2 className="font-serif font-normal text-[clamp(2rem,3.8vw,3rem)] leading-[1.26] tracking-[-0.01em] max-w-[15ch] pb-[0.04em]">
             Vier Perspektiven.{' '}
             <em className="italic text-gold-600">Ein Denken.</em>
@@ -74,14 +74,18 @@ export default function ArbeitsfelderSection() {
         </div>
 
         {/* Field cards */}
-        <div className="grid border border-stone-200 bg-[#FBFAF7]"
-             style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div className="grid-4col-cards border border-stone-200 bg-[#FBFAF7]">
           {FIELDS.map(({ lens, num, title, body, contrib }, i) => (
             <div
               key={title}
               className={[
                 'flex flex-col px-[1.6rem] py-[1.7rem] pb-[1.9rem] relative',
-                i < 3 ? 'border-r border-stone-200' : '',
+                /* mobile (2-col): right border on odd columns, bottom border everywhere except last row */
+                i % 2 === 0 ? 'border-r border-stone-200' : '',
+                i < 2 ? 'border-b border-stone-200' : '',
+                /* desktop (4-col): override */
+                i < 3 ? 'lg:border-r lg:border-stone-200' : 'lg:border-r-0',
+                'lg:border-b-0',
               ].join(' ')}
             >
               {/* Connector line to spine */}

@@ -83,7 +83,7 @@ export default function MethodeKiSection() {
           </p>
           <SectionLabel num="03">Methode &amp; Haltung zu KI</SectionLabel>
 
-          <div className="grid gap-12 items-end pb-12" style={{ gridTemplateColumns: '1.5fr 1fr' }}>
+          <div className="grid-2col-intro-wide gap-8 md:gap-12 items-end pb-8 md:pb-12">
             <h2 className="font-serif font-normal text-[clamp(2rem,3.8vw,3rem)] leading-[1.26] tracking-[-0.01em] max-w-[17ch] pb-[0.04em]">
               Zuerst das System.{' '}
               <em className="italic text-gold-600">Dann das Werkzeug.</em>
@@ -126,14 +126,16 @@ export default function MethodeKiSection() {
             Verwaltungsprojekten. Am Ende steht eine bewusste Entscheidung.
           </p>
 
-          <div className="grid border border-stone-200 bg-[#FBFAF7]"
-               style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+          <div className="grid-4col-cards border border-stone-200 bg-[#FBFAF7]">
             {FLOW_STEPS.map(({ num, title, body }, i) => (
               <div
                 key={num}
                 className={[
                   'relative px-[1.4rem] py-[1.4rem]',
-                  i < 3 ? 'border-r border-stone-200' : '',
+                  i % 2 === 0 ? 'border-r border-stone-200' : '',
+                  i < 2 ? 'border-b border-stone-200' : '',
+                  i < 3 ? 'lg:border-r lg:border-stone-200' : 'lg:border-r-0',
+                  'lg:border-b-0',
                 ].join(' ')}
               >
                 {i < 3 && (
@@ -159,7 +161,7 @@ export default function MethodeKiSection() {
             <span className="h-px w-12 bg-stone-200" />
           </div>
 
-          <div className="grid gap-5" style={{ gridTemplateColumns: '1fr 1fr' }}>
+          <div className="grid-2col gap-5">
             <div className="border border-[rgba(201,169,75,0.4)] bg-gradient-to-b from-[rgba(201,169,75,0.07)] to-transparent p-[1.5rem] flex gap-[1.1rem] items-start">
               <span className="font-mono text-[0.7rem] tracking-[0.08em] text-gold-600 border border-[rgba(201,169,75,0.5)] bg-[rgba(201,169,75,0.08)] rounded-sm px-2 py-[0.3rem] whitespace-nowrap">
                 KI
@@ -218,8 +220,8 @@ export default function MethodeKiSection() {
             Maximierung.
           </p>
           <div
-            className="grid gap-px border border-[rgba(191,216,234,0.16)]"
-            style={{ gridTemplateColumns: 'repeat(3, 1fr)', background: 'rgba(191,216,234,0.16)' }}
+            className="grid-3col gap-px border border-[rgba(191,216,234,0.16)]"
+            style={{ background: 'rgba(191,216,234,0.16)' }}
           >
             {CRITERIA.map(({ idx, title, body, q }) => (
               <div key={idx} className="px-6 py-[1.6rem]" style={{ background: '#102234' }}>
@@ -250,8 +252,8 @@ export default function MethodeKiSection() {
           <p className="text-[0.92rem] text-text-muted font-light mb-[1.6rem] max-w-[56ch]">
             Die Haltung zeigt sich in Entscheidungen — auch in der bewussten Entscheidung gegen KI.
           </p>
-          <div className="grid gap-px border border-stone-200"
-               style={{ gridTemplateColumns: 'repeat(2, 1fr)', background: '#D6D2C8' }}>
+          <div className="grid-2col gap-px border border-stone-200"
+               style={{ background: '#D6D2C8' }}>
             {EVIDENCE.map(({ title, role, roleVariant, body, src }) => (
               <div key={title} className="bg-[#FBFAF7] p-[1.5rem]">
                 <div className="flex justify-between items-start gap-4 mb-[1.05rem]">
@@ -286,8 +288,7 @@ export default function MethodeKiSection() {
         </div>
 
         {/* Closing quote */}
-        <div className="grid gap-8 items-start border-t border-stone-200 pt-10 pb-16 mt-[3.4rem]"
-             style={{ gridTemplateColumns: 'auto 1fr' }}>
+        <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8 border-t border-stone-200 pt-10 pb-16 mt-[3.4rem]">
           <div className="font-mono text-[0.64rem] tracking-[0.16em] uppercase text-text-muted whitespace-nowrap pt-[0.6rem]">
             Haltung
           </div>

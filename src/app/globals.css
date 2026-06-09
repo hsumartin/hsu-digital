@@ -1,5 +1,182 @@
 @import "tailwindcss";
 
+/* ── Responsive grid utilities ────────────────────────────────────────────── */
+
+/* Hero: 1 col → 3 col (232px | 1fr | 330px) at lg */
+.grid-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .grid-hero {
+    grid-template-columns: 232px minmax(0, 1fr) 330px;
+  }
+}
+
+/* 2-col intro header (1.4fr 1fr) — stacks on mobile */
+.grid-2col-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-2col-intro {
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
+
+/* 2-col intro header (1.5fr 1fr) */
+.grid-2col-intro-wide {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-2col-intro-wide {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+/* 4-col cards: 1 → 2 → 4 */
+.grid-4col-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .grid-4col-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid-4col-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Case card: 1 → 300px + 1fr at lg */
+.grid-case-card {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .grid-case-card {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+/* Herkunft / 2-col (1fr 1.4fr) — stacks on mobile */
+.grid-2col-herkunft {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-2col-herkunft {
+    grid-template-columns: 1fr 1.4fr;
+  }
+}
+
+/* Origins row: 1 → 2 → 3 cols */
+.grid-3col-origins {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 480px) {
+  .grid-3col-origins {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .grid-3col-origins {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 3-col equal: 1 → 3 at md */
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 2-col equal: 1 → 2 at sm */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Schriften index row: 1 → 3-col (172px 1fr 250px) at md */
+.grid-schriften-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-schriften-row {
+    grid-template-columns: 172px 1fr 250px;
+  }
+}
+
+/* Graph wrapper home: 1 → 1fr 320px at md */
+.grid-graph-home {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-graph-home {
+    grid-template-columns: 1fr 320px;
+  }
+}
+
+/* Graph canvas: 1 → 1fr 340px at md */
+.grid-graph-canvas {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-graph-canvas {
+    grid-template-columns: 1fr 340px;
+  }
+}
+
+/* Contact panel: 1 → 1.5fr 1fr at md */
+.grid-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-contact {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+/* Anatomy row inside case cards: 1 → 8.5rem + 1fr at md */
+.grid-anatomy-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .grid-anatomy-row {
+    grid-template-columns: 8.5rem 1fr;
+  }
+}
+
+/* Meta strip in hero: 1 → 2 → 4 cols */
+.grid-meta-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .grid-meta-strip {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /* Nav status badge pulse — decorative only */
 .nav-pulse-dot {
   width: 6px;

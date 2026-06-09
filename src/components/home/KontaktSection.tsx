@@ -29,10 +29,9 @@ export default function KontaktSection() {
 
         {/* Blue contact panel */}
         <div
-          className="grid border border-blue-900 bg-blue-800 text-[#F4F2EC]
-                     px-[clamp(2rem,4vw,3.4rem)] py-[clamp(2rem,4vw,3.4rem)] gap-[3.4rem] items-start
+          className="grid-contact border border-blue-900 bg-blue-800 text-[#F4F2EC]
+                     px-[clamp(2rem,4vw,3.4rem)] py-[clamp(2rem,4vw,3.4rem)] gap-8 md:gap-[3.4rem] items-start
                      shadow-[0_24px_60px_-34px_rgba(16,38,54,0.5)]"
-          style={{ gridTemplateColumns: '1.5fr 1fr' }}
         >
           <div>
             <h2 className="font-serif font-normal text-[clamp(2.3rem,4.4vw,3.7rem)] leading-[1.3] tracking-[-0.01em] text-[#F4F2EC] max-w-[16ch] pb-[0.08em]">

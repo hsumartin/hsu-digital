@@ -490,16 +490,13 @@ export default function GraphCanvas({ readout, onReadout }: GraphCanvasProps) {
   return (
     <div>
       <GraphFilterBar value={filter} onChange={setFilter} />
-      <div
-        className="grid border border-stone-200 bg-[#FBFAF7]"
-        style={{ gridTemplateColumns: '1fr 340px' }}
-      >
+      <div className="grid-graph-canvas border border-stone-200 bg-[#FBFAF7]">
         {/* Canvas stage */}
         <div
           ref={stageRef}
-          className="relative min-w-0 border-r border-stone-200 bg-paper-soft overflow-hidden"
+          className="relative min-w-0 border-b border-stone-200 md:border-b-0 md:border-r md:border-stone-200 bg-paper-soft overflow-hidden"
           style={{
-            minHeight: '680px',
+            minHeight: '420px',
             backgroundImage:
               'linear-gradient(rgba(43,104,149,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(43,104,149,0.10) 1px, transparent 1px)',
             backgroundSize: '40px 40px',
@@ -518,7 +515,6 @@ export default function GraphCanvas({ readout, onReadout }: GraphCanvasProps) {
         <aside
           className="flex flex-col px-[1.5rem] py-[1.6rem] bg-[#FBFAF7]"
           aria-live="polite"
-          style={{ minHeight: '680px' }}
         >
           <div className="font-mono text-[0.6rem] tracking-[0.16em] uppercase text-blue-800 mb-[0.7rem]">
             {readout.type}

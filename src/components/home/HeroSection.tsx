@@ -50,10 +50,9 @@ export default function HeroSection() {
 
       {/* Three-column grid */}
       <div
-        className="relative z-10 grid gap-[clamp(2rem,4vw,3.6rem)] max-w-[96rem] mx-auto
+        className="grid-hero relative z-10 gap-[clamp(2rem,4vw,3.6rem)] max-w-[96rem] mx-auto
                    px-[clamp(1.5rem,4vw,4rem)] py-[clamp(2.4rem,4vw,3.6rem)] pb-12 items-start
                    min-h-[calc(100svh-4.2rem)]"
-        style={{ gridTemplateColumns: '232px minmax(0,1fr) 330px' }}
       >
         {/* ── INDEX RAIL ── */}
         <aside className="sticky top-24 self-start hidden lg:block">
@@ -147,22 +146,16 @@ export default function HeroSection() {
           </div>
 
           {/* Meta strip */}
-          <div
-            className="grid mt-12 border border-stone-200 max-w-[42rem] bg-paper-soft"
-            style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}
-          >
-            {[
-              { k: 'Lesart', v: 'Struktur & Schichtung' },
-              { k: 'Felder', v: 'Architektur · Verwaltung · KI' },
-              { k: 'Rolle', v: 'Product Ownership · Requirements' },
-              { k: 'Haltung', v: 'Struktur vor Werkzeug' },
-            ].map(({ k, v }, i) => (
+          <div className="grid-meta-strip mt-12 border border-stone-200 max-w-[42rem] bg-paper-soft">
+            {([
+              { k: 'Lesart', v: 'Struktur & Schichtung',   mob: 'border-r border-b', desk: 'md:border-r md:border-b-0' },
+              { k: 'Felder', v: 'Architektur · Verwaltung · KI', mob: 'border-b',   desk: 'md:border-r md:border-b-0' },
+              { k: 'Rolle',  v: 'Product Ownership · Requirements', mob: 'border-r', desk: 'md:border-r' },
+              { k: 'Haltung', v: 'Struktur vor Werkzeug',  mob: '',                  desk: '' },
+            ] as const).map(({ k, v, mob, desk }) => (
               <div
                 key={k}
-                className={[
-                  'px-[1.1rem] py-[0.95rem]',
-                  i < 3 ? 'border-r border-stone-200' : '',
-                ].join(' ')}
+                className={['px-[1.1rem] py-[0.95rem] border-stone-200', mob, desk].join(' ')}
               >
                 <div className="font-mono text-[0.58rem] tracking-[0.14em] uppercase text-text-muted mb-[0.45rem]">
                   {k}
