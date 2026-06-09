@@ -58,7 +58,7 @@ const NODE_RADIUS: Record<NodeType, number> = {
 };
 
 const NODE_FILL: Record<NodeType, string> = {
-  core: 'none',
+  core: 'rgba(248,247,243,0.96)',
   prinzip: '#C9A94B',
   feld: '#2B6895',
   projekt: '#3F7FAE',
@@ -273,7 +273,7 @@ export default function VerbindungenHomeSection() {
                     <circle
                       cx={node.x} cy={node.y} r={r}
                       fill={fill}
-                      stroke={isActive || isLocked ? '#A88E3D' : 'rgba(245,244,240,0.95)'}
+                      stroke={node.t === 'core' ? '#C9A94B' : isActive || isLocked ? '#A88E3D' : 'rgba(245,244,240,0.95)'}
                       strokeWidth={node.t === 'core' ? 2.5 : isActive || isLocked ? 2 : 1.25}
                       style={{ transition: 'stroke 0.2s, stroke-width 0.2s' }}
                     />
