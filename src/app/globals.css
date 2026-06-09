@@ -188,6 +188,29 @@
   }
 }
 
+/* Profile hero: 1 col → 42% | 1fr at 900px */
+.grid-profile-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .grid-profile-hero {
+    grid-template-columns: 42% 1fr;
+  }
+}
+
+/* Connection block: 1 col → repeat(3,1fr) at 760px */
+.grid-connection-block {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 760px) {
+  .grid-connection-block {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* Nav status badge pulse — decorative only */
 .nav-pulse-dot {
   width: 6px;

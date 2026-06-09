@@ -126,7 +126,7 @@ export default function VerbindungenPage() {
             </aside>
 
             {/* ConnectionBlock */}
-            <div className="grid border border-stone-200 bg-[#F8F7F3] max-[760px]:grid-cols-1" style={{ gridTemplateColumns: 'repeat(3,1fr)', gap: '1px' }}>
+            <div className="grid-connection-block border border-stone-200 bg-[#F8F7F3]">
               {[
                 {
                   title: 'Projekte',

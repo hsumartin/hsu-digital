@@ -3,8 +3,7 @@ import Image from 'next/image';
 export default function ProfileHero() {
   return (
     <section
-      className="grid max-[900px]:grid-cols-1 overflow-hidden"
-      style={{ gridTemplateColumns: '42% 1fr' }}
+      className="grid-profile-hero overflow-hidden"
       aria-label="Profil"
     >
       {/* Portrait */}
