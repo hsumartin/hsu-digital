@@ -141,7 +141,9 @@ export default function SystemeProjekteSection() {
             {CASES.map(({ num, tag, badge, title, href, diagram, anatomy, relevanz, chips }) => (
               <article
                 key={num}
-                className="grid-case-card border border-stone-200 bg-[#FBFAF7]"
+                className="grid-case-card border border-stone-200 bg-[#FBFAF7]
+                           hover:border-gold-500/40 focus-within:border-gold-500/40 active:border-gold-500/40
+                           transition-colors duration-200"
               >
                 {/* Dark diagram plate */}
                 <div
@@ -191,7 +193,13 @@ export default function SystemeProjekteSection() {
                   </div>
 
                   <h3 className="font-serif font-normal text-[1.85rem] leading-[1.16] tracking-[-0.005em] text-ink mb-[1.1rem] pb-[0.04em]">
-                    {title}
+                    <Link
+                      href={href}
+                      className="no-underline text-ink hover:text-gold-600 transition-colors duration-200
+                                 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
+                    >
+                      {title}
+                    </Link>
                   </h3>
 
                   <div className="border-t border-stone-200">
