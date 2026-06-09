@@ -3,7 +3,7 @@
 Portfolio von Martin Hsu — Informationsarchitektur, Product Ownership, GIS, Verwaltungsdigitalisierung und verantwortungsvoller KI-Einsatz.
 
 Website: [https://martinhsu.digital](https://martinhsu.digital)  
-Kontakt: [kontakt@martinhsu.digital](mailto:kontakt@martinhsu.digital)
+Kontakt: [kontakt@martinhsu.digital](mailto:kontakt@martinhsu.digital)  
 LinkedIn: [https://www.linkedin.com/in/martinhsu-digital](https://www.linkedin.com/in/martinhsu-digital)
 
 ---
