@@ -7,7 +7,7 @@ export default function ProfileHero() {
       aria-label="Profil"
     >
       {/* Portrait */}
-      <div className="relative overflow-hidden max-[900px]:aspect-[4/5] max-[900px]:max-h-[520px]">
+      <div className="relative overflow-hidden max-[900px]:aspect-[4/5] max-[900px]:max-h-[450px]">
         <Image
           src="/uploads/DSC_7508_4a.jpg"
           alt="Portrait Martin Hsu"
