@@ -7,15 +7,15 @@ export default function ProfileHero() {
       aria-label="Profil"
     >
       {/* Portrait */}
-      <div className="relative overflow-hidden max-[900px]:h-[60vw] max-[900px]:min-h-[280px]">
+      <div className="relative overflow-hidden max-[900px]:h-[72vw] max-[900px]:min-h-[300px]">
         <Image
           src="/uploads/DSC_7508_4a.jpg"
           alt="Portrait Martin Hsu"
           fill
-          className="object-cover object-[center_15%] grayscale-[5%]"
+          className="object-cover object-[center_15%] max-[900px]:object-[center_22%] grayscale-[5%]"
           priority
         />
-        {/* Fade-Overlay Richtung Inhaltsspalte */}
+        {/* Fade-Overlay Richtung Inhaltsspalte — Desktop only */}
         <div
           aria-hidden="true"
           className="absolute inset-0 pointer-events-none max-[900px]:hidden"
@@ -24,12 +24,13 @@ export default function ProfileHero() {
               'linear-gradient(to right, transparent 50%, rgba(245,244,240,0.55) 78%, #F5F4F0 100%)',
           }}
         />
+        {/* Fade-Overlay unten — Mobile only */}
         <div
           aria-hidden="true"
           className="absolute inset-0 pointer-events-none hidden max-[900px]:block"
           style={{
             background:
-              'linear-gradient(to bottom, transparent 50%, #F5F4F0 100%)',
+              'linear-gradient(to bottom, transparent 60%, #F5F4F0 100%)',
           }}
         />
       </div>
