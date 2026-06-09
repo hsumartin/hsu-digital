@@ -147,7 +147,7 @@ export default function SchriftenSection() {
           {SCHRIFTEN.map(({ id, type, year, title, prinzip, body, wirktIn, href }) => (
             <div
               key={id}
-              className="grid-schriften-row border-b border-stone-200 last:border-b-0 transition-colors duration-200 hover:bg-paper-soft"
+              className="group grid-schriften-row border-b border-stone-200 last:border-b-0 transition-colors duration-200 hover:bg-paper-soft"
             >
               {/* Category col */}
               <div className="px-[1.4rem] py-6 border-b border-stone-200 md:border-b-0 md:border-r md:border-stone-200">
@@ -161,7 +161,13 @@ export default function SchriftenSection() {
               {/* Main col */}
               <div className="px-[1.6rem] py-6">
                 <h3 className="font-serif font-normal text-[1.65rem] leading-[1.15] tracking-[-0.005em] text-ink mb-3">
-                  {title}
+                  <Link
+                    href={href}
+                    className="no-underline text-ink group-hover:text-gold-600 transition-colors duration-200
+                               focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
+                  >
+                    {title}
+                  </Link>
                 </h3>
                 <div className="border-l-2 border-gold-500 pl-[0.9rem] font-serif italic text-[1.18rem] leading-[1.3] text-[#4A4640] mb-3">
                   {prinzip}

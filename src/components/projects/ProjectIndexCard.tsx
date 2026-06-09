@@ -28,7 +28,8 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
   const title = project.hasDetail ? (
     <Link
       href={`/projekte/${project.slug}`}
-      className="text-stone-900 no-underline hover:text-gold-600 transition-colors"
+      className="text-stone-900 no-underline hover:text-gold-600 transition-colors
+                 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
     >
       {project.title}
     </Link>
@@ -39,7 +40,9 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
   return (
     <article
       className={[
-        'border border-stone-200 bg-[#FBFAF7] grid',
+        'group border border-stone-200 bg-[#FBFAF7] grid',
+        'hover:border-gold-500/40 focus-within:border-gold-500/40 active:border-gold-500/40',
+        'transition-colors duration-200',
         compact
           ? 'grid-cols-[12rem_1fr]'
           : 'grid-cols-[16rem_1fr] min-h-[14rem]',

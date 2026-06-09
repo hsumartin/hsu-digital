@@ -22,7 +22,8 @@ export default function WritingIndexCard({ writing, featured = false }: WritingI
   const title = writing.hasDetail ? (
     <Link
       href={`/schriften/${writing.slug}`}
-      className="text-stone-900 no-underline hover:text-gold-600 transition-colors"
+      className="text-stone-900 no-underline hover:text-gold-600 transition-colors
+                 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
     >
       {writing.title}
     </Link>
@@ -33,7 +34,9 @@ export default function WritingIndexCard({ writing, featured = false }: WritingI
   return (
     <article
       className={[
-        'border border-stone-200 bg-[#FBFAF7] grid grid-cols-[13rem_1fr_20rem]',
+        'group border border-stone-200 bg-[#FBFAF7] grid grid-cols-[13rem_1fr_20rem]',
+        'hover:border-gold-500/40 focus-within:border-gold-500/40 active:border-gold-500/40',
+        'transition-colors duration-200',
         featured ? 'min-h-[16rem]' : 'min-h-[13rem]',
         'max-[1040px]:grid-cols-[11rem_1fr]',
         'max-[720px]:grid-cols-1',

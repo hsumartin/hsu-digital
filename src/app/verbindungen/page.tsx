@@ -91,8 +91,8 @@ export default function VerbindungenPage() {
           id="systemkarte"
           className="border-b border-stone-200"
         >
-          <div className="max-w-[90rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.5rem] grid gap-16 items-start max-[900px]:grid-cols-1" style={{ gridTemplateColumns: '15rem minmax(0,1fr)' }}>
-            <aside className="sticky top-24 self-start max-[900px]:static">
+          <div className="grid-aside-content max-w-[90rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.5rem] gap-16 items-start">
+            <aside className="sticky top-24 self-start max-[899px]:static">
               <SectionLabel num="01">Systemkarte</SectionLabel>
               <h2 className="font-serif font-normal text-[clamp(1.7rem,3vw,2.4rem)] leading-[1.18] tracking-[-0.01em] pb-[0.06em]">
                 Themenkarte als vertiefte Verbindungssektion
@@ -113,8 +113,8 @@ export default function VerbindungenPage() {
           id="logik"
           className="border-b border-stone-200"
         >
-          <div className="max-w-[90rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.5rem] grid gap-16 items-start max-[900px]:grid-cols-1" style={{ gridTemplateColumns: '15rem minmax(0,1fr)' }}>
-            <aside className="sticky top-24 self-start max-[900px]:static">
+          <div className="grid-aside-content max-w-[90rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.5rem] gap-16 items-start">
+            <aside className="sticky top-24 self-start max-[899px]:static">
               <SectionLabel num="02">Lesart</SectionLabel>
               <h2 className="font-serif font-normal text-[clamp(1.7rem,3vw,2.4rem)] leading-[1.18] tracking-[-0.01em] pb-[0.06em]">
                 Vom Katalog zur Beziehung

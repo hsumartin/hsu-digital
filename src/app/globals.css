@@ -177,6 +177,17 @@
   }
 }
 
+/* Aside + content: 1 col → 15rem | 1fr at 900px */
+.grid-aside-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .grid-aside-content {
+    grid-template-columns: 15rem minmax(0, 1fr);
+  }
+}
+
 /* Nav status badge pulse — decorative only */
 .nav-pulse-dot {
   width: 6px;

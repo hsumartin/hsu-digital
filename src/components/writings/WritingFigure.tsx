@@ -21,22 +21,23 @@ export default function WritingFigure({
   maxHeight,
 }: WritingFigureProps) {
   return (
-    <figure className="my-10 border border-stone-200 bg-[#FBFAF7] overflow-auto">
+    <figure className="my-10 border border-stone-200 bg-[#FBFAF7]">
       <div className="flex justify-between gap-4 items-baseline px-4 py-[0.75rem] border-b border-stone-100 font-mono text-[0.58rem] tracking-[0.14em] uppercase">
         <span className="text-gold-600">{label}</span>
         <span className="text-stone-400">{type}</span>
       </div>
-      <div className="bg-[#F8F7F3] p-4 overflow-auto">
+      {/* overflow-x-auto keeps horizontal scroll contained to this box only */}
+      <div className="bg-[#F8F7F3] p-4 overflow-x-auto">
         <Image
           src={src}
           alt={label}
           width={width}
           height={height}
-          className="block w-full"
+          className="block w-full max-w-full"
           style={
             maxHeight
-              ? { maxHeight, objectFit: 'contain', height: 'auto', minWidth: 540 }
-              : { height: 'auto', minWidth: 540 }
+              ? { maxHeight, objectFit: 'contain', height: 'auto' }
+              : { height: 'auto' }
           }
           unoptimized
         />
