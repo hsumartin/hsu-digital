@@ -12,7 +12,7 @@ export default function MethodengefuehrteKiSystementwicklungDossier({ writing }:
       title={
         <>
           Von der Problemstellung zur{' '}
-          <em className="italic text-gold-600">technischen Eigenständigkeit</em>
+          <em className="italic text-gold-600">eigenständigen Systemkonzeption</em>
         </>
       }
       subtitle={writing.subtitle}
@@ -45,7 +45,7 @@ export default function MethodengefuehrteKiSystementwicklungDossier({ writing }:
         },
         {
           title: 'Fassungen',
-          items: [{ label: 'English version', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' }],
+          items: [{ label: 'English version', href: '/en/whitepaper/from-problem-framing-towards-independent-system-design' }],
         },
       ]}
       handoffs={[
@@ -62,7 +62,7 @@ export default function MethodengefuehrteKiSystementwicklungDossier({ writing }:
       ]}
       series={{ items: kiSeries.de, current: 1 }}
       alternate={{
-        href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy',
+        href: '/en/whitepaper/from-problem-framing-towards-independent-system-design',
         label: 'English version',
         lang: 'en',
       }}

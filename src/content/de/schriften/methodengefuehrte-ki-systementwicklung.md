@@ -1,5 +1,5 @@
 ---
-title: "Von der Problemstellung zur technischen Eigenständigkeit"
+title: "Von der Problemstellung zur eigenständigen Systemkonzeption"
 subtitle: "Eine quellengebundene Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems"
 documentType: "Methodisches Whitepaper / explorative retrospektive Einzelfallstudie"
 version: "Öffentliche Arbeitsfassung V1.6.1 (auditgebundene Präzisierung; Basis: öffentliche V1.6)"
@@ -10,7 +10,7 @@ sourcePolicy: "Historische Unterlagen bleiben historische Belege; keine Übernah
 implementationStatus: "Die MVP-Implementierung und deren technische Prüfungen werden in diesem Dokument nicht nachgewiesen"
 ---
 
-# Von der Problemstellung zur technischen Eigenständigkeit
+# Von der Problemstellung zur eigenständigen Systemkonzeption
 
 *Eine Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems*
 

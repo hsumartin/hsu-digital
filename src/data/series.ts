@@ -12,7 +12,7 @@ export const kiSeries: Record<'de' | 'en', SeriesItem[]> = {
   ],
   en: [
     { label: 'AI and the Expansion of Human Development Opportunities', href: '/en/whitepaper/ai-and-human-development' },
-    { label: 'From Problem Framing towards Technological Autonomy', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' },
+    { label: 'From Problem Framing towards Independent System Design', href: '/en/whitepaper/from-problem-framing-towards-independent-system-design' },
     { label: 'AI as a Cultural Accelerator', href: '/en/whitepaper/ai-as-a-cultural-accelerator' },
   ],
 };

@@ -1,5 +1,5 @@
 ---
-title: "From Problem Framing towards Technological Autonomy"
+title: "From Problem Framing towards Independent System Design"
 subtitle: "A source-grounded case study of a method-driven, AI-assisted approach to developing a local agent system"
 documentType: "Methodological whitepaper / exploratory retrospective single-case study"
 version: "English parallel edition of public working draft V1.6.1"
@@ -10,7 +10,7 @@ sourcePolicy: "Historical materials remain historical evidence and do not consti
 implementationStatus: "MVP implementation and technical verification are not demonstrated in this paper"
 ---
 
-# From Problem Framing towards Technological Autonomy
+# From Problem Framing towards Independent System Design
 
 *A Case Study of a Method-Driven, AI-Assisted Approach to Developing a Local Agent System*
 
@@ -18,7 +18,7 @@ implementationStatus: "MVP implementation and technical verification are not dem
 **Nature of this document:** A methodological whitepaper with a historical research focus. It does not demonstrate the implementation, security or effectiveness of the proposed local AI agent system.
 
 <figure class="whitepaper-illustration whitepaper-illustration--hero">
-  <img src="/assets/writings/from-problem-framing-towards-technological-autonomy/wp-methodik-01-hero.webp" alt="An abstract meeting of landscape and architectural forms, traced by precise blue and gold lines." width="1536" height="355" loading="eager" decoding="async" />
+  <img src="/assets/writings/from-problem-framing-towards-independent-system-design/wp-methodik-01-hero.webp" alt="An abstract meeting of landscape and architectural forms, traced by precise blue and gold lines." width="1536" height="355" loading="eager" decoding="async" />
   <figcaption>Conceptual illustration: From an open-ended problem to a structured vision of a system.</figcaption>
 </figure>
 
@@ -130,7 +130,7 @@ Even before the later Nova/Nadia vision, the author's conceptual contribution th
 The emerging question was no longer simply how good an individual configuration could be, but how multiple specialised units might collaborate. Work on individual tools revealed requirements at the wider system level.
 
 <figure class="whitepaper-illustration whitepaper-illustration--werkzeuge">
-  <img src="/assets/writings/from-problem-framing-towards-technological-autonomy/wp-methodik-02-werkzeuge.webp" alt="Individual blue and gold lines and nodes connect into a shared flow." width="593" height="298" loading="lazy" decoding="async" />
+  <img src="/assets/writings/from-problem-framing-towards-independent-system-design/wp-methodik-02-werkzeuge.webp" alt="Individual blue and gold lines and nodes connect into a shared flow." width="593" height="298" loading="lazy" decoding="async" />
   <figcaption>Conceptual illustration: From individual tools towards connected working structures.</figcaption>
 </figure>
 
@@ -179,7 +179,7 @@ These historical role descriptions are **not evidence of current technical imple
 The defining combination in this early concept was **open-ended human reflection, traceable handoff and modular specialised execution**.
 
 <figure class="whitepaper-illustration whitepaper-illustration--uebergabe">
-  <img src="/assets/writings/from-problem-framing-towards-technological-autonomy/wp-methodik-03-uebergabe.webp" alt="Layered translucent planes in blue, grey and gold with connecting lines." width="455" height="298" loading="lazy" decoding="async" />
+  <img src="/assets/writings/from-problem-framing-towards-independent-system-design/wp-methodik-03-uebergabe.webp" alt="Layered translucent planes in blue, grey and gold with connecting lines." width="455" height="298" loading="lazy" decoding="async" />
   <figcaption>Conceptual illustration: A structured handoff between reflection and specialised execution.</figcaption>
 </figure>
 
@@ -214,7 +214,7 @@ This substantive work should not be represented as a completed technical impleme
 Requirements engineering offers a useful external comparison. Nuseibeh and Easterbrook (2000, Sections 1–2 and 9) describe the elicitation, modelling, analysis, communication, agreement and evolution of requirements as connected activities. The documented shift from a concrete handoff problem to questions of information continuity, working states and the boundaries of technical decisions can be understood in that methodological context. This resemblance concerns problem clarification and requirements work; it does not demonstrate full application of a particular requirements engineering method or completion of all activities envisaged in the Phase 2 model.
 
 <figure class="whitepaper-illustration whitepaper-illustration--entwicklungsweg">
-  <img src="/assets/writings/from-problem-framing-towards-technological-autonomy/wp-methodik-04-entwicklungsweg.webp" alt="An abstract blue-and-gold data landscape with connected ridges and points." width="556" height="333" loading="lazy" decoding="async" />
+  <img src="/assets/writings/from-problem-framing-towards-independent-system-design/wp-methodik-04-entwicklungsweg.webp" alt="An abstract blue-and-gold data landscape with connected ridges and points." width="556" height="333" loading="lazy" decoding="async" />
   <figcaption>Conceptual illustration: The progressive development of a structured working method.</figcaption>
 </figure>
 

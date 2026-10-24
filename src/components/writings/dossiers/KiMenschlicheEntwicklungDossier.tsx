@@ -32,7 +32,7 @@ export default function KiMenschlicheEntwicklungDossier({ writing }: { writing: 
         {
           title: 'Verwandte Schriften',
           items: [
-            { label: 'Von der Problemstellung zur technischen Eigenständigkeit', href: '/schriften/methodengefuehrte-ki-systementwicklung' },
+            { label: 'Von der Problemstellung zur eigenständigen Systemkonzeption', href: '/schriften/methodengefuehrte-ki-systementwicklung' },
             { label: 'KI als kultureller Beschleuniger', href: '/schriften/ki-kultureller-beschleuniger' },
             { label: 'Denkarchitektur', href: '/schriften/denkarchitektur' },
           ],
@@ -46,9 +46,9 @@ export default function KiMenschlicheEntwicklungDossier({ writing }: { writing: 
       ]}
       handoffs={[
         {
-          text: 'Welche neuen Fragestellungen können entstehen, wenn Menschen mithilfe von KI ein zunächst ungewohntes technisches Gebiet erschliessen? Die Fallstudie «Von der Problemstellung zur technischen Eigenständigkeit» rekonstruiert einen konkreten Entwicklungsprozess. Sie zeigt, welche Fragen und Methoden im Verlauf eines Projekts dokumentiert wurden, ohne daraus allgemeine Lernwirkungen abzuleiten.',
+          text: 'Welche neuen Fragestellungen können entstehen, wenn Menschen mithilfe von KI ein zunächst ungewohntes technisches Gebiet erschliessen? Die Fallstudie «Von der Problemstellung zur eigenständigen Systemkonzeption» rekonstruiert einen konkreten Entwicklungsprozess. Sie zeigt, welche Fragen und Methoden im Verlauf eines Projekts dokumentiert wurden, ohne daraus allgemeine Lernwirkungen abzuleiten.',
           href: '/schriften/methodengefuehrte-ki-systementwicklung',
-          label: 'Von der Problemstellung zur technischen Eigenständigkeit',
+          label: 'Von der Problemstellung zur eigenständigen Systemkonzeption',
         },
         {
           text: 'Die Erweiterung individueller Handlungsmöglichkeiten ist nicht gleichbedeutend mit gesellschaftlichem Erkenntnisgewinn. «Künstliche Intelligenz als kultureller Beschleuniger» untersucht, welche wissenschaftlichen, institutionellen und technischen Voraussetzungen hinzukommen müssen, damit neu erschlossene Möglichkeiten zu überprüfbarem und gemeinsam nutzbarem Wissen beitragen können.',
@@ -59,7 +59,7 @@ export default function KiMenschlicheEntwicklungDossier({ writing }: { writing: 
       series={{ items: kiSeries.de, current: 0 }}
       alternate={{ href: '/en/whitepaper/ai-and-human-development', label: 'English version', lang: 'en' }}
       prev={{ label: 'Denkarchitektur', kicker: 'Framework', href: '/schriften/denkarchitektur' }}
-      next={{ label: 'Von der Problemstellung zur technischen Eigenständigkeit', kicker: 'Whitepaper', href: '/schriften/methodengefuehrte-ki-systementwicklung' }}
+      next={{ label: 'Von der Problemstellung zur eigenständigen Systemkonzeption', kicker: 'Whitepaper', href: '/schriften/methodengefuehrte-ki-systementwicklung' }}
     />
   );
 }

@@ -6,12 +6,12 @@ export default function ProblemFramingTowardsAutonomyDossier() {
   return (
     <MarkdownDossier
       locale="en"
-      markdown={readContent('en', 'whitepaper', 'from-problem-framing-towards-technological-autonomy')}
+      markdown={readContent('en', 'whitepaper', 'from-problem-framing-towards-independent-system-design')}
       eyebrow="Methodological whitepaper · Version 1.6.1"
       title={
         <>
           From Problem Framing towards{' '}
-          <em className="italic text-gold-600">Technological Autonomy</em>
+          <em className="italic text-gold-600">Independent System Design</em>
         </>
       }
       subtitle="A Case Study of a Method-Driven, AI-Assisted Approach to Developing a Local Agent System"

@@ -71,7 +71,7 @@ const SCHRIFTEN = [
     id: 'SCH · 06',
     type: 'Whitepaper',
     year: '2026',
-    title: 'Von der Problemstellung zur technischen Eigenständigkeit',
+    title: 'Von der Problemstellung zur eigenständigen Systemkonzeption',
     prinzip: '„Ein Architekturentwurf ist kein Implementierungsnachweis."',
     body: 'Eine quellengebundene Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems.',
     wirktIn: [

@@ -63,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/en/whitepaper/from-problem-framing-towards-technological-autonomy`,
+      url: `${BASE_URL}/en/whitepaper/from-problem-framing-towards-independent-system-design`,
       lastModified,
       changeFrequency: 'yearly',
       priority: 0.7,

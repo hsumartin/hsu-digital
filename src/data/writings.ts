@@ -89,7 +89,7 @@ export const writings: WritingIndex[] = [
   {
     slug: 'methodengefuehrte-ki-systementwicklung',
     id: 'SCH · 06',
-    title: 'Von der Problemstellung zur technischen Eigenständigkeit',
+    title: 'Von der Problemstellung zur eigenständigen Systemkonzeption',
     type: 'Whitepaper',
     year: '2026',
     principle: '«Ein Architekturentwurf ist kein Implementierungsnachweis.»',

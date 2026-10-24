@@ -15,7 +15,7 @@ export const dynamicParams = false;
 const EN_VERSIONS: Record<string, string> = {
   'ki-menschliche-entwicklung': '/en/whitepaper/ai-and-human-development',
   'ki-kultureller-beschleuniger': '/en/whitepaper/ai-as-a-cultural-accelerator',
-  'methodengefuehrte-ki-systementwicklung': '/en/whitepaper/from-problem-framing-towards-technological-autonomy',
+  'methodengefuehrte-ki-systementwicklung': '/en/whitepaper/from-problem-framing-towards-independent-system-design',
 };
 
 export function generateStaticParams() {
