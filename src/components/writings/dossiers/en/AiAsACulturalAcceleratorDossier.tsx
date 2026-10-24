@@ -12,7 +12,7 @@ export default function AiAsACulturalAcceleratorDossier() {
           AI as a <em className="italic text-gold-600">Cultural Accelerator</em>
         </>
       }
-      subtitle="Societal conditions for human knowledge"
+      subtitle="Societal Conditions for Expanding Human Knowledge, Collaboration, and Development"
       lead="The societal significance of AI is decided not by its performance alone, but by the conditions under which individual assistance can give rise to verifiable knowledge, collective understanding and societal benefit."
       tags={[
         { label: 'Epistemology', variant: 'gold' },

@@ -66,7 +66,12 @@ export default function WritingHeader({
             >
               {title}
             </h1>
-            <p className="mt-[1.05rem] font-serif text-[clamp(1.45rem,2.3vw,2rem)] italic leading-[1.25] text-stone-700 max-w-[22ch]">
+            <p
+              className={[
+                'mt-[1.05rem] font-serif italic leading-[1.25] text-stone-700',
+                longTitle ? 'text-[clamp(1.3rem,1.9vw,1.65rem)] max-w-[34ch]' : 'text-[clamp(1.45rem,2.3vw,2rem)] max-w-[22ch]',
+              ].join(' ')}
+            >
               {subtitle}
             </p>
             {tags && tags.length > 0 && (

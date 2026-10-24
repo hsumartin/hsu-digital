@@ -191,7 +191,7 @@ const kiKulturellerBeschleunigerLead =
 
 export const kiKulturellerBeschleunigerDetail: WritingDetail = {
   ...writings[5],
-  subtitle: 'Gesellschaftliche Voraussetzungen für menschliche Erkenntnis',
+  subtitle: 'Gesellschaftliche Voraussetzungen für die Erweiterung menschlicher Erkenntnis, Zusammenarbeit und Entwicklung',
   lead: kiKulturellerBeschleunigerLead,
   record: [
     { key: 'Kategorie', value: 'Whitepaper' },
