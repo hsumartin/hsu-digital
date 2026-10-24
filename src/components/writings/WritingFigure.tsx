@@ -3,8 +3,11 @@ import Image from 'next/image';
 interface WritingFigureProps {
   label: string;
   type: string;
+  alt?: string;
+  /** When set, the figure links to the full-size file in a new tab. */
+  zoomLabel?: string;
   src: string;
-  caption: string;
+  caption: React.ReactNode;
   width?: number;
   height?: number;
   /** Optional CSS max-height in px; image will be constrained with object-contain */
@@ -14,6 +17,8 @@ interface WritingFigureProps {
 export default function WritingFigure({
   label,
   type,
+  alt,
+  zoomLabel,
   src,
   caption,
   width = 1500,
@@ -24,13 +29,21 @@ export default function WritingFigure({
     <figure className="my-10 border border-stone-200 bg-[#FBFAF7]">
       <div className="flex justify-between gap-4 items-baseline px-4 py-[0.75rem] border-b border-stone-100 font-mono text-[0.58rem] tracking-[0.14em] uppercase">
         <span className="text-gold-600">{label}</span>
-        <span className="text-stone-400">{type}</span>
+        <span className="text-stone-400">
+          {zoomLabel ? (
+            <a href={src} target="_blank" rel="noopener noreferrer" className="text-blue-700 no-underline hover:text-stone-900 transition-colors">
+              {zoomLabel}
+            </a>
+          ) : (
+            type
+          )}
+        </span>
       </div>
       {/* overflow-x-auto keeps horizontal scroll contained to this box only */}
       <div className="bg-[#F8F7F3] p-4 overflow-x-auto">
         <Image
           src={src}
-          alt={label}
+          alt={alt ?? label}
           width={width}
           height={height}
           className="block w-full max-w-full"
@@ -42,7 +55,7 @@ export default function WritingFigure({
           unoptimized
         />
       </div>
-      <figcaption className="border-t border-stone-100 px-4 py-[0.72rem] font-mono text-[0.62rem] tracking-[0.05em] leading-[1.55] text-stone-400">
+      <figcaption className="border-t border-stone-100 px-4 py-[0.72rem] font-mono text-[0.66rem] tracking-[0.04em] leading-[1.6] text-stone-600">
         {caption}
       </figcaption>
     </figure>

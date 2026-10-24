@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="t d" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+<title id="t">Mögliche Rückkopplung menschlicher Entwicklung durch KI-gestützte Erfahrungen</title>
+<desc id="d">Konzeptionelle Prozessskizze: Individuelle Ausgangssituation, KI-gestützter Zugang und neue Erfahrungen. Die Erfahrung kann Interessen, Verständnis und Perspektiven verändern, wodurch neue Fragen und Entscheidungen entstehen. Eine gestrichelte Rückführung kennzeichnet die mögliche nächste Erkundung unter veränderten Voraussetzungen. Der Verlauf ist hypothetisch, nicht zwingend linear oder positiv.</desc>
+<defs><marker id="arrowblue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9" stroke="#2B6895" stroke-width="2" fill="none"/></marker><marker id="arrowgold" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9" stroke="#C9A94B" stroke-width="2" fill="none"/></marker></defs>
+<rect width="1200" height="760" fill="#F0EEE8"/>
+<rect x="54" y="48" width="5" height="44" rx="2" fill="#C9A94B"/>
+<text x="78" y="66" font-size="16" letter-spacing="3" font-weight="700" fill="#2B6895">ABBILDUNG 02  /  KAPITEL 4</text>
+<text x="78" y="104" font-size="31" font-weight="700" fill="#0E1116">Wenn Erfahrungen die nächste Ausgangssituation verändern</text>
+<text x="78" y="141" font-size="18" fill="#5D6771">Ein möglicher Entwicklungsverlauf – keine zwangsläufige Wirkung</text>
+<!-- upper row -->
+<g>
+<rect x="62" y="199" width="328" height="149" rx="13" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="62" y="199" width="328" height="6" rx="3" fill="#2B6895"/>
+<text x="84" y="237" font-size="14" font-weight="700" letter-spacing="1.5" fill="#2B6895">01 / AUSGANGSSITUATION</text>
+<text x="84" y="276" font-size="23" font-weight="700" fill="#0E1116">Bestehende Idee</text>
+<text x="84" y="309" font-size="17" fill="#5D6771">Ziele, Wissen, Interessen</text>
+</g>
+<g>
+<rect x="436" y="199" width="328" height="149" rx="13" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="436" y="199" width="328" height="6" rx="3" fill="#3F7FAE"/>
+<text x="458" y="237" font-size="14" font-weight="700" letter-spacing="1.5" fill="#2B6895">02 / ZUGANG</text>
+<text x="458" y="276" font-size="23" font-weight="700" fill="#0E1116">KI-gestützte Erkundung</text>
+<text x="458" y="309" font-size="17" fill="#5D6771">Methoden, erste Untersuchungen</text>
+</g>
+<g>
+<rect x="810" y="199" width="328" height="149" rx="13" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="810" y="199" width="328" height="6" rx="3" fill="#C9A94B"/>
+<text x="832" y="237" font-size="14" font-weight="700" letter-spacing="1.5" fill="#2B6895">03 / ERFAHRUNGEN</text>
+<text x="832" y="276" font-size="23" font-weight="700" fill="#0E1116">Neue Begegnungen</text>
+<text x="832" y="309" font-size="17" fill="#5D6771">Fragen, Ergebnisse, Reflexion</text>
+</g>
+<path d="M394 275 H425" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<path d="M768 275 H798" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<!-- down and left return -->
+<path d="M974 353 V409" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<rect x="622" y="428" width="516" height="127" rx="13" fill="#FCFBF8" stroke="#C9A94B" stroke-width="2"/>
+<rect x="622" y="428" width="516" height="6" rx="3" fill="#C9A94B"/>
+<text x="644" y="466" font-size="14" font-weight="700" letter-spacing="1.4" fill="#2B6895">04 / MÖGLICHE VERÄNDERUNG</text>
+<text x="644" y="502" font-size="23" font-weight="700" fill="#0E1116">Veränderte Voraussetzungen</text>
+<text x="644" y="532" font-size="17" fill="#5D6771">Neue Interessen, Kenntnisse, Perspektiven</text>
+<rect x="62" y="428" width="516" height="127" rx="13" fill="#FCFBF8" stroke="#3F7FAE" stroke-width="2"/>
+<rect x="62" y="428" width="516" height="6" rx="3" fill="#3F7FAE"/>
+<text x="84" y="466" font-size="14" font-weight="700" letter-spacing="1.4" fill="#2B6895">05 / NÄCHSTE ENTSCHEIDUNGEN</text>
+<text x="84" y="502" font-size="23" font-weight="700" fill="#0E1116">Andere Fragen und Projekte</text>
+<text x="84" y="532" font-size="17" fill="#5D6771">Möglicherweise andere KI-Nutzung</text>
+<path d="M617 493 H587" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<!-- return loop deliberately dashed and conditional -->
+<path d="M62 492 H29 V176 H226 V195" stroke="#C9A94B" stroke-width="2.8" stroke-dasharray="9 8" fill="none" marker-end="url(#arrowgold)"/>
+<rect x="282" y="357" width="272" height="34" rx="16" fill="#F0EEE8"/>
+<text x="418" y="378" font-size="15" font-weight="700" text-anchor="middle" fill="#2B6895">Möglicher nächster Durchlauf</text>
+<!-- caveat -->
+<rect x="62" y="610" width="1076" height="96" rx="11" fill="#2B6895" fill-opacity=".07" stroke="#2B6895" stroke-opacity=".23"/>
+<rect x="82" y="631" width="4" height="51" fill="#C9A94B"/>
+<text x="103" y="645" font-size="18" font-weight="700" fill="#0E1116">Die nächste Idee entsteht möglicherweise unter anderen persönlichen Voraussetzungen.</text>
+<text x="103" y="675" font-size="17" fill="#5D6771">Rückkopplungen können förderlich, begrenzt oder nachteilig sein; langfristige KI-Wirkungen bleiben zu prüfen.</text>
+<text x="62" y="739" font-size="13" fill="#5D6771">Konzeptionelle Hypothese aus dem Fachartikel · Pfeile visualisieren Möglichkeiten, keine empirisch bestätigten Kausalbeziehungen</text>
+</svg>

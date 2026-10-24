@@ -73,6 +73,19 @@ export const writings: WritingIndex[] = [
     featured: false,
     hasDetail: true,
   },
+  {
+    slug: 'ki-menschliche-entwicklung',
+    id: 'SCH · 05',
+    title: 'KI und die Erweiterung menschlicher Entwicklungsmöglichkeiten',
+    type: 'Whitepaper',
+    year: '2026',
+    principle: '«Entwicklung ist mehr als das, was jemand heute schon kann.»',
+    description:
+      'Wie neue Werkzeuge nicht nur unsere heutigen Fähigkeiten ergänzen, sondern auch zukünftige Interessen, Erfahrungen und Denkweisen beeinflussen könnten.',
+    tags: ['Menschliche Entwicklung', 'Mensch-KI-Zusammenarbeit', 'Entwicklungsoffenheit'],
+    featured: false,
+    hasDetail: true,
+  },
 ];
 
 export const gptStackDetail: WritingDetail = {
@@ -143,7 +156,25 @@ export const denkarchitekturDetail: WritingDetail = {
   ],
 };
 
+const kiMenschlicheEntwicklungLead =
+  'Wie neue Werkzeuge nicht nur unsere heutigen Fähigkeiten ergänzen, sondern auch zukünftige Interessen, Erfahrungen und Denkweisen beeinflussen könnten.';
+
+export const kiMenschlicheEntwicklungDetail: WritingDetail = {
+  ...writings[4],
+  subtitle: 'Zwischen Können, Ermöglichen und neuen Interessen',
+  lead: kiMenschlicheEntwicklungLead,
+  record: [
+    { key: 'Kategorie', value: 'Whitepaper' },
+    { key: 'Version', value: '1.4' },
+    { key: 'Thema', value: 'KI und Gesellschaft' },
+    { key: 'Artefakte', value: 'Drei Dimensionen · Rückkopplung' },
+    { key: 'Sprachen', value: 'Deutsch · English' },
+  ],
+  abstractText: [kiMenschlicheEntwicklungLead],
+};
+
 export function getWritingDetail(slug: string): WritingDetail | null {
+  if (slug === 'ki-menschliche-entwicklung') return kiMenschlicheEntwicklungDetail;
   if (slug === 'gpt-stack') return gptStackDetail;
   if (slug === 'decision-layer') return decisionLayerDetail;
   if (slug === 'ki-governance') return kiGovernanceDetail;

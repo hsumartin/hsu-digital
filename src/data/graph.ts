@@ -105,6 +105,15 @@ export const MAIN_NODES: GraphNode[] = [
     url: '/schriften/denkarchitektur',
     tags: ['KI & Agenten', 'Systemdenken', 'Visualisierung', 'Wissensstruktur'],
   },
+  {
+    id: 'ki-menschliche-entwicklung',
+    type: 'artikel',
+    cat: 'ki',
+    label: 'Menschliche Entwicklungsmöglichkeiten',
+    short: 'Wie KI neue Erfahrungen, Interessen und Handlungsmöglichkeiten eröffnen könnte',
+    url: '/schriften/ki-menschliche-entwicklung',
+    tags: ['KI & Agenten', 'Wissensstruktur', 'Systemdenken'],
+  },
 ];
 
 function buildTagCounts(nodes: GraphNode[]): Record<string, number> {

@@ -51,6 +51,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/schriften/ki-menschliche-entwicklung`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/en/whitepaper/ai-and-human-development`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/en/whitepaper/architecture-of-thinking`,
       lastModified,
       changeFrequency: 'yearly',

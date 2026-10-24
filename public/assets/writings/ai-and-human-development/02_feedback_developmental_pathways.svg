@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="t d" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+<title id="t">Possible feedback effects in human development through AI-supported experience</title>
+<desc id="d">Conceptual process sketch: an initial personal situation, AI-supported exploration, and new experiences. These experiences may change interests, understanding, and perspectives, which can lead to new questions and decisions. A dashed return path marks a possible next exploration under changed conditions. The sequence is hypothetical, not necessarily linear or positive.</desc>
+<defs><marker id="arrowblue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9" stroke="#2B6895" stroke-width="2" fill="none"/></marker><marker id="arrowgold" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9" stroke="#C9A94B" stroke-width="2" fill="none"/></marker></defs>
+<rect width="1200" height="760" fill="#F0EEE8"/>
+<rect x="54" y="48" width="5" height="44" rx="2" fill="#C9A94B"/>
+<text x="78" y="66" font-size="16" letter-spacing="3" font-weight="700" fill="#2B6895">FIGURE 02  /  CHAPTER 4</text>
+<text x="78" y="104" font-size="31" font-weight="700" fill="#0E1116">When experience changes the next starting position</text>
+<text x="78" y="141" font-size="18" fill="#5D6771">A possible developmental pathway — not an automatic effect</text>
+<g>
+<rect x="62" y="199" width="328" height="149" rx="13" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="62" y="199" width="328" height="6" rx="3" fill="#2B6895"/>
+<text x="84" y="237" font-size="14" font-weight="700" letter-spacing="1.5" fill="#2B6895">01 / STARTING POINT</text>
+<text x="84" y="276" font-size="23" font-weight="700" fill="#0E1116">Existing idea</text>
+<text x="84" y="309" font-size="17" fill="#5D6771">Goals, knowledge, interests</text>
+</g>
+<g>
+<rect x="436" y="199" width="328" height="149" rx="13" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="436" y="199" width="328" height="6" rx="3" fill="#3F7FAE"/>
+<text x="458" y="237" font-size="14" font-weight="700" letter-spacing="1.5" fill="#2B6895">02 / ACCESS</text>
+<text x="458" y="276" font-size="23" font-weight="700" fill="#0E1116">AI-supported exploration</text>
+<text x="458" y="309" font-size="17" fill="#5D6771">Methods, first investigations</text>
+</g>
+<g>
+<rect x="810" y="199" width="328" height="149" rx="13" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="810" y="199" width="328" height="6" rx="3" fill="#C9A94B"/>
+<text x="832" y="237" font-size="14" font-weight="700" letter-spacing="1.5" fill="#2B6895">03 / EXPERIENCE</text>
+<text x="832" y="276" font-size="23" font-weight="700" fill="#0E1116">New encounters</text>
+<text x="832" y="309" font-size="17" fill="#5D6771">Questions, results, reflection</text>
+</g>
+<path d="M394 275 H425" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<path d="M768 275 H798" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<path d="M974 353 V409" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<rect x="622" y="428" width="516" height="127" rx="13" fill="#FCFBF8" stroke="#C9A94B" stroke-width="2"/>
+<rect x="622" y="428" width="516" height="6" rx="3" fill="#C9A94B"/>
+<text x="644" y="466" font-size="14" font-weight="700" letter-spacing="1.4" fill="#2B6895">04 / POSSIBLE CHANGE</text>
+<text x="644" y="502" font-size="23" font-weight="700" fill="#0E1116">Changed preconditions</text>
+<text x="644" y="532" font-size="17" fill="#5D6771">New interests, knowledge, perspectives</text>
+<rect x="62" y="428" width="516" height="127" rx="13" fill="#FCFBF8" stroke="#3F7FAE" stroke-width="2"/>
+<rect x="62" y="428" width="516" height="6" rx="3" fill="#3F7FAE"/>
+<text x="84" y="466" font-size="14" font-weight="700" letter-spacing="1.4" fill="#2B6895">05 / NEXT DECISIONS</text>
+<text x="84" y="502" font-size="23" font-weight="700" fill="#0E1116">Different questions and projects</text>
+<text x="84" y="532" font-size="17" fill="#5D6771">Potentially different use of AI</text>
+<path d="M617 493 H587" stroke="#2B6895" stroke-width="2.7" fill="none" marker-end="url(#arrowblue)"/>
+<path d="M62 492 H29 V176 H226 V195" stroke="#C9A94B" stroke-width="2.8" stroke-dasharray="9 8" fill="none" marker-end="url(#arrowgold)"/>
+<rect x="282" y="357" width="272" height="34" rx="16" fill="#F0EEE8"/>
+<text x="418" y="378" font-size="15" font-weight="700" text-anchor="middle" fill="#2B6895">Possible next cycle</text>
+<rect x="62" y="610" width="1076" height="96" rx="11" fill="#2B6895" fill-opacity=".07" stroke="#2B6895" stroke-opacity=".23"/>
+<rect x="82" y="631" width="4" height="51" fill="#C9A94B"/>
+<text x="103" y="645" font-size="18" font-weight="700" fill="#0E1116">The next idea may emerge under different personal conditions.</text>
+<text x="103" y="675" font-size="17" fill="#5D6771">Feedback effects can be enabling, limiting, or adverse; long-term AI effects still need to be examined.</text>
+<text x="62" y="739" font-size="13" fill="#5D6771">Conceptual hypothesis from the article · arrows visualize possibilities, not empirically confirmed causal relationships</text>
+</svg>

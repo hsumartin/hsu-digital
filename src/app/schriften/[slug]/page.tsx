@@ -6,6 +6,7 @@ import GptStackDossier from '@/components/writings/dossiers/GptStackDossier';
 import DecisionLayerDossier from '@/components/writings/dossiers/DecisionLayerDossier';
 import KiGovernanceDossier from '@/components/writings/dossiers/KiGovernanceDossier';
 import DenkarchitekturDossier from '@/components/writings/dossiers/DenkarchitekturDossier';
+import KiMenschlicheEntwicklungDossier from '@/components/writings/dossiers/KiMenschlicheEntwicklungDossier';
 
 export const dynamicParams = false;
 
@@ -15,6 +16,7 @@ export function generateStaticParams() {
     { slug: 'decision-layer' },
     { slug: 'ki-governance' },
     { slug: 'denkarchitektur' },
+    { slug: 'ki-menschliche-entwicklung' },
   ];
 }
 
@@ -29,7 +31,12 @@ export async function generateMetadata({
   return {
     title: `${writing.title} · Schrift · Martin Hsu`,
     description: writing.abstractText[0],
-    alternates: { canonical: `/schriften/${slug}` },
+    alternates: {
+      canonical: `/schriften/${slug}`,
+      ...(slug === 'ki-menschliche-entwicklung' && {
+        languages: { en: '/en/whitepaper/ai-and-human-development' },
+      }),
+    },
   };
 }
 
@@ -46,6 +53,7 @@ export default async function SchriftenDetailPage({
   if (slug === 'decision-layer') return <><ScrollProgress /><DecisionLayerDossier writing={writing} /></>;
   if (slug === 'ki-governance') return <><ScrollProgress /><KiGovernanceDossier writing={writing} /></>;
   if (slug === 'denkarchitektur') return <><ScrollProgress /><DenkarchitekturDossier writing={writing} /></>;
+  if (slug === 'ki-menschliche-entwicklung') return <><ScrollProgress /><KiMenschlicheEntwicklungDossier writing={writing} /></>;
 
   notFound();
 }

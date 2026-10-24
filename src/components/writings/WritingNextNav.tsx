@@ -10,17 +10,19 @@ interface WritingNextNavProps {
   prev?: NavItem;
   next?: NavItem;
   indexHref?: string;
+  labels?: { all: string; aria: string };
 }
 
 export default function WritingNextNav({
   prev,
   next,
   indexHref = '/schriften',
+  labels = { all: 'Alle Schriften', aria: 'Schriften-Navigation' },
 }: WritingNextNavProps) {
   return (
     <nav
       className="border-t border-stone-100 pt-8 mt-8 flex justify-between items-center gap-4 flex-wrap"
-      aria-label="Schriften-Navigation"
+      aria-label={labels.aria}
     >
       {prev ? (
         <Link
@@ -38,7 +40,7 @@ export default function WritingNextNav({
         href={indexHref}
         className="font-mono text-[0.64rem] tracking-[0.12em] uppercase text-stone-400 no-underline hover:text-stone-900 transition-colors"
       >
-        Alle Schriften
+        {labels.all}
       </Link>
 
       {next ? (

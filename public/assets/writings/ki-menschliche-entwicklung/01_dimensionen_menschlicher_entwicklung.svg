@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="t d" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+<title id="t">Drei Dimensionen menschlicher Entwicklungsmöglichkeiten</title>
+<desc id="d">Drei gleichrangige Bereiche: eigenständig erworbene Kompetenz, instrumentelle Befähigung durch Werkzeuge und neue Interessen und Entwicklungsrichtungen. Sie können zusammenwirken, müssen es aber nicht. Keine Rangfolge oder automatische Wirkung wird behauptet.</desc>
+<rect width="1200" height="650" fill="#F0EEE8"/>
+<rect x="54" y="48" width="5" height="44" rx="2" fill="#C9A94B"/>
+<text x="78" y="66" font-size="16" letter-spacing="3" font-weight="700" fill="#2B6895">ABBILDUNG 01  /  KAPITEL 3–4</text>
+<text x="78" y="104" font-size="31" font-weight="700" fill="#0E1116">Drei Dimensionen menschlicher Möglichkeiten</text>
+<text x="78" y="141" font-size="18" fill="#5D6771">Unterschiedliche Wirkungen — ohne automatische Gleichsetzung</text>
+<!-- neutral baseline -->
+<g>
+<rect x="64" y="202" width="338" height="279" rx="14" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="64" y="202" width="338" height="7" rx="3" fill="#2B6895"/>
+<text x="88" y="253" font-size="15" font-weight="700" letter-spacing="1.6" fill="#2B6895">01 / EIGENSTÄNDIG</text>
+<text x="88" y="304" font-size="27" font-weight="700" fill="#0E1116">Persönliche</text>
+<text x="88" y="340" font-size="27" font-weight="700" fill="#0E1116">Kompetenz</text>
+<path d="M88 369 H376" stroke="#CBD3D7" stroke-width="1.6"/>
+<text x="88" y="402" font-size="18" fill="#5D6771">Selbst erworbenes Wissen</text>
+<text x="88" y="432" font-size="18" fill="#5D6771">und eigene Fähigkeiten</text>
+</g>
+<g>
+<rect x="431" y="202" width="338" height="279" rx="14" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="431" y="202" width="338" height="7" rx="3" fill="#3F7FAE"/>
+<text x="455" y="253" font-size="15" font-weight="700" letter-spacing="1.6" fill="#2B6895">02 / WERKZEUGGESTÜTZT</text>
+<text x="455" y="304" font-size="27" font-weight="700" fill="#0E1116">Instrumentelle</text>
+<text x="455" y="340" font-size="27" font-weight="700" fill="#0E1116">Befähigung</text>
+<path d="M455 369 H743" stroke="#CBD3D7" stroke-width="1.6"/>
+<text x="455" y="402" font-size="18" fill="#5D6771">Mit KI zugängliche</text>
+<text x="455" y="432" font-size="18" fill="#5D6771">Handlungsmöglichkeiten</text>
+</g>
+<g>
+<rect x="798" y="202" width="338" height="279" rx="14" fill="#FCFBF8" stroke="#CBD3D7" stroke-width="2"/>
+<rect x="798" y="202" width="338" height="7" rx="3" fill="#C9A94B"/>
+<text x="822" y="253" font-size="15" font-weight="700" letter-spacing="1.6" fill="#2B6895">03 / ENTWICKLUNGSOFFEN</text>
+<text x="822" y="304" font-size="27" font-weight="700" fill="#0E1116">Neue Interessen</text>
+<text x="822" y="340" font-size="25" font-weight="700" fill="#0E1116">und Perspektiven</text>
+<path d="M822 369 H1110" stroke="#CBD3D7" stroke-width="1.6"/>
+<text x="822" y="402" font-size="18" fill="#5D6771">Neue Fragen, Ziele und</text>
+<text x="822" y="432" font-size="18" fill="#5D6771">Entwicklungsrichtungen</text>
+</g>
+<path d="M402 342 H431 M769 342 H798" stroke="#5A97C4" stroke-width="2" stroke-dasharray="4 9"/>
+<rect x="64" y="520" width="1072" height="77" rx="10" fill="#2B6895" fill-opacity="0.07" stroke="#2B6895" stroke-opacity="0.22"/>
+<rect x="83" y="541" width="4" height="35" fill="#C9A94B"/>
+<text x="106" y="553" font-size="18" font-weight="700" fill="#0E1116">Diese Dimensionen können sich beeinflussen.</text>
+<text x="106" y="580" font-size="17" fill="#5D6771">Sie sind weder gleichbedeutend noch zwingend miteinander verbunden.</text>
+<text x="65" y="629" font-size="13" fill="#5D6771">Konzeptionelle Unterscheidung aus dem Fachartikel · keine quantitative oder kausale Evidenzdarstellung</text>
+</svg>

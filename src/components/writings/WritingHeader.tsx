@@ -12,9 +12,25 @@ interface WritingHeaderProps {
   subtitle: string;
   lead: string;
   tags?: Tag[];
+  /** Long titles use a smaller size so they stay readable. */
+  longTitle?: boolean;
+  /** UI labels; defaults are the German originals. */
+  labels?: { kicker: string; section: string; back: string; backHref?: string };
+  alternate?: { href: string; label: string; lang: string };
 }
 
-export default function WritingHeader({ eyebrow, title, subtitle, lead, tags }: WritingHeaderProps) {
+const DEFAULT_LABELS = { kicker: 'Schrift · Whitepaper', section: 'Schriftendetail', back: 'Zurück zu Schriften', backHref: '/schriften' };
+
+export default function WritingHeader({
+  eyebrow,
+  title,
+  subtitle,
+  lead,
+  tags,
+  longTitle = false,
+  labels = DEFAULT_LABELS,
+  alternate,
+}: WritingHeaderProps) {
   return (
     <header className="relative pt-24 pb-[3.2rem] border-b border-stone-100 overflow-hidden">
       <div
@@ -29,14 +45,21 @@ export default function WritingHeader({ eyebrow, title, subtitle, lead, tags }: 
       />
       <div className="relative z-10 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
         <div className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-stone-400 mb-6">
-          <b className="text-gold-600 font-medium">Schrift · Whitepaper</b> · {eyebrow}
+          <b className="text-gold-600 font-medium">{labels.kicker}</b> · {eyebrow}
         </div>
 
-        <SectionLabel num="01">Schriftendetail</SectionLabel>
+        <SectionLabel num="01">{labels.section}</SectionLabel>
 
         <div className="grid grid-cols-[minmax(0,1.42fr)_minmax(18rem,0.8fr)] gap-12 items-end max-[880px]:grid-cols-1 max-[880px]:gap-6">
           <div>
-            <h1 className="font-serif font-normal text-[clamp(3rem,6.2vw,5.4rem)] leading-[1.03] tracking-[-0.025em] max-w-[10ch] pb-[0.08em]">
+            <h1
+              className={[
+                'font-serif font-normal leading-[1.03] tracking-[-0.025em] pb-[0.08em]',
+                longTitle
+                  ? 'text-[clamp(2.2rem,4.2vw,3.6rem)] max-w-[18ch]'
+                  : 'text-[clamp(3rem,6.2vw,5.4rem)] max-w-[10ch]',
+              ].join(' ')}
+            >
               {title}
             </h1>
             <p className="mt-[1.05rem] font-serif text-[clamp(1.45rem,2.3vw,2rem)] italic leading-[1.25] text-stone-700 max-w-[22ch]">
@@ -67,12 +90,24 @@ export default function WritingHeader({ eyebrow, title, subtitle, lead, tags }: 
             <p className="text-[1.04rem] leading-[1.72] text-stone-700 font-light max-w-[42ch]">
               {lead}
             </p>
-            <Link
-              href="/schriften"
-              className="inline-flex mt-[1.4rem] font-mono text-[0.64rem] tracking-[0.12em] uppercase text-blue-700 no-underline border-b border-blue-700/25 pb-[2px]"
-            >
-              Zurück zu Schriften
-            </Link>
+            <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2 mt-[1.4rem]">
+              <Link
+                href={labels.backHref ?? '/schriften'}
+                className="inline-flex font-mono text-[0.64rem] tracking-[0.12em] uppercase text-blue-700 no-underline border-b border-blue-700/25 pb-[2px]"
+              >
+                {labels.back}
+              </Link>
+              {alternate && (
+                <Link
+                  href={alternate.href}
+                  lang={alternate.lang}
+                  hrefLang={alternate.lang}
+                  className="inline-flex font-mono text-[0.64rem] tracking-[0.12em] uppercase text-blue-700 no-underline border-b border-blue-700/25 pb-[2px]"
+                >
+                  {alternate.label}
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </div>
