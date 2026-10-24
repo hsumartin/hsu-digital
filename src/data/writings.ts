@@ -86,6 +86,19 @@ export const writings: WritingIndex[] = [
     featured: false,
     hasDetail: true,
   },
+  {
+    slug: 'ki-kultureller-beschleuniger',
+    id: 'SCH · 07',
+    title: 'KI als kultureller Beschleuniger',
+    type: 'Whitepaper',
+    year: '2026',
+    principle: '«Entscheidend sind die Bedingungen, nicht allein die Leistung.»',
+    description:
+      'Dieses Whitepaper untersucht, unter welchen technischen, individuellen und institutionellen Bedingungen KI nicht nur Aufgaben beschleunigt, sondern neue Fragen, überprüfbare Erkenntnisse und gemeinschaftlich nutzbare Wissensformen ermöglichen kann.',
+    tags: ['Erkenntnistheorie', 'Digitale Souveränität', 'Wissenschaftliche Assistenz'],
+    featured: false,
+    hasDetail: true,
+  },
 ];
 
 export const gptStackDetail: WritingDetail = {
@@ -173,7 +186,25 @@ export const kiMenschlicheEntwicklungDetail: WritingDetail = {
   abstractText: [kiMenschlicheEntwicklungLead],
 };
 
+const kiKulturellerBeschleunigerLead =
+  'Die gesellschaftliche Bedeutung künstlicher Intelligenz entscheidet sich nicht allein an ihrer Leistungsfähigkeit, sondern an den Bedingungen, unter denen aus individueller Assistenz überprüfbare Erkenntnis, kollektives Wissen und gesellschaftlicher Nutzen entstehen können.';
+
+export const kiKulturellerBeschleunigerDetail: WritingDetail = {
+  ...writings[5],
+  subtitle: 'Gesellschaftliche Voraussetzungen für menschliche Erkenntnis',
+  lead: kiKulturellerBeschleunigerLead,
+  record: [
+    { key: 'Kategorie', value: 'Whitepaper' },
+    { key: 'Version', value: '1.5' },
+    { key: 'Lesezeit', value: 'ca. 35–45 Min.' },
+    { key: 'Artefakte', value: 'Drei Abbildungen' },
+    { key: 'Sprachen', value: 'Deutsch · English' },
+  ],
+  abstractText: [kiKulturellerBeschleunigerLead],
+};
+
 export function getWritingDetail(slug: string): WritingDetail | null {
+  if (slug === 'ki-kultureller-beschleuniger') return kiKulturellerBeschleunigerDetail;
   if (slug === 'ki-menschliche-entwicklung') return kiMenschlicheEntwicklungDetail;
   if (slug === 'gpt-stack') return gptStackDetail;
   if (slug === 'decision-layer') return decisionLayerDetail;

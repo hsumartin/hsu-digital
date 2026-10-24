@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import SectionLabel from '@/components/ui/SectionLabel';
 
@@ -17,6 +18,8 @@ interface WritingHeaderProps {
   /** UI labels; defaults are the German originals. */
   labels?: { kicker: string; section: string; back: string; backHref?: string };
   alternate?: { href: string; label: string; lang: string };
+  /** Optional decorative header image shown above the lead. */
+  hero?: { src: string; alt: string };
 }
 
 const DEFAULT_LABELS = { kicker: 'Schrift · Whitepaper', section: 'Schriftendetail', back: 'Zurück zu Schriften', backHref: '/schriften' };
@@ -30,6 +33,7 @@ export default function WritingHeader({
   longTitle = false,
   labels = DEFAULT_LABELS,
   alternate,
+  hero,
 }: WritingHeaderProps) {
   return (
     <header className="relative pt-24 pb-[3.2rem] border-b border-stone-100 overflow-hidden">
@@ -87,6 +91,16 @@ export default function WritingHeader({
           </div>
 
           <div>
+            {hero && (
+              <Image
+                src={hero.src}
+                alt={hero.alt}
+                width={1672}
+                height={941}
+                className="w-full aspect-[2.7/1] object-cover mb-6"
+                unoptimized
+              />
+            )}
             <p className="text-[1.04rem] leading-[1.72] text-stone-700 font-light max-w-[42ch]">
               {lead}
             </p>

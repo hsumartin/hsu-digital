@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050" role="img" aria-labelledby="title desc">
+<title id="title">Institutionelle Vermittlungsbedingungen</title>
+<desc id="desc">Fünf gleichmässig angeordnete Einflussbereiche um den zentralen Kreis Prüfbare Erkenntnis und kollektive Nutzbarkeit. Zwischen den Kreisrändern besteht überall der gleiche Abstand. Konzeptionelles Modell, keine kausale Wirkungskette.</desc>
+<defs>
+<linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8F7F3"/><stop offset="1" stop-color="#E7ECF0"/></linearGradient>
+</defs>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+
+<circle cx="600" cy="510" r="333" fill="none" stroke="#C9A94B" stroke-width="1.6" stroke-opacity=".62" stroke-dasharray="7 10"/>
+<line x1="600.00" y1="363.00" x2="600.00" y2="307.00" stroke="#C9A94B" stroke-width="2.7" stroke-dasharray="6 7"/>
+<line x1="739.81" y1="464.57" x2="793.06" y2="447.27" stroke="#C9A94B" stroke-width="2.7" stroke-dasharray="6 7"/>
+<line x1="686.40" y1="628.93" x2="719.32" y2="674.23" stroke="#C9A94B" stroke-width="2.7" stroke-dasharray="6 7"/>
+<line x1="513.60" y1="628.93" x2="480.68" y2="674.23" stroke="#C9A94B" stroke-width="2.7" stroke-dasharray="6 7"/>
+<line x1="460.19" y1="464.57" x2="406.94" y2="447.27" stroke="#C9A94B" stroke-width="2.7" stroke-dasharray="6 7"/>
+<circle cx="600.00" cy="177.00" r="128" fill="url(#card)" stroke="#BFD1DD" stroke-width="2.2"/>
+<text x="600.00" y="140.00" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Bildung</text>
+<text x="600.00" y="169.00" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Befähigung</text>
+<text x="600.00" y="209.00" text-anchor="middle" font-size="16.5" fill="#343B48">Lernen, Urteilsfähigkeit</text>
+<text x="600.00" y="237.00" text-anchor="middle" font-size="16.5" fill="#343B48">und kritische Nutzung</text>
+<circle cx="916.70" cy="407.10" r="128" fill="url(#card)" stroke="#BFD1DD" stroke-width="2.2"/>
+<text x="916.70" y="370.10" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Wissenschaftliche</text>
+<text x="916.70" y="399.10" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Kritik</text>
+<text x="916.70" y="439.10" text-anchor="middle" font-size="16.5" fill="#343B48">Öffentliche Kritik,</text>
+<text x="916.70" y="467.10" text-anchor="middle" font-size="16.5" fill="#343B48">Replikation, Widerspruch</text>
+<circle cx="795.73" cy="779.40" r="128" fill="url(#card)" stroke="#BFD1DD" stroke-width="2.2"/>
+<text x="795.73" y="742.40" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Institutionelle</text>
+<text x="795.73" y="771.40" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Anreize</text>
+<text x="795.73" y="811.40" text-anchor="middle" font-size="16.5" fill="#343B48">Bewertung, Finanzierung</text>
+<text x="795.73" y="839.40" text-anchor="middle" font-size="16.5" fill="#343B48">und Forschungsprioritäten</text>
+<circle cx="404.27" cy="779.40" r="128" fill="url(#card)" stroke="#BFD1DD" stroke-width="2.2"/>
+<text x="404.27" y="742.40" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Digitale</text>
+<text x="404.27" y="771.40" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Souveränität</text>
+<text x="404.27" y="811.40" text-anchor="middle" font-size="16.5" fill="#343B48">Datenzugang, Wechsel</text>
+<text x="404.27" y="839.40" text-anchor="middle" font-size="16.5" fill="#343B48">und Handlungsrechte</text>
+<circle cx="283.30" cy="407.10" r="128" fill="url(#card)" stroke="#BFD1DD" stroke-width="2.2"/>
+<text x="283.30" y="370.10" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">Qualitäts-</text>
+<text x="283.30" y="399.10" text-anchor="middle" font-size="22" font-weight="650" fill="#183B55">sicherung</text>
+<text x="283.30" y="439.10" text-anchor="middle" font-size="16.5" fill="#343B48">Prüfverfahren,</text>
+<text x="283.30" y="467.10" text-anchor="middle" font-size="16.5" fill="#343B48">Transparenz, Standards</text>
+<circle cx="600" cy="510" r="145" fill="#E7ECF0" fill-opacity=".95" stroke="#2B6895" stroke-width="2.5"/>
+<circle cx="600" cy="510" r="131" fill="none" stroke="#C9A94B" stroke-width="3.2"/>
+<text x="600" y="482" font-size="23" font-weight="650" text-anchor="middle" fill="#183B55">Prüfbare Erkenntnis</text>
+<text x="600" y="515" font-size="22" font-weight="500" text-anchor="middle" fill="#183B55">und kollektive</text>
+<text x="600" y="548" font-size="22" font-weight="500" text-anchor="middle" fill="#183B55">Nutzbarkeit</text>
+<path d="M 549 576 H 651" stroke="#C9A94B" stroke-width="3"/>
+<text x="600" y="1005" font-size="18" text-anchor="middle" fill="#343B48">Konzeptionelle Vermittlungsbedingungen, keine empirisch bestätigte Wirkungskette</text>
+</g></svg>

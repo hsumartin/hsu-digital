@@ -6,9 +6,15 @@ import GptStackDossier from '@/components/writings/dossiers/GptStackDossier';
 import DecisionLayerDossier from '@/components/writings/dossiers/DecisionLayerDossier';
 import KiGovernanceDossier from '@/components/writings/dossiers/KiGovernanceDossier';
 import DenkarchitekturDossier from '@/components/writings/dossiers/DenkarchitekturDossier';
+import KiKulturellerBeschleunigerDossier from '@/components/writings/dossiers/KiKulturellerBeschleunigerDossier';
 import KiMenschlicheEntwicklungDossier from '@/components/writings/dossiers/KiMenschlicheEntwicklungDossier';
 
 export const dynamicParams = false;
+
+const EN_VERSIONS: Record<string, string> = {
+  'ki-menschliche-entwicklung': '/en/whitepaper/ai-and-human-development',
+  'ki-kultureller-beschleuniger': '/en/whitepaper/ai-as-a-cultural-accelerator',
+};
 
 export function generateStaticParams() {
   return [
@@ -17,6 +23,7 @@ export function generateStaticParams() {
     { slug: 'ki-governance' },
     { slug: 'denkarchitektur' },
     { slug: 'ki-menschliche-entwicklung' },
+    { slug: 'ki-kultureller-beschleuniger' },
   ];
 }
 
@@ -33,9 +40,7 @@ export async function generateMetadata({
     description: writing.abstractText[0],
     alternates: {
       canonical: `/schriften/${slug}`,
-      ...(slug === 'ki-menschliche-entwicklung' && {
-        languages: { en: '/en/whitepaper/ai-and-human-development' },
-      }),
+      ...(slug in EN_VERSIONS && { languages: { en: EN_VERSIONS[slug] } }),
     },
   };
 }
@@ -54,6 +59,7 @@ export default async function SchriftenDetailPage({
   if (slug === 'ki-governance') return <><ScrollProgress /><KiGovernanceDossier writing={writing} /></>;
   if (slug === 'denkarchitektur') return <><ScrollProgress /><DenkarchitekturDossier writing={writing} /></>;
   if (slug === 'ki-menschliche-entwicklung') return <><ScrollProgress /><KiMenschlicheEntwicklungDossier writing={writing} /></>;
+  if (slug === 'ki-kultureller-beschleuniger') return <><ScrollProgress /><KiKulturellerBeschleunigerDossier writing={writing} /></>;
 
   notFound();
 }

@@ -30,13 +30,23 @@ export default function KiMenschlicheEntwicklungDossier({ writing }: { writing: 
         },
         {
           title: 'Verwandte Schriften',
-          items: [{ label: 'Denkarchitektur', href: '/schriften/denkarchitektur' }],
+          items: [
+            { label: 'KI als kultureller Beschleuniger', href: '/schriften/ki-kultureller-beschleuniger' },
+            { label: 'Denkarchitektur', href: '/schriften/denkarchitektur' },
+          ],
         },
         {
           title: 'Fassungen',
           items: [
             { label: 'English version', href: '/en/whitepaper/ai-and-human-development' },
           ],
+        },
+      ]}
+      handoffs={[
+        {
+          text: 'Die Erweiterung individueller Handlungsmöglichkeiten ist nicht gleichbedeutend mit gesellschaftlichem Erkenntnisgewinn. «Künstliche Intelligenz als kultureller Beschleuniger» untersucht, welche wissenschaftlichen, institutionellen und technischen Voraussetzungen hinzukommen müssen, damit neu erschlossene Möglichkeiten zu überprüfbarem und gemeinsam nutzbarem Wissen beitragen können.',
+          href: '/schriften/ki-kultureller-beschleuniger',
+          label: 'KI als kultureller Beschleuniger',
         },
       ]}
       alternate={{ href: '/en/whitepaper/ai-and-human-development', label: 'English version', lang: 'en' }}

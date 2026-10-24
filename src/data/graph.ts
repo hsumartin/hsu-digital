@@ -114,6 +114,15 @@ export const MAIN_NODES: GraphNode[] = [
     url: '/schriften/ki-menschliche-entwicklung',
     tags: ['KI & Agenten', 'Wissensstruktur', 'Systemdenken'],
   },
+  {
+    id: 'ki-kultureller-beschleuniger',
+    type: 'artikel',
+    cat: 'ki',
+    label: 'KI als kultureller Beschleuniger',
+    short: 'Gesellschaftliche Bedingungen für überprüfbare und gemeinsam nutzbare Erkenntnis',
+    url: '/schriften/ki-kultureller-beschleuniger',
+    tags: ['KI & Agenten', 'Wissensstruktur', 'Governance & Ethik', 'Systemdenken'],
+  },
 ];
 
 function buildTagCounts(nodes: GraphNode[]): Record<string, number> {

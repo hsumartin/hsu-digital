@@ -5,6 +5,7 @@ import WritingRecord from '@/components/writings/WritingRecord';
 import WritingSection from '@/components/writings/WritingSection';
 import WritingFigure from '@/components/writings/WritingFigure';
 import WritingConnections from '@/components/writings/WritingConnections';
+import WritingHandoffs from '@/components/writings/WritingHandoffs';
 import WritingNextNav from '@/components/writings/WritingNextNav';
 import Inline from '@/components/writings/Inline';
 import { Block, parseMarkdown } from '@/lib/markdown';
@@ -22,6 +23,7 @@ const UI = {
     figure: 'ABB.',
     zoom: 'Vergrössern ↗',
     connections: 'Verbindungen',
+    handoffs: 'Weiterführung',
     navAll: 'Alle Schriften',
     navAria: 'Schriften-Navigation',
   },
@@ -35,6 +37,7 @@ const UI = {
     figure: 'FIG.',
     zoom: 'Enlarge ↗',
     connections: 'Connections',
+    handoffs: 'Continue reading',
     navAll: 'All writings',
     navAria: 'Writings navigation',
   },
@@ -53,6 +56,8 @@ interface MarkdownDossierProps {
   record: Array<{ key: string; value: string }>;
   connections: Array<{ title: string; items: Array<{ label: string; href?: string }> }>;
   alternate?: { href: string; label: string; lang: string };
+  hero?: { src: string; alt: string };
+  handoffs?: Array<{ text: string; href: string; label: string }>;
   prev?: NavItem;
   next?: NavItem;
 }
@@ -124,22 +129,30 @@ function Prose({
                 <Inline text={b.text} />
               </p>
             );
-          case 'bq':
+          case 'bq': {
+            // "**Label** text" renders the label as a small caption above the quote
+            const labelled = b.text.match(/^\*\*([^*]+)\*\*\s+([\s\S]*)$/);
             return (
               <blockquote
                 key={i}
                 className="border-l-2 border-gold-500 pl-6 my-8 max-w-[66ch] font-serif text-[1.05rem] italic leading-[1.75] tracking-[0.015em] text-stone-900"
               >
-                <Inline text={b.text} />
+                {labelled && (
+                  <span className="block not-italic font-mono text-[0.62rem] tracking-[0.18em] uppercase text-gold-600 mb-2">
+                    {labelled[1]}
+                  </span>
+                )}
+                <Inline text={labelled ? labelled[2] : b.text} />
               </blockquote>
             );
+          }
           case 'ul':
           case 'ol': {
             const List = b.t;
             return (
               <List
                 key={i}
-                className={`${b.t === 'ul' ? 'list-disc' : 'list-decimal'} pl-6 mb-[1.25rem] max-w-[66ch] grid gap-[0.45rem] text-[1rem] leading-[1.75] text-stone-700 font-light marker:text-gold-600`}
+                className={`${b.t === 'ul' ? 'list-disc' : 'list-decimal'} pl-6 mb-[1.25rem] max-w-[66ch] grid gap-[0.45rem] ${reference ? 'text-[0.88rem] leading-[1.7] break-words' : 'text-[1rem] leading-[1.75]'} text-stone-700 font-light marker:text-gold-600`}
               >
                 {b.items.map((item, j) => (
                   <li key={j}><Inline text={item} /></li>
@@ -207,7 +220,8 @@ export default function MarkdownDossier(props: MarkdownDossierProps) {
     figuresBefore.set(s.id, seenFigures);
     seenFigures += s.blocks.filter((b) => b.t === 'img').length;
   }
-  const connectionsNum = String(sections.length + 1).padStart(2, '0');
+  const handoffsNum = String(sections.length + 1).padStart(2, '0');
+  const connectionsNum = String(sections.length + (props.handoffs ? 2 : 1)).padStart(2, '0');
 
   return (
     <PageShell>
@@ -221,6 +235,7 @@ export default function MarkdownDossier(props: MarkdownDossierProps) {
         longTitle
         labels={{ kicker: ui.kicker, section: ui.section, back: ui.back }}
         alternate={props.alternate}
+        hero={props.hero}
       />
 
       <div className="max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
@@ -233,6 +248,7 @@ export default function MarkdownDossier(props: MarkdownDossierProps) {
             <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">{ui.toc}</div>
             <ol className="list-none grid gap-[0.3rem] max-[960px]:grid-cols-2 max-[560px]:grid-cols-1">
               {[...sections.map((s) => ({ id: s.id, num: s.num, text: s.title ?? s.label })),
+                ...(props.handoffs ? [{ id: 'weiterfuehrung', num: handoffsNum, text: ui.handoffs }] : []),
                 { id: 'verbindungen', num: connectionsNum, text: ui.connections }].map((item) => (
                 <li key={item.id}>
                   <a href={`#${item.id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.65rem] tracking-[0.04em] text-stone-600 hover:text-stone-900 transition-colors">
@@ -264,6 +280,12 @@ export default function MarkdownDossier(props: MarkdownDossierProps) {
               </div>
             </WritingSection>
           ))}
+
+          {props.handoffs && (
+            <WritingSection id="weiterfuehrung" num={handoffsNum} label={ui.handoffs}>
+              <WritingHandoffs items={props.handoffs} />
+            </WritingSection>
+          )}
 
           <WritingSection id="verbindungen" num={connectionsNum} label={ui.connections}>
             <WritingConnections cols={props.connections} />

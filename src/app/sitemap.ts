@@ -57,6 +57,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/schriften/ki-kultureller-beschleuniger`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/en/whitepaper/ai-as-a-cultural-accelerator`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/en/whitepaper/ai-and-human-development`,
       lastModified,
       changeFrequency: 'yearly',
