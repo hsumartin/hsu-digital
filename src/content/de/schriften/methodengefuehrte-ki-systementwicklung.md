@@ -340,7 +340,7 @@ Diese Publikationsfassung stellt die dokumentierte Entstehungs- und Methodengesc
 
 Der Autor untersucht hier sein eigenes Entwicklungsprojekt; die dadurch mögliche retrospektive Perspektivverzerrung bleibt ausdrücklich zu berücksichtigen. Die Angaben zu persönlichen Ausbildungs- und Tätigkeitsstationen sowie zu einzelnen frühen zeitlichen Erinnerungsankern beruhen teilweise auf retrospektiven Auskünften. Aussagen über externe KI-Plattformen beschreiben beobachtete Nutzungserfahrungen und sollen nicht als unabhängig bestätigte technische Aussagen über deren interne Abrechnung oder Kontextverarbeitung gelesen werden.
 
-Vor der tatsächlichen Veröffentlichung bleiben die abschliessende sachliche Prüfung personenbezogener und historischer Angaben sowie die redaktionelle Freigabe erforderlich. Die interne Masterfassung V1.2 mit ihrer ausführlichen Quellenmatrix bleibt gesondert erhalten.
+Die personenbezogenen und historischen Angaben wurden vor der Veröffentlichung vom Autor geprüft; die redaktionelle Freigabe ist erfolgt. Die interne Masterfassung V1.2 mit ihrer ausführlichen Quellenmatrix bleibt gesondert erhalten.
 
 ## Wissenschaftliche Literatur
 

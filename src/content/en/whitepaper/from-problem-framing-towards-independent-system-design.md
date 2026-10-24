@@ -344,7 +344,7 @@ This publication recounts the documented origins and methodological history of t
 
 The author examines his own project. The resulting potential for retrospective bias must be taken into account. Details of educational and professional stages, and of some early chronological reference points, rely partly on retrospective accounts. Statements about external AI platforms report observations of use and should not be read as independently confirmed technical claims about their internal billing or context-processing mechanisms.
 
-Before actual publication, a final factual check of personal and historical details and editorial approval are still required. The internal master version V1.2, with its detailed source matrix, is retained separately.
+The author reviewed the personal and historical details before publication, and editorial approval has been given. The internal master version V1.2, with its detailed source matrix, is retained separately.
 
 ## Academic References
 
