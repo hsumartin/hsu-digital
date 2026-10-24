@@ -3,6 +3,7 @@ import PageShell from '@/components/layout/PageShell';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GraphExplorer from '@/components/graph/GraphExplorer';
 import Link from 'next/link';
+import { MAIN_NODES } from '@/data/graph';
 
 export const metadata: Metadata = {
   title: 'Verbindungen · Martin Hsu',
@@ -57,7 +58,7 @@ export default function VerbindungenPage() {
           >
             {[
               { key: 'Projekte', val: '6 Einträge', gold: false },
-              { key: 'Schriften', val: '4 Einträge', gold: false },
+              { key: 'Schriften', val: `${MAIN_NODES.filter((n) => n.type === 'artikel').length} Einträge`, gold: false },
               { key: 'Themen', val: '12 Knoten', gold: true },
               { key: 'Logik', val: 'Graph · Readout', gold: false },
             ].map(({ key, val, gold }, i, arr) => (
@@ -140,6 +141,7 @@ export default function VerbindungenPage() {
                   title: 'Schriften',
                   items: [
                     'GPT-Stack, Decision Layer, KI-Governance und Denkarchitektur tragen die Reflexionsebene.',
+                    'Drei Whitepapers vertiefen Mensch-KI-Zusammenarbeit, Methode und gesellschaftliche Bedingungen.',
                   ],
                   link: { href: '/schriften', label: 'Zum Schriftenindex' },
                 },

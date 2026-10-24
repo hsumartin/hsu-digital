@@ -38,7 +38,11 @@ export default function AiAndHumanDevelopmentDossier() {
         },
         {
           title: 'Related writings',
-          items: [{ label: 'From Tool to Thinking Architecture', href: '/en/whitepaper/architecture-of-thinking' }],
+          items: [
+            { label: 'From Problem Framing towards Technological Autonomy', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' },
+            { label: 'AI as a Cultural Accelerator', href: '/en/whitepaper/ai-as-a-cultural-accelerator' },
+            { label: 'From Tool to Thinking Architecture', href: '/en/whitepaper/architecture-of-thinking' },
+          ],
         },
         {
           title: 'Versions',
@@ -46,6 +50,7 @@ export default function AiAndHumanDevelopmentDossier() {
         },
       ]}
       alternate={{ href: '/schriften/ki-menschliche-entwicklung', label: 'Deutsche Fassung', lang: 'de' }}
+      next={{ label: 'From Problem Framing towards Technological Autonomy', kicker: 'Whitepaper', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' }}
       prev={{ label: 'From Tool to Thinking Architecture', kicker: 'Framework', href: '/en/whitepaper/architecture-of-thinking' }}
     />
   );

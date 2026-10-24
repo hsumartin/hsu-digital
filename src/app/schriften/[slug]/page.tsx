@@ -6,6 +6,7 @@ import GptStackDossier from '@/components/writings/dossiers/GptStackDossier';
 import DecisionLayerDossier from '@/components/writings/dossiers/DecisionLayerDossier';
 import KiGovernanceDossier from '@/components/writings/dossiers/KiGovernanceDossier';
 import DenkarchitekturDossier from '@/components/writings/dossiers/DenkarchitekturDossier';
+import MethodengefuehrteKiSystementwicklungDossier from '@/components/writings/dossiers/MethodengefuehrteKiSystementwicklungDossier';
 import KiKulturellerBeschleunigerDossier from '@/components/writings/dossiers/KiKulturellerBeschleunigerDossier';
 import KiMenschlicheEntwicklungDossier from '@/components/writings/dossiers/KiMenschlicheEntwicklungDossier';
 
@@ -14,6 +15,7 @@ export const dynamicParams = false;
 const EN_VERSIONS: Record<string, string> = {
   'ki-menschliche-entwicklung': '/en/whitepaper/ai-and-human-development',
   'ki-kultureller-beschleuniger': '/en/whitepaper/ai-as-a-cultural-accelerator',
+  'methodengefuehrte-ki-systementwicklung': '/en/whitepaper/from-problem-framing-towards-technological-autonomy',
 };
 
 export function generateStaticParams() {
@@ -23,6 +25,7 @@ export function generateStaticParams() {
     { slug: 'ki-governance' },
     { slug: 'denkarchitektur' },
     { slug: 'ki-menschliche-entwicklung' },
+    { slug: 'methodengefuehrte-ki-systementwicklung' },
     { slug: 'ki-kultureller-beschleuniger' },
   ];
 }
@@ -60,6 +63,7 @@ export default async function SchriftenDetailPage({
   if (slug === 'denkarchitektur') return <><ScrollProgress /><DenkarchitekturDossier writing={writing} /></>;
   if (slug === 'ki-menschliche-entwicklung') return <><ScrollProgress /><KiMenschlicheEntwicklungDossier writing={writing} /></>;
   if (slug === 'ki-kultureller-beschleuniger') return <><ScrollProgress /><KiKulturellerBeschleunigerDossier writing={writing} /></>;
+  if (slug === 'methodengefuehrte-ki-systementwicklung') return <><ScrollProgress /><MethodengefuehrteKiSystementwicklungDossier writing={writing} /></>;
 
   notFound();
 }

@@ -115,6 +115,15 @@ export const MAIN_NODES: GraphNode[] = [
     tags: ['KI & Agenten', 'Wissensstruktur', 'Systemdenken'],
   },
   {
+    id: 'methodengefuehrte-ki-systementwicklung',
+    type: 'artikel',
+    cat: 'ki',
+    label: 'Methodengeführte KI-Systementwicklung',
+    short: 'Retrospektive Fallstudie vom GPT-Stack zur Konzeption eines lokalen Agentensystems',
+    url: '/schriften/methodengefuehrte-ki-systementwicklung',
+    tags: ['KI & Agenten', 'Systemdenken', 'Wissensstruktur', 'Governance & Ethik'],
+  },
+  {
     id: 'ki-kultureller-beschleuniger',
     type: 'artikel',
     cat: 'ki',

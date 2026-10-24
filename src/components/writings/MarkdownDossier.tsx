@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ReactNode } from 'react';
 import PageShell from '@/components/layout/PageShell';
 import WritingHeader from '@/components/writings/WritingHeader';
@@ -20,6 +21,7 @@ const UI = {
     toc: 'Inhalt',
     tocAria: 'Inhaltsnavigation',
     chapter: 'Kapitel',
+    intro: 'Dokumentstatus',
     figure: 'ABB.',
     zoom: 'Vergrössern ↗',
     connections: 'Verbindungen',
@@ -34,6 +36,7 @@ const UI = {
     toc: 'Contents',
     tocAria: 'Table of contents',
     chapter: 'Chapter',
+    intro: 'Document status',
     figure: 'FIG.',
     zoom: 'Enlarge ↗',
     connections: 'Connections',
@@ -64,22 +67,26 @@ interface MarkdownDossierProps {
 
 interface Section { id: string; num: string; label: string; title?: string; reference: boolean; blocks: Block[] }
 
-const REFERENCE_HEADING = /^(Literatur|References|Bibliograph|Quellen|Sources)/i;
+const REFERENCE_HEADING = /^(Literatur|Wissenschaftliche Literatur|Literature|Scientific literature|References|Bibliograph|Quellen|Sources)/i;
 
 function slug(text: string) {
   return text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-/** Blocks before the first "##" are title and subtitle, which come from the metadata instead. */
-function buildSections(blocks: Block[], chapterWord: string): Section[] {
+/**
+ * Blocks before the first "##" are the title and an italic subtitle, which come from the
+ * metadata instead. Anything else there (document status notes, a banner figure) is kept
+ * as an introductory section so no source text is lost.
+ */
+function buildSections(blocks: Block[], chapterWord: string, introLabel: string): Section[] {
   const sections: Section[] = [];
+  const preamble: Block[] = [];
   for (const b of blocks) {
     if (b.t === 'h2') {
       const m = b.text.match(/^(\d+)\.\s+(.*)$/);
-      const n = String(sections.length + 1).padStart(2, '0');
       sections.push({
         id: m ? `kap${m[1]}` : slug(b.text),
-        num: n,
+        num: '',
         label: m ? `${chapterWord} ${m[1]}` : b.text,
         title: m ? m[2] : undefined,
         reference: REFERENCE_HEADING.test(b.text),
@@ -87,9 +94,15 @@ function buildSections(blocks: Block[], chapterWord: string): Section[] {
       });
     } else if (sections.length) {
       sections[sections.length - 1].blocks.push(b);
+    } else {
+      preamble.push(b);
     }
   }
-  return sections;
+  const intro = preamble.filter((b) => !(b.t === 'p' && /^\*[^*].*\*$/.test(b.text)));
+  if (intro.length) {
+    sections.unshift({ id: 'dokumentstatus', num: '', label: introLabel, reference: false, blocks: intro });
+  }
+  return sections.map((s, i) => ({ ...s, num: String(i + 1).padStart(2, '0') }));
 }
 
 function Prose({
@@ -116,6 +129,12 @@ function Prose({
                 {b.text}
               </h3>
             );
+          case 'h4':
+            return (
+              <h4 key={i} className="font-serif text-[1.15rem] leading-[1.4] text-stone-900 mt-6 mb-2 max-w-[66ch]">
+                {b.text}
+              </h4>
+            );
           case 'p':
             return (
               <p
@@ -123,7 +142,7 @@ function Prose({
                 className={
                   reference
                     ? 'text-[0.88rem] leading-[1.7] text-stone-700 font-light mb-[0.9rem] break-words max-w-[66ch]'
-                    : 'text-[1rem] leading-[1.85] text-stone-700 font-light mb-[1.25rem] max-w-[66ch]'
+                    : 'text-[1rem] leading-[1.85] text-stone-700 font-light mb-[1.25rem] max-w-[66ch] whitespace-pre-line'
                 }
               >
                 <Inline text={b.text} />
@@ -161,6 +180,27 @@ function Prose({
             );
           }
           case 'img': {
+            if (b.illustration) {
+              // Decorative illustrations keep their native size and are never upscaled
+              return (
+                <figure key={i} className="my-10">
+                  <Image
+                    src={b.src}
+                    alt={b.alt}
+                    width={b.width ?? 1200}
+                    height={b.height ?? 700}
+                    className="block w-full h-auto bg-[#F5F4F0]"
+                    style={b.width ? { maxWidth: b.width } : undefined}
+                    unoptimized
+                  />
+                  {b.caption && (
+                    <figcaption className="mt-[0.7rem] text-[0.85rem] leading-[1.55] text-stone-700 max-w-[66ch]">
+                      <Inline text={b.caption} />
+                    </figcaption>
+                  )}
+                </figure>
+              );
+            }
             figureNo += 1;
             return (
               <WritingFigure
@@ -213,12 +253,12 @@ function Prose({
 
 export default function MarkdownDossier(props: MarkdownDossierProps) {
   const ui = UI[props.locale];
-  const sections = buildSections(parseMarkdown(props.markdown), ui.chapter);
+  const sections = buildSections(parseMarkdown(props.markdown), ui.chapter, ui.intro);
   let seenFigures = 0;
   const figuresBefore = new Map<string, number>();
   for (const s of sections) {
     figuresBefore.set(s.id, seenFigures);
-    seenFigures += s.blocks.filter((b) => b.t === 'img').length;
+    seenFigures += s.blocks.filter((b) => b.t === 'img' && !b.illustration).length;
   }
   const handoffsNum = String(sections.length + 1).padStart(2, '0');
   const connectionsNum = String(sections.length + (props.handoffs ? 2 : 1)).padStart(2, '0');

@@ -9,13 +9,18 @@ import path from 'node:path';
 export type Block =
   | { t: 'h2'; text: string }
   | { t: 'h3'; text: string }
+  | { t: 'h4'; text: string }
   | { t: 'p'; text: string }
   | { t: 'ul'; items: string[] }
   | { t: 'ol'; items: string[] }
   | { t: 'bq'; text: string }
   | { t: 'hr' }
-  | { t: 'img'; alt: string; src: string; caption?: string }
+  | { t: 'img'; alt: string; src: string; caption?: string; width?: number; height?: number; illustration?: boolean }
   | { t: 'table'; head: string[]; rows: string[][] };
+
+function decodeEntities(t: string) {
+  return t.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+}
 
 const CAPTION_START = /^\*{1,2}(Abb\.|Abbildung|Fig\.|Figure)/;
 
@@ -38,7 +43,7 @@ export function parseMarkdown(source: string): Block[] {
   const blocks: Block[] = [];
 
   const isSpecial = (l: string) =>
-    /^(#{1,3} |> |[-*] |\d+\. |---$|!\[|\|)/.test(l);
+    /^(#{1,4} |<figure|> |[-*] |\d+\. |---$|!\[|\|)/.test(l);
 
   let i = 0;
   while (i < lines.length) {
@@ -47,8 +52,33 @@ export function parseMarkdown(source: string): Block[] {
 
     if (line.startsWith('# ')) { i++; continue; }
     if (line.startsWith('## ')) { blocks.push({ t: 'h2', text: line.slice(3).trim() }); i++; continue; }
+    if (line.startsWith('#### ')) { blocks.push({ t: 'h4', text: line.slice(5).trim() }); i++; continue; }
     if (line.startsWith('### ')) { blocks.push({ t: 'h3', text: line.slice(4).trim() }); i++; continue; }
     if (line.trim() === '---') { blocks.push({ t: 'hr' }); i++; continue; }
+
+    if (line.startsWith('<figure')) {
+      const parts: string[] = [];
+      while (i < lines.length) {
+        parts.push(lines[i]);
+        if (lines[i].includes('</figure>')) { i++; break; }
+        i++;
+      }
+      const html = parts.join(' ');
+      const attr = (name: string) => html.match(new RegExp(`${name}="([^"]*)"`))?.[1];
+      const src = attr('src');
+      if (src) {
+        blocks.push({
+          t: 'img',
+          src,
+          alt: decodeEntities(attr('alt') ?? ''),
+          width: Number(attr('width')) || undefined,
+          height: Number(attr('height')) || undefined,
+          caption: decodeEntities(html.match(/<figcaption>([\s\S]*?)<\/figcaption>/)?.[1].trim() ?? ''),
+          illustration: true,
+        });
+      }
+      continue;
+    }
 
     if (line.startsWith('>')) {
       const parts: string[] = [];
@@ -87,10 +117,11 @@ export function parseMarkdown(source: string): Block[] {
 
     const parts: string[] = [];
     while (i < lines.length && lines[i].trim() && (parts.length === 0 || !isSpecial(lines[i]))) {
-      parts.push(lines[i].trim());
+      // two trailing spaces are a hard line break in Markdown
+      parts.push(lines[i].trim() + (lines[i].endsWith('  ') ? '\n' : ' '));
       i++;
     }
-    blocks.push({ t: 'p', text: parts.join(' ') });
+    blocks.push({ t: 'p', text: parts.join('').trim() });
   }
 
   // A paragraph that starts with "Abb./Fig." right after an image is its caption.

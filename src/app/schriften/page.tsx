@@ -60,9 +60,9 @@ export default function SchriftenPage() {
             aria-label="Schriftenübersicht"
           >
             {[
-              { key: 'Umfang', val: '04 Schriften', gold: false },
+              { key: 'Umfang', val: `${String(writings.length).padStart(2, '0')} Schriften`, gold: false },
               { key: 'Featured', val: '02 Referenzen', gold: true },
-              { key: 'Typen', val: 'Denkmodell · Framework · Position', gold: false },
+              { key: 'Typen', val: 'Denkmodell · Framework · Position · Whitepaper', gold: false },
               { key: 'Routing', val: 'Start → Index → Detail', gold: false },
             ].map((item) => (
               <div

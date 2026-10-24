@@ -45,6 +45,7 @@ export default function AiAsACulturalAcceleratorDossier() {
           title: 'Related writings',
           items: [
             { label: 'AI and the Expansion of Human Development Opportunities', href: '/en/whitepaper/ai-and-human-development' },
+            { label: 'From Problem Framing towards Technological Autonomy', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' },
           ],
         },
         {
@@ -53,7 +54,7 @@ export default function AiAsACulturalAcceleratorDossier() {
         },
       ]}
       alternate={{ href: '/schriften/ki-kultureller-beschleuniger', label: 'Deutsche Fassung', lang: 'de' }}
-      prev={{ label: 'AI and the Expansion of Human Development Opportunities', kicker: 'Whitepaper', href: '/en/whitepaper/ai-and-human-development' }}
+      prev={{ label: 'From Problem Framing towards Technological Autonomy', kicker: 'Whitepaper', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' }}
     />
   );
 }

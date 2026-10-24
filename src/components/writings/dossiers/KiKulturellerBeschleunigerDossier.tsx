@@ -40,6 +40,7 @@ export default function KiKulturellerBeschleunigerDossier({ writing }: { writing
           title: 'Verwandte Schriften',
           items: [
             { label: 'Menschliche Entwicklungsmöglichkeiten', href: '/schriften/ki-menschliche-entwicklung' },
+            { label: 'Von der Problemstellung zur technischen Eigenständigkeit', href: '/schriften/methodengefuehrte-ki-systementwicklung' },
             { label: 'KI-Governance', href: '/schriften/ki-governance' },
             { label: 'Decision Layer', href: '/schriften/decision-layer' },
           ],
@@ -62,7 +63,7 @@ export default function KiKulturellerBeschleunigerDossier({ writing }: { writing
         },
       ]}
       alternate={{ href: '/en/whitepaper/ai-as-a-cultural-accelerator', label: 'English version', lang: 'en' }}
-      prev={{ label: 'Menschliche Entwicklungsmöglichkeiten', kicker: 'Whitepaper', href: '/schriften/ki-menschliche-entwicklung' }}
+      prev={{ label: 'Von der Problemstellung zur technischen Eigenständigkeit', kicker: 'Whitepaper', href: '/schriften/methodengefuehrte-ki-systementwicklung' }}
     />
   );
 }

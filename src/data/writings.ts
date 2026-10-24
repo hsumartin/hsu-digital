@@ -87,6 +87,19 @@ export const writings: WritingIndex[] = [
     hasDetail: true,
   },
   {
+    slug: 'methodengefuehrte-ki-systementwicklung',
+    id: 'SCH · 06',
+    title: 'Von der Problemstellung zur technischen Eigenständigkeit',
+    type: 'Whitepaper',
+    year: '2026',
+    principle: '«Ein Architekturentwurf ist kein Implementierungsnachweis.»',
+    description:
+      'Eine quellengebundene Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems.',
+    tags: ['Methode', 'Fallstudie', 'Lokales Agentensystem'],
+    featured: false,
+    hasDetail: true,
+  },
+  {
     slug: 'ki-kultureller-beschleuniger',
     id: 'SCH · 07',
     title: 'KI als kultureller Beschleuniger',
@@ -186,11 +199,28 @@ export const kiMenschlicheEntwicklungDetail: WritingDetail = {
   abstractText: [kiMenschlicheEntwicklungLead],
 };
 
+const methodengefuehrteLead =
+  'Methodisches Whitepaper mit historischem Erkenntnisinteresse. Kein Implementierungs-, Sicherheits- oder Wirksamkeitsnachweis des geplanten lokalen KI-Agentensystems.';
+
+export const methodengefuehrteKiSystementwicklungDetail: WritingDetail = {
+  ...writings[5],
+  subtitle: 'Eine Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems',
+  lead: methodengefuehrteLead,
+  record: [
+    { key: 'Kategorie', value: 'Whitepaper' },
+    { key: 'Version', value: '1.6.1' },
+    { key: 'Stand', value: '23. Oktober 2026' },
+    { key: 'Artefakte', value: 'Vier Illustrationen · Anhang A–C' },
+    { key: 'Sprachen', value: 'Deutsch · English' },
+  ],
+  abstractText: [methodengefuehrteLead],
+};
+
 const kiKulturellerBeschleunigerLead =
   'Die gesellschaftliche Bedeutung künstlicher Intelligenz entscheidet sich nicht allein an ihrer Leistungsfähigkeit, sondern an den Bedingungen, unter denen aus individueller Assistenz überprüfbare Erkenntnis, kollektives Wissen und gesellschaftlicher Nutzen entstehen können.';
 
 export const kiKulturellerBeschleunigerDetail: WritingDetail = {
-  ...writings[5],
+  ...writings[6],
   subtitle: 'Gesellschaftliche Voraussetzungen für die Erweiterung menschlicher Erkenntnis, Zusammenarbeit und Entwicklung',
   lead: kiKulturellerBeschleunigerLead,
   record: [
@@ -205,6 +235,7 @@ export const kiKulturellerBeschleunigerDetail: WritingDetail = {
 
 export function getWritingDetail(slug: string): WritingDetail | null {
   if (slug === 'ki-kultureller-beschleuniger') return kiKulturellerBeschleunigerDetail;
+  if (slug === 'methodengefuehrte-ki-systementwicklung') return methodengefuehrteKiSystementwicklungDetail;
   if (slug === 'ki-menschliche-entwicklung') return kiMenschlicheEntwicklungDetail;
   if (slug === 'gpt-stack') return gptStackDetail;
   if (slug === 'decision-layer') return decisionLayerDetail;

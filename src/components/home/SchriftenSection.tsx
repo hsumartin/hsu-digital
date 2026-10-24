@@ -54,6 +54,45 @@ const SCHRIFTEN = [
     ],
     href: '/schriften/denkarchitektur',
   },
+  {
+    id: 'SCH · 05',
+    type: 'Whitepaper',
+    year: '2026',
+    title: 'KI und die Erweiterung menschlicher Entwicklungsmöglichkeiten',
+    prinzip: '„Entwicklung ist mehr als das, was jemand heute schon kann."',
+    body: 'Wie neue Werkzeuge nicht nur unsere heutigen Fähigkeiten ergänzen, sondern auch zukünftige Interessen, Erfahrungen und Denkweisen beeinflussen könnten.',
+    wirktIn: [
+      { label: 'Denkarchitektur', href: '/schriften/denkarchitektur' },
+      { label: '03 Methode & KI', href: '#section-03' },
+    ],
+    href: '/schriften/ki-menschliche-entwicklung',
+  },
+  {
+    id: 'SCH · 06',
+    type: 'Whitepaper',
+    year: '2026',
+    title: 'Von der Problemstellung zur technischen Eigenständigkeit',
+    prinzip: '„Ein Architekturentwurf ist kein Implementierungsnachweis."',
+    body: 'Eine quellengebundene Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems.',
+    wirktIn: [
+      { label: 'GPT-Stack', href: '/schriften/gpt-stack' },
+      { label: 'Denkarchitektur', href: '/schriften/denkarchitektur' },
+    ],
+    href: '/schriften/methodengefuehrte-ki-systementwicklung',
+  },
+  {
+    id: 'SCH · 07',
+    type: 'Whitepaper',
+    year: '2026',
+    title: 'KI als kultureller Beschleuniger',
+    prinzip: '„Entscheidend sind die Bedingungen, nicht allein die Leistung."',
+    body: 'Unter welchen Bedingungen aus technischer Assistenz überprüfbare Erkenntnis, kollektives Wissen und gemeinschaftlich nutzbare Handlungsmöglichkeiten entstehen können.',
+    wirktIn: [
+      { label: 'KI-Governance', href: '/schriften/ki-governance' },
+      { label: 'Decision Layer', href: '/schriften/decision-layer' },
+    ],
+    href: '/schriften/ki-kultureller-beschleuniger',
+  },
 ] as const;
 
 const PRINCIPLES: { title: string; em: string; tags: string[]; inactive?: string[] }[] = [
@@ -118,10 +157,11 @@ export default function SchriftenSection() {
         {/* Category bar */}
         <div className="flex items-center border border-stone-200 bg-paper-soft mb-[1.4rem] flex-wrap">
           {[
-            { label: 'Alle', count: '04', active: true },
+            { label: 'Alle', count: '07', active: true },
             { label: 'Denkmodelle', count: '01', active: false },
             { label: 'Frameworks', count: '02', active: false },
             { label: 'Positionen', count: '01', active: false },
+            { label: 'Whitepapers', count: '03', active: false },
           ].map(({ label, count, active }) => (
             <span
               key={label}

@@ -57,6 +57,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/schriften/methodengefuehrte-ki-systementwicklung`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/en/whitepaper/from-problem-framing-towards-technological-autonomy`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/schriften/ki-kultureller-beschleuniger`,
       lastModified,
       changeFrequency: 'yearly',
