@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SectionLabel from '@/components/ui/SectionLabel';
 
 const FIELDS = [
@@ -135,12 +136,12 @@ export default function ArbeitsfelderSection() {
         <div className="flex items-center gap-3 mt-10 font-mono text-[0.68rem] tracking-[0.14em] uppercase text-text-muted">
           <span>In den Projekten wird das konkret</span>
           <span className="flex-1 h-px bg-stone-200 max-w-[5rem]" />
-          <a
-            href="#section-02"
+          <Link
+            href="/projekte"
             className="inline-flex items-center gap-[0.45rem] text-gold-600 no-underline transition-all duration-200 hover:gap-3"
           >
             02 — Systeme &amp; Projekte →
-          </a>
+          </Link>
         </div>
       </div>
     </section>

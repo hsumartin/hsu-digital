@@ -12,7 +12,7 @@ export default function CategoryBar({ items, meta }: CategoryBarProps) {
     >
       {items.map((item, i) => (
         <a
-          key={item.anchor}
+          key={item.num}
           href={item.anchor}
           className={[
             'flex items-baseline gap-[0.5rem] px-[1.15rem] py-[0.8rem]',

@@ -18,7 +18,7 @@ const tagVariants: Record<string, string> = {
 function tagClass(tag: string) {
   return (
     tagVariants[tag] ??
-    'border-stone-200 text-stone-400 bg-[#F8F7F3]'
+    'border-stone-200 text-stone-600 bg-[#F8F7F3]'
   );
 }
 
@@ -71,7 +71,7 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
 
       {/* Body */}
       <div className="p-[1.45rem_1.65rem]">
-        <div className="font-mono text-[0.62rem] tracking-[0.14em] uppercase text-stone-400 mb-[0.8rem]">
+        <div className="font-mono text-[0.68rem] tracking-[0.14em] uppercase text-stone-600 mb-[0.8rem]">
           {project.context}
         </div>
         <h3
@@ -109,7 +109,7 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
 
         {/* Footer */}
         <div className="grid grid-cols-[1fr_auto] gap-5 items-end border-t border-stone-100 pt-4 mt-4 max-sm:grid-cols-1">
-          <div className="font-mono text-[0.62rem] tracking-[0.08em] leading-[1.6] text-stone-400">
+          <div className="font-mono text-[0.68rem] tracking-[0.08em] leading-[1.6] text-stone-600">
             <b className="text-blue-700 font-medium">{compact ? 'Detail:' : 'Artefakte:'}</b>{' '}
             {project.artifacts}
           </div>

@@ -75,7 +75,7 @@ export default function WritingIndexCard({ writing, featured = false }: WritingI
         >
           {title}
         </h2>
-        <div className="font-serif italic text-[0.95rem] text-stone-500 mb-[0.85rem]">
+        <div className="font-serif italic text-[0.95rem] tracking-[0.015em] text-stone-500 mb-[0.85rem]">
           {writing.principle}
         </div>
         <p className="text-[0.92rem] leading-[1.72] text-stone-700 font-light max-w-[58ch]">

@@ -13,7 +13,7 @@ const P = ({ children }: { children: React.ReactNode }) => (
   <p className="text-[1rem] leading-[1.85] text-stone-700 font-light mb-[1.25rem]">{children}</p>
 );
 const BQ = ({ children }: { children: React.ReactNode }) => (
-  <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] text-stone-900">
+  <blockquote className="border-l-2 border-gold-500 pl-6 my-8 font-serif text-[1.05rem] italic leading-[1.75] tracking-[0.015em] text-stone-900">
     {children}
   </blockquote>
 );
@@ -99,7 +99,7 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
             href="/en/whitepaper/architecture-of-thinking"
             className="text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
           >
-            Englische Whitepaper-Fassung
+            English whitepaper version
           </Link>
         </p>
       </div>
@@ -447,7 +447,7 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
               href="/en/whitepaper/architecture-of-thinking"
               className="text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
             >
-              Englische Whitepaper-Fassung
+              English whitepaper version
             </Link>
           </p>
         </div>

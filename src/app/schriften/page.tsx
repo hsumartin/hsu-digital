@@ -112,7 +112,7 @@ export default function SchriftenPage() {
                         href="/en/whitepaper/architecture-of-thinking"
                         className="text-blue-700 no-underline border-b border-blue-700/20 pb-[2px] hover:border-blue-700/60 transition-colors"
                       >
-                        Englische Whitepaper-Fassung
+                        English whitepaper version
                       </Link>
                     </p>
                   )}

@@ -73,7 +73,7 @@ export default function SystemeProjekteSection() {
     <>
       {/* INTRO */}
       <section
-        id="projekte"
+        id="section-02"
         className="pt-24 px-[clamp(1.5rem,4vw,4rem)]"
         aria-label="Systeme und Projekte"
       >
@@ -218,7 +218,7 @@ export default function SystemeProjekteSection() {
                     ))}
                   </div>
 
-                  <blockquote className="border-l-2 border-gold-500 pl-4 my-[1.1rem] mb-5 font-serif italic text-[1.16rem] leading-[1.4] text-[#2A2620]">
+                  <blockquote className="border-l-2 border-gold-500 pl-4 my-[1.1rem] mb-5 font-serif italic text-[1.16rem] leading-[1.4] tracking-[0.015em] text-[#2A2620]">
                     {relevanz}
                   </blockquote>
 
