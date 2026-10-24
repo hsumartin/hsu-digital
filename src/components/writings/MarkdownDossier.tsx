@@ -6,10 +6,12 @@ import WritingRecord from '@/components/writings/WritingRecord';
 import WritingSection from '@/components/writings/WritingSection';
 import WritingFigure from '@/components/writings/WritingFigure';
 import WritingConnections from '@/components/writings/WritingConnections';
+import WritingSeries from '@/components/writings/WritingSeries';
 import WritingHandoffs from '@/components/writings/WritingHandoffs';
 import WritingNextNav from '@/components/writings/WritingNextNav';
 import Inline from '@/components/writings/Inline';
 import { Block, parseMarkdown } from '@/lib/markdown';
+import { SeriesItem } from '@/data/series';
 
 type Locale = 'de' | 'en';
 
@@ -22,6 +24,7 @@ const UI = {
     tocAria: 'Inhaltsnavigation',
     chapter: 'Kapitel',
     intro: 'Dokumentstatus',
+    series: { heading: 'Empfohlene Lesereihenfolge', part: 'Teil', of: 'von' },
     figure: 'ABB.',
     zoom: 'Vergrössern ↗',
     connections: 'Verbindungen',
@@ -37,6 +40,7 @@ const UI = {
     tocAria: 'Table of contents',
     chapter: 'Chapter',
     intro: 'Document status',
+    series: { heading: 'Suggested reading order', part: 'Part', of: 'of' },
     figure: 'FIG.',
     zoom: 'Enlarge ↗',
     connections: 'Connections',
@@ -60,6 +64,7 @@ interface MarkdownDossierProps {
   connections: Array<{ title: string; items: Array<{ label: string; href?: string }> }>;
   alternate?: { href: string; label: string; lang: string };
   hero?: { src: string; alt: string };
+  series?: { items: SeriesItem[]; current: number };
   handoffs?: Array<{ text: string; href: string; label: string }>;
   prev?: NavItem;
   next?: NavItem;
@@ -280,6 +285,7 @@ export default function MarkdownDossier(props: MarkdownDossierProps) {
 
       <div className="max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
         <WritingRecord items={props.record} />
+        {props.series && <WritingSeries items={props.series.items} current={props.series.current} labels={ui.series} />}
       </div>
 
       <div className="grid grid-cols-[220px_1fr] gap-16 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.8rem] pb-24 max-[960px]:grid-cols-1 max-[960px]:gap-10">

@@ -1,5 +1,6 @@
 import MarkdownDossier from '@/components/writings/MarkdownDossier';
 import { readContent } from '@/lib/markdown';
+import { kiSeries } from '@/data/series';
 
 export default function ProblemFramingTowardsAutonomyDossier() {
   return (
@@ -50,6 +51,7 @@ export default function ProblemFramingTowardsAutonomyDossier() {
           items: [{ label: 'Deutsche Fassung', href: '/schriften/methodengefuehrte-ki-systementwicklung' }],
         },
       ]}
+      series={{ items: kiSeries.en, current: 1 }}
       alternate={{ href: '/schriften/methodengefuehrte-ki-systementwicklung', label: 'Deutsche Fassung', lang: 'de' }}
       prev={{ label: 'AI and the Expansion of Human Development Opportunities', kicker: 'Whitepaper', href: '/en/whitepaper/ai-and-human-development' }}
       next={{ label: 'AI as a Cultural Accelerator', kicker: 'Whitepaper', href: '/en/whitepaper/ai-as-a-cultural-accelerator' }}

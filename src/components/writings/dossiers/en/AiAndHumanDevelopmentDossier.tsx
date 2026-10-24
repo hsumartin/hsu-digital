@@ -1,5 +1,6 @@
 import MarkdownDossier from '@/components/writings/MarkdownDossier';
 import { readContent } from '@/lib/markdown';
+import { kiSeries } from '@/data/series';
 
 const LEAD =
   'How new tools might not only extend what we can do today, but also influence the interests, experiences, and ways of thinking we develop in the future.';
@@ -49,6 +50,7 @@ export default function AiAndHumanDevelopmentDossier() {
           items: [{ label: 'Deutsche Fassung', href: '/schriften/ki-menschliche-entwicklung' }],
         },
       ]}
+      series={{ items: kiSeries.en, current: 0 }}
       alternate={{ href: '/schriften/ki-menschliche-entwicklung', label: 'Deutsche Fassung', lang: 'de' }}
       next={{ label: 'From Problem Framing towards Technological Autonomy', kicker: 'Whitepaper', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' }}
       prev={{ label: 'From Tool to Thinking Architecture', kicker: 'Framework', href: '/en/whitepaper/architecture-of-thinking' }}

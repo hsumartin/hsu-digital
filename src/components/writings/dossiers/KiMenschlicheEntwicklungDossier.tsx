@@ -1,5 +1,6 @@
 import MarkdownDossier from '@/components/writings/MarkdownDossier';
 import { readContent } from '@/lib/markdown';
+import { kiSeries } from '@/data/series';
 import { WritingDetail } from '@/data/writings';
 
 export default function KiMenschlicheEntwicklungDossier({ writing }: { writing: WritingDetail }) {
@@ -55,6 +56,7 @@ export default function KiMenschlicheEntwicklungDossier({ writing }: { writing: 
           label: 'KI als kultureller Beschleuniger',
         },
       ]}
+      series={{ items: kiSeries.de, current: 0 }}
       alternate={{ href: '/en/whitepaper/ai-and-human-development', label: 'English version', lang: 'en' }}
       prev={{ label: 'Denkarchitektur', kicker: 'Framework', href: '/schriften/denkarchitektur' }}
       next={{ label: 'Von der Problemstellung zur technischen Eigenständigkeit', kicker: 'Whitepaper', href: '/schriften/methodengefuehrte-ki-systementwicklung' }}

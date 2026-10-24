@@ -1,5 +1,6 @@
 import MarkdownDossier from '@/components/writings/MarkdownDossier';
 import { readContent } from '@/lib/markdown';
+import { kiSeries } from '@/data/series';
 import { WritingDetail } from '@/data/writings';
 
 export default function MethodengefuehrteKiSystementwicklungDossier({ writing }: { writing: WritingDetail }) {
@@ -59,6 +60,7 @@ export default function MethodengefuehrteKiSystementwicklungDossier({ writing }:
           label: 'Vom Tool zur Denkarchitektur',
         },
       ]}
+      series={{ items: kiSeries.de, current: 1 }}
       alternate={{
         href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy',
         label: 'English version',

@@ -1,5 +1,6 @@
 import MarkdownDossier from '@/components/writings/MarkdownDossier';
 import { readContent } from '@/lib/markdown';
+import { kiSeries } from '@/data/series';
 import { WritingDetail } from '@/data/writings';
 
 export default function KiKulturellerBeschleunigerDossier({ writing }: { writing: WritingDetail }) {
@@ -62,6 +63,7 @@ export default function KiKulturellerBeschleunigerDossier({ writing }: { writing
           label: 'Decision Layer',
         },
       ]}
+      series={{ items: kiSeries.de, current: 2 }}
       alternate={{ href: '/en/whitepaper/ai-as-a-cultural-accelerator', label: 'English version', lang: 'en' }}
       prev={{ label: 'Von der Problemstellung zur technischen Eigenständigkeit', kicker: 'Whitepaper', href: '/schriften/methodengefuehrte-ki-systementwicklung' }}
     />

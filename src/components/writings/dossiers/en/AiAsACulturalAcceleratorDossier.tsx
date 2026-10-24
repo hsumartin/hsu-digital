@@ -1,5 +1,6 @@
 import MarkdownDossier from '@/components/writings/MarkdownDossier';
 import { readContent } from '@/lib/markdown';
+import { kiSeries } from '@/data/series';
 
 export default function AiAsACulturalAcceleratorDossier() {
   return (
@@ -53,6 +54,7 @@ export default function AiAsACulturalAcceleratorDossier() {
           items: [{ label: 'Deutsche Fassung', href: '/schriften/ki-kultureller-beschleuniger' }],
         },
       ]}
+      series={{ items: kiSeries.en, current: 2 }}
       alternate={{ href: '/schriften/ki-kultureller-beschleuniger', label: 'Deutsche Fassung', lang: 'de' }}
       prev={{ label: 'From Problem Framing towards Technological Autonomy', kicker: 'Whitepaper', href: '/en/whitepaper/from-problem-framing-towards-technological-autonomy' }}
     />
