@@ -60,7 +60,7 @@ export default function KompetenzGrid() {
               i === FELDER.length - 2 ? 'max-[680px]:border-b border-stone-200' : '',
             ].join(' ')}
           >
-            <p className="font-mono text-[0.62rem] tracking-[0.18em] text-blue-700 mb-[0.6rem]">
+            <p className="font-mono text-[0.68rem] tracking-[0.18em] text-blue-800 mb-[0.6rem]">
               {f.num}
             </p>
             <p className="text-[0.92rem] font-medium text-ink mb-[0.5rem]">{f.title}</p>

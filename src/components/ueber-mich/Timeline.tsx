@@ -52,13 +52,13 @@ export default function Timeline() {
             ].join(' ')}
           />
 
-          <p className="font-mono text-[0.65rem] tracking-[0.2em] text-gold-600 mb-[0.4rem]">
+          <p className="font-mono text-[0.7rem] tracking-[0.2em] text-gold-700 mb-[0.4rem]">
             {entry.year}
           </p>
           <h3 className="font-serif font-normal text-[1.2rem] leading-[1.2] text-ink mb-[0.5rem]">
             {entry.title}
           </h3>
-          <p className="font-mono text-[0.65rem] tracking-[0.12em] text-blue-700 mb-[0.6rem]">
+          <p className="font-mono text-[0.7rem] tracking-[0.12em] text-blue-800 mb-[0.6rem]">
             {entry.place}
           </p>
           <p className="text-[0.88rem] leading-[1.7] text-stone-600 font-light">

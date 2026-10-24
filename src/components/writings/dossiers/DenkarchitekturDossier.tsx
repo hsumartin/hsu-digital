@@ -18,7 +18,7 @@ const BQ = ({ children }: { children: React.ReactNode }) => (
   </blockquote>
 );
 const H3 = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="font-mono text-[0.72rem] tracking-[0.14em] uppercase text-blue-700 mt-8 mb-3">
+  <h3 className="font-mono text-[0.86rem] font-medium tracking-[0.1em] uppercase text-blue-800 mt-10 mb-4">
     {children}
   </h3>
 );
@@ -35,7 +35,7 @@ function TableBlock({ rows, headers }: { rows: string[][]; headers: string[] }) 
         <thead>
           <tr>
             {headers.map((h) => (
-              <th key={h} className="bg-[#F8F7F3] font-mono text-[0.58rem] tracking-[0.09em] uppercase font-medium text-stone-400 px-4 py-[0.78rem] text-left border-b border-stone-200">
+              <th key={h} className="bg-[#F8F7F3] font-mono text-[0.68rem] tracking-[0.09em] uppercase font-medium text-stone-500 px-4 py-[0.78rem] text-left border-b border-stone-200">
                 {h}
               </th>
             ))}
@@ -94,10 +94,10 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
 
       <div className="max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
         <WritingRecord items={writing.record} />
-        <p className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-stone-400 mt-[0.9rem]">
+        <p className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-stone-500 mt-[0.9rem]">
           <Link
             href="/en/whitepaper/architecture-of-thinking"
-            className="text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
+            className="text-blue-800 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
           >
             English whitepaper version
           </Link>
@@ -108,12 +108,12 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
         {/* TOC */}
         <aside className="sticky top-24 self-start max-[960px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">Inhalt</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">Inhalt</div>
             <ol className="list-none grid gap-[0.3rem] max-[960px]:grid-cols-2 max-[560px]:grid-cols-1">
               {tocItems.map(([id, num, label]) => (
                 <li key={id}>
-                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.65rem] tracking-[0.04em] text-stone-400 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700 shrink-0">{num}</span>
+                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.7rem] tracking-[0.04em] text-stone-500 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800 shrink-0">{num}</span>
                     <span className="leading-tight">{label}</span>
                   </a>
                 </li>
@@ -128,7 +128,7 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
           {/* 01 Abstract */}
           <WritingSection id="abstract" num="01" label="Abstract">
             <div className="bg-[#F8F7F3] border border-stone-200 px-[1.85rem] py-[1.65rem] mb-12 max-w-[66ch]">
-              <p className="font-mono text-[0.62rem] tracking-[0.18em] uppercase text-gold-600 mb-[0.9rem]">Kerngedanke</p>
+              <p className="font-mono text-[0.68rem] tracking-[0.18em] uppercase text-gold-700 mb-[0.9rem]">Kerngedanke</p>
               <p className="text-[1rem] leading-[1.82] text-stone-700 font-light mb-4">
                 KI entfaltet ihr Potenzial nicht im einzelnen Prompt, sondern in der Architektur des Denkens. Der GPT-Stack, das USE+ Framework™ und der PromptPilot machen Denkprozesse sichtbar, strukturierbar und steuerbar — Grundlage für reproduzierbare Erkenntnis statt zufälliger Outputs.
               </p>
@@ -209,7 +209,7 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
                 { key: 'ELEVATE', title: 'Metaperspektive verankern', text: 'Die erprobten Elemente werden in Prinzipien, Policies und Marker überführt: Welche Quellenpflicht gilt? Welche Quality Gates sind verbindlich? Aus Episoden wird System.' },
               ].map((step) => (
                 <div key={step.key} className="bg-[#FBFAF7] p-[1.5rem]">
-                  <p className="font-mono text-[0.72rem] tracking-[0.2em] text-gold-600 font-medium mb-[0.6rem]">{step.key}</p>
+                  <p className="font-mono text-[0.72rem] tracking-[0.2em] text-gold-700 font-medium mb-[0.6rem]">{step.key}</p>
                   <h4 className="text-[0.9rem] font-medium text-stone-900 mb-[0.4rem]">{step.title}</h4>
                   <p className="text-[0.88rem] leading-[1.65] text-stone-700 font-light m-0">{step.text}</p>
                 </div>
@@ -370,14 +370,14 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
                 { time: '180 Tage', text: 'Atlas als Wissensgraph; Ausweitung auf weitere Domänen; Ethik-Marker aktiv; Continuous-Improvement-Backlog.' },
               ].map((step) => (
                 <div key={step.time} className="flex gap-6 items-baseline border-t border-stone-100 first:border-t-0 px-6 py-5">
-                  <span className="font-mono text-[0.65rem] tracking-[0.15em] text-gold-600 shrink-0 w-20">{step.time}</span>
+                  <span className="font-mono text-[0.7rem] tracking-[0.15em] text-gold-700 shrink-0 w-20">{step.time}</span>
                   <p className="text-[0.88rem] text-stone-700 font-light m-0">{step.text}</p>
                 </div>
               ))}
             </div>
             <div className="max-w-[66ch]">
               <BQ>Reflexion ersetzt Reaktion. Das System reagiert nicht — es erkennt. Wer jetzt baut, baut nicht nur Werkzeuge. Er baut Räume für Erkenntnis.</BQ>
-              <p className="text-[0.8rem] text-stone-400 italic mt-8 pt-6 border-t border-stone-100">
+              <p className="text-[0.8rem] text-stone-500 italic mt-8 pt-6 border-t border-stone-100">
                 «USE+ Framework™» ist eine Marke von Martin Hsu. Die Nutzung des Namens ohne vorherige schriftliche Zustimmung ist nicht gestattet. © 2025 Martin Hsu. Zitate sind mit Quellenangabe zulässig; Reproduktionen erfordern eine Lizenz.
               </p>
             </div>
@@ -427,7 +427,7 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
               </h2>
             </div>
             <div>
-              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.72)] font-light max-w-[42ch]">
+              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.9)] font-light max-w-[42ch]">
                 Für Gespräche zu GPT-Stack, USE+ Framework™, PromptPilot und Systemarchitektur für strukturiertes KI-Denken.
               </p>
               <div className="flex flex-col gap-3 mt-4">
@@ -442,10 +442,10 @@ export default function DenkarchitekturDossier({ writing }: { writing: WritingDe
             prev={{ label: 'KI-Governance', kicker: 'Position', href: '/schriften/ki-governance' }}
           />
 
-          <p className="font-mono text-[0.62rem] tracking-[0.08em] text-stone-400 mt-6 pt-6 border-t border-stone-100">
+          <p className="font-mono text-[0.68rem] tracking-[0.08em] text-stone-500 mt-6 pt-6 border-t border-stone-100">
             <Link
               href="/en/whitepaper/architecture-of-thinking"
-              className="text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
+              className="text-blue-800 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
             >
               English whitepaper version
             </Link>

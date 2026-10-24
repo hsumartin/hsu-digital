@@ -31,10 +31,10 @@ export default function WritingRecord({ items }: WritingRecordProps) {
                      max-[900px]:[&:nth-child(2n)]:border-r-0
                      max-[520px]:border-r-0"
         >
-          <span className="block font-mono text-[0.56rem] tracking-[0.13em] uppercase text-stone-400 mb-[0.42rem] break-words">
+          <span className="block font-mono text-[0.68rem] tracking-[0.13em] uppercase text-stone-500 mb-[0.42rem] break-words">
             {item.key}
           </span>
-          <span className="block font-mono text-[0.76rem] leading-[1.45] text-blue-700 break-words">
+          <span className="block font-mono text-[0.76rem] leading-[1.45] text-blue-800 break-words">
             {item.value}
           </span>
         </div>

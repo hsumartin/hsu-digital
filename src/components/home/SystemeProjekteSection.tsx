@@ -107,13 +107,13 @@ export default function SystemeProjekteSection() {
                 key={k}
                 className="flex-1 min-w-[150px] flex items-center gap-[0.6rem] px-[1.1rem] py-[0.85rem] border-r border-stone-200 last:border-r-0"
               >
-                <span className="font-mono text-[0.58rem] tracking-[0.12em] uppercase text-text-muted">
+                <span className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-text-muted">
                   {k}
                 </span>
                 <span
                   className={[
                     'font-mono text-[0.78rem]',
-                    live ? 'inline-flex items-center gap-[0.4rem] text-gold-600' : 'text-blue-800',
+                    live ? 'inline-flex items-center gap-[0.4rem] text-gold-700' : 'text-blue-800',
                   ].join(' ')}
                 >
                   {live && <span className="w-[6px] h-[6px] rounded-full bg-gold-500 shrink-0" />}
@@ -129,10 +129,10 @@ export default function SystemeProjekteSection() {
       <section className="px-[clamp(1.5rem,4vw,4rem)] py-12 pb-[3.6rem]">
         <div className="max-w-[90rem] mx-auto">
           <div className="flex justify-between items-baseline mb-7 flex-wrap gap-2">
-            <span className="font-mono text-[0.66rem] tracking-[0.2em] uppercase text-gold-600">
+            <span className="font-mono text-[0.7rem] tracking-[0.2em] uppercase text-gold-700">
               Umwelt- &amp; Gesundheitsschutz Zürich
             </span>
-            <span className="font-mono text-[0.66rem] tracking-[0.12em] text-text-muted">
+            <span className="font-mono text-[0.7rem] tracking-[0.12em] text-text-muted">
               Fallstudien · Ausgangslage → Beitrag → Methode → Stand
             </span>
           </div>
@@ -152,8 +152,8 @@ export default function SystemeProjekteSection() {
                   style={{ background: '#0F1D2E' }}
                 >
                   <span
-                    className="absolute top-[0.7rem] right-[0.9rem] font-mono text-[0.5rem]
-                               tracking-[0.16em] text-[rgba(191,216,234,0.4)]"
+                    className="absolute top-[0.7rem] right-[0.9rem] font-mono text-[0.68rem]
+                               tracking-[0.16em] text-[rgba(191,216,234,0.65)]"
                     aria-hidden="true"
                   >
                     ABB · PLATE
@@ -166,8 +166,8 @@ export default function SystemeProjekteSection() {
                     className="w-full h-auto block"
                   />
                   <span
-                    className="absolute left-[0.9rem] bottom-[0.75rem] font-mono text-[0.56rem]
-                               tracking-[0.12em] uppercase text-[rgba(244,242,236,0.45)]"
+                    className="absolute left-[0.9rem] bottom-[0.75rem] font-mono text-[0.68rem]
+                               tracking-[0.12em] uppercase text-[rgba(244,242,236,0.6)]"
                   >
                     {diagram.caption}
                   </span>
@@ -175,15 +175,15 @@ export default function SystemeProjekteSection() {
 
                 {/* Body */}
                 <div className="flex flex-col px-8 py-[1.9rem]">
-                  <div className="flex items-center gap-[0.9rem] mb-3">
-                    <span className="font-mono text-[0.62rem] tracking-[0.18em] text-gold-600">
+                  <div className="flex flex-wrap items-center gap-x-[0.9rem] gap-y-2 mb-3">
+                    <span className="font-mono text-[0.68rem] tracking-[0.18em] text-gold-700">
                       {num}
                     </span>
-                    <span className="font-mono text-[0.62rem] tracking-[0.13em] uppercase text-text-muted">
+                    <span className="font-mono text-[0.68rem] tracking-[0.13em] uppercase text-text-muted">
                       {tag}
                     </span>
                     <span
-                      className="ml-auto inline-flex items-center gap-[0.4rem] font-mono text-[0.6rem]
+                      className="ml-auto inline-flex items-center gap-[0.4rem] font-mono text-[0.68rem]
                                  tracking-[0.1em] uppercase border border-stone-200 rounded-full
                                  px-[0.7rem] py-[0.22rem] text-blue-800"
                     >
@@ -208,7 +208,7 @@ export default function SystemeProjekteSection() {
                         key={key}
                         className="grid-anatomy-row gap-3 sm:gap-5 py-[0.72rem] border-b border-stone-200"
                       >
-                        <span className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-gold-600 pt-[0.18rem]">
+                        <span className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-gold-700 pt-[0.18rem]">
                           {key}
                         </span>
                         <span className="text-[0.9rem] leading-[1.55] text-stone-700 font-light">
@@ -227,7 +227,7 @@ export default function SystemeProjekteSection() {
                       {chips.map((chip) => (
                         <span
                           key={chip}
-                          className="font-mono text-[0.56rem] tracking-[0.1em] uppercase border border-stone-200 rounded-full px-[0.6rem] py-[0.2rem] text-text-muted"
+                          className="font-mono text-[0.68rem] tracking-[0.1em] uppercase border border-stone-200 rounded-full px-[0.6rem] py-[0.2rem] text-text-muted"
                         >
                           {chip}
                         </span>
@@ -235,7 +235,7 @@ export default function SystemeProjekteSection() {
                     </div>
                     <Link
                       href={href}
-                      className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-gold-600
+                      className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-gold-700
                                  no-underline whitespace-nowrap inline-flex items-center gap-[0.45rem]
                                  transition-all duration-200 hover:text-ink hover:gap-3"
                     >
@@ -256,14 +256,14 @@ export default function SystemeProjekteSection() {
       >
         <div className="grid-2col-herkunft max-w-[90rem] mx-auto gap-8 md:gap-10 items-center">
           <div>
-            <div className="font-mono text-[0.66rem] tracking-[0.2em] uppercase text-gold-200 mb-[0.9rem]">
+            <div className="font-mono text-[0.7rem] tracking-[0.2em] uppercase text-gold-200 mb-[0.9rem]">
               Herkunft des Denkens
             </div>
             <h4 className="font-serif font-normal text-[1.9rem] leading-[1.24] text-[#F4F2EC] pb-[0.34em]">
               Die Systemlogik stammt{' '}
               <em className="italic text-gold-200">aus der Architektur.</em>
             </h4>
-            <p className="text-[0.92rem] text-[rgba(244,242,236,0.72)] font-light mt-7 max-w-[34ch]">
+            <p className="text-[0.92rem] text-[rgba(244,242,236,0.9)] font-light mt-7 max-w-[34ch]">
               Raum, Schichten, Sequenz: Was heute Daten und Verfahren strukturiert, wurde im Entwurf
               gelernt — keine eigene Disziplin, sondern die Wurzel derselben Denkweise.
             </p>
@@ -288,11 +288,11 @@ export default function SystemeProjekteSection() {
                 className="block bg-blue-900 px-[1.2rem] py-[1.1rem] no-underline
                            transition-colors duration-200 hover:bg-[#10283b]"
               >
-                <div className="font-mono text-[0.56rem] tracking-[0.1em] uppercase text-blue-300 mb-2">
+                <div className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-[#D9E8F3] mb-2">
                   {type}
                 </div>
                 <div className="font-serif text-[1.18rem] text-[#F4F2EC] leading-[1.15]">{name}</div>
-                <div className="text-[0.76rem] text-[rgba(244,242,236,0.72)] font-light mt-[0.35rem]">
+                <div className="text-[0.76rem] text-[rgba(244,242,236,0.9)] font-light mt-[0.35rem]">
                   {desc}
                 </div>
               </Link>

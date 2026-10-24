@@ -18,23 +18,23 @@ export default function SiteFooter() {
       className="border-t border-stone-200 px-[clamp(1.5rem,4vw,4rem)] py-8"
     >
       <div className="max-w-[var(--width-page)] mx-auto flex flex-wrap justify-between items-center gap-4">
-        <span className="font-mono text-[0.64rem] tracking-[0.16em] uppercase text-text-muted">
-          <b className="text-gold-600 font-medium">Editorial Architecture</b>
+        <span className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-text-muted">
+          <b className="text-gold-700 font-medium">Editorial Architecture</b>
           {' '}×{' '}
-          <b className="text-gold-600 font-medium">Civic Digital</b>
+          <b className="text-gold-700 font-medium">Civic Digital</b>
           {' '}×{' '}
-          <b className="text-gold-600 font-medium">AI Clarity</b>
+          <b className="text-gold-700 font-medium">AI Clarity</b>
         </span>
 
         <ul className="flex flex-wrap gap-x-3 gap-y-1 list-none" role="list">
           {FOOTER_LINKS.map(({ href, label }, i) => (
             <li key={href} className="flex items-center gap-3">
               {i > 0 && (
-                <span aria-hidden="true" className="text-stone-200 font-mono text-[0.6rem]">·</span>
+                <span aria-hidden="true" className="text-stone-200 font-mono text-[0.68rem]">·</span>
               )}
               <Link
                 href={href}
-                className="font-mono text-[0.6rem] tracking-[0.08em] uppercase text-stone-700
+                className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-stone-700
                            no-underline transition-colors duration-200 hover:text-gold-600"
               >
                 {label}
@@ -76,7 +76,7 @@ export default function SiteFooter() {
               className="opacity-40 hover:opacity-70 transition-opacity duration-200 grayscale"
             />
           </a>
-          <span className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-text-muted">
+          <span className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-text-muted">
             © 2026 martinhsu.digital
           </span>
         </div>

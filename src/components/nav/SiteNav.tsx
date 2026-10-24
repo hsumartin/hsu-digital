@@ -56,8 +56,8 @@ export default function SiteNav() {
         {/* Status badge — desktop only */}
         <div
           aria-hidden="true"
-          className="hidden md:flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.12em]
-                     uppercase text-gold-600 border border-stone-200 rounded-full px-[0.85rem] py-[0.4rem]
+          className="hidden md:flex items-center gap-2 font-mono text-[0.68rem] tracking-[0.12em]
+                     uppercase text-gold-700 border border-stone-200 rounded-full px-[0.85rem] py-[0.4rem]
                      whitespace-nowrap"
         >
           <span className="nav-pulse-dot" />
@@ -126,7 +126,7 @@ export default function SiteNav() {
             })}
           </ul>
 
-          <div className="flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.12em] uppercase text-gold-600 px-[clamp(1.5rem,4vw,4rem)] mt-8">
+          <div className="flex items-center gap-2 font-mono text-[0.68rem] tracking-[0.12em] uppercase text-gold-700 px-[clamp(1.5rem,4vw,4rem)] mt-8">
             <span className="nav-pulse-dot" />
             Verfügbar für Projekte
           </div>

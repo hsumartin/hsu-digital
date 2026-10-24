@@ -53,8 +53,8 @@ export default function ArbeitsfelderSection() {
       />
 
       <div className="relative z-10 max-w-[84rem] mx-auto">
-        <p className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-text-muted mb-6">
-          <b className="text-gold-600 font-medium">Editorial Architecture</b>
+        <p className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-text-muted mb-6">
+          <b className="text-gold-700 font-medium">Editorial Architecture</b>
           {' '}× Civic Digital × AI Clarity
         </p>
         <SectionLabel num="01">Arbeitsfelder</SectionLabel>
@@ -95,10 +95,10 @@ export default function ArbeitsfelderSection() {
                 className="absolute left-1/2 -bottom-px w-px h-[34px] -translate-x-1/2 translate-y-full z-20"
                 style={{ background: 'linear-gradient(180deg, #D6D2C8, #2B6895)' }}
               />
-              <div className="font-mono text-[0.62rem] tracking-[0.2em] uppercase text-gold-600 mb-4">
+              <div className="font-mono text-[0.68rem] tracking-[0.2em] uppercase text-gold-700 mb-4">
                 {lens}
               </div>
-              <div className="font-mono text-[0.6rem] tracking-[0.12em] text-text-muted mb-2">
+              <div className="font-mono text-[0.68rem] tracking-[0.12em] text-text-muted mb-2">
                 {num}
               </div>
               <h3 className="font-serif font-normal text-[1.7rem] leading-[1.14] tracking-[-0.005em] text-ink mb-3">
@@ -106,7 +106,7 @@ export default function ArbeitsfelderSection() {
               </h3>
               <p className="text-[0.86rem] leading-[1.62] text-stone-700 font-light">{body}</p>
               <div className="mt-auto pt-5">
-                <div className="font-mono text-[0.56rem] tracking-[0.12em] uppercase text-text-muted mb-1">
+                <div className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-text-muted mb-1">
                   Bringt ein
                 </div>
                 <div className="font-mono text-[0.74rem] tracking-[0.04em] text-blue-800">
@@ -126,7 +126,7 @@ export default function ArbeitsfelderSection() {
           <div className="font-serif text-[2.1rem] leading-[1.1] whitespace-nowrap text-[#F4F2EC]">
             → <em className="italic text-gold-200">Systemdenken</em>
           </div>
-          <p className="text-[0.95rem] text-[rgba(244,242,236,0.72)] font-light max-w-[52ch] text-center">
+          <p className="text-[0.95rem] text-[rgba(244,242,236,0.9)] font-light max-w-[52ch] text-center">
             Aus jeder Perspektive entsteht dieselbe Fähigkeit: komplexe Zusammenhänge verstehen,
             strukturieren und verantwortungsvoll weiterentwickeln.
           </p>
@@ -138,7 +138,7 @@ export default function ArbeitsfelderSection() {
           <span className="flex-1 h-px bg-stone-200 max-w-[5rem]" />
           <Link
             href="/projekte"
-            className="inline-flex items-center gap-[0.45rem] text-gold-600 no-underline transition-all duration-200 hover:gap-3"
+            className="inline-flex items-center gap-[0.45rem] text-gold-700 no-underline transition-all duration-200 hover:gap-3"
           >
             02 — Systeme &amp; Projekte →
           </Link>

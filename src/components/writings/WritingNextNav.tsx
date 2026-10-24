@@ -27,9 +27,9 @@ export default function WritingNextNav({
       {prev ? (
         <Link
           href={prev.href}
-          className="font-mono text-[0.64rem] tracking-[0.12em] uppercase text-stone-400 no-underline hover:text-stone-900 transition-colors"
+          className="font-mono text-[0.7rem] tracking-[0.12em] uppercase text-stone-500 no-underline hover:text-stone-900 transition-colors"
         >
-          ← {prev.kicker && <span className="text-blue-700">{prev.kicker} · </span>}
+          ← {prev.kicker && <span className="text-blue-800">{prev.kicker} · </span>}
           {prev.label}
         </Link>
       ) : (
@@ -38,7 +38,7 @@ export default function WritingNextNav({
 
       <Link
         href={indexHref}
-        className="font-mono text-[0.64rem] tracking-[0.12em] uppercase text-stone-400 no-underline hover:text-stone-900 transition-colors"
+        className="font-mono text-[0.7rem] tracking-[0.12em] uppercase text-stone-500 no-underline hover:text-stone-900 transition-colors"
       >
         {labels.all}
       </Link>
@@ -46,9 +46,9 @@ export default function WritingNextNav({
       {next ? (
         <Link
           href={next.href}
-          className="font-mono text-[0.64rem] tracking-[0.12em] uppercase text-stone-400 no-underline hover:text-stone-900 transition-colors"
+          className="font-mono text-[0.7rem] tracking-[0.12em] uppercase text-stone-500 no-underline hover:text-stone-900 transition-colors"
         >
-          {next.kicker && <span className="text-blue-700">{next.kicker} · </span>}
+          {next.kicker && <span className="text-blue-800">{next.kicker} · </span>}
           {next.label} →
         </Link>
       ) : (

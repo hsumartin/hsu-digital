@@ -99,7 +99,7 @@ export default async function ProjectDetailPage({
         {/* Aside: table of contents */}
         <aside className="sticky top-24 self-start max-[980px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">
               Inhalt
             </div>
             <ol className="list-none">
@@ -118,9 +118,9 @@ export default async function ProjectDetailPage({
                 <li key={id} className="border-t border-stone-100">
                   <a
                     href={`#${id}`}
-                    className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-400 hover:text-stone-900 transition-colors"
+                    className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-500 hover:text-stone-900 transition-colors"
                   >
-                    <span className="text-blue-700">{num}</span>
+                    <span className="text-blue-800">{num}</span>
                     {label}
                   </a>
                 </li>
@@ -193,7 +193,7 @@ export default async function ProjectDetailPage({
                   key={row.num}
                   className="grid grid-cols-[3.5rem_12rem_1fr] border-t border-stone-100 first:border-t-0 max-[760px]:grid-cols-[3.5rem_1fr]"
                 >
-                  <div className="p-[1rem_1.1rem] font-mono text-[0.62rem] tracking-[0.14em] text-blue-700">
+                  <div className="p-[1rem_1.1rem] font-mono text-[0.68rem] tracking-[0.14em] text-blue-800">
                     {row.num}
                   </div>
                   <div className="p-[1rem_1.1rem] border-l border-stone-100 text-[0.9rem] font-medium text-stone-900 max-[760px]:col-start-2">
@@ -228,7 +228,7 @@ export default async function ProjectDetailPage({
                 { kicker: 'Beitrag 04', title: 'Releasebegleitung', text: 'Einordnung von Änderungen, Prüfung fachlicher Auswirkungen und Begleitung iterativer Verbesserungen.' },
               ].map((item) => (
                 <article key={item.kicker} className="bg-[#FBFAF7] p-[1.35rem_1.45rem]">
-                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-blue-700 mb-[0.55rem]">
+                  <div className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-blue-800 mb-[0.55rem]">
                     {item.kicker}
                   </div>
                   <h3 className="text-[0.96rem] leading-[1.35] font-medium text-stone-900 mb-[0.45rem]">
@@ -247,7 +247,7 @@ export default async function ProjectDetailPage({
                 <h3 className="font-serif font-normal text-[clamp(1.45rem,2.4vw,2.05rem)] leading-[1.25] text-[#F5F4F0]">
                   Vier Ebenen der Systemmodellierung
                 </h3>
-                <p className="text-[0.95rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light">
+                <p className="text-[0.95rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light">
                   Die Systemlogik verbindet fachliche Wirklichkeit und digitale Struktur. Entscheidend
                   ist nicht nur, welche Funktionen das System besitzt, sondern wie Organisation, Daten,
                   Schnittstellen und Oberfläche zusammenwirken.
@@ -261,13 +261,13 @@ export default async function ProjectDetailPage({
                   { num: '04', title: 'Oberfläche', text: 'Fallansichten, Fachreiter, Dashboards, Such- und Filterlogiken.' },
                 ].map((layer) => (
                   <div key={layer.num} className="p-[1.35rem] border-r border-[rgba(244,242,236,0.18)] last:border-r-0 max-[900px]:[&:nth-child(2)]:border-r-0 max-[560px]:border-r-0 max-[560px]:border-b max-[560px]:last:border-b-0">
-                    <div className="font-mono text-[0.58rem] tracking-[0.16em] text-[#F0E1B5] mb-[0.7rem]">
+                    <div className="font-mono text-[0.68rem] tracking-[0.16em] text-[#F0E1B5] mb-[0.7rem]">
                       {layer.num}
                     </div>
                     <h4 className="text-[0.9rem] font-medium mb-[0.5rem] text-[#F5F4F0]">
                       {layer.title}
                     </h4>
-                    <p className="text-[0.82rem] leading-[1.6] text-[rgba(244,242,236,0.7)] font-light">
+                    <p className="text-[0.82rem] leading-[1.6] text-[rgba(244,242,236,0.9)] font-light">
                       {layer.text}
                     </p>
                   </div>
@@ -327,7 +327,7 @@ export default async function ProjectDetailPage({
                   key={row.name}
                   className="grid grid-cols-[14rem_1fr] border-t border-stone-100 first:border-t-0 max-[650px]:grid-cols-1"
                 >
-                  <div className="p-[1rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.08em] text-blue-700 max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
+                  <div className="p-[1rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.08em] text-blue-800 max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
                     {row.name}
                   </div>
                   <div className="p-[1rem_1.1rem] text-[0.9rem] leading-[1.6] text-stone-700 font-light">
@@ -404,7 +404,7 @@ export default async function ProjectDetailPage({
               </h2>
             </div>
             <div>
-              <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light">
+              <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light">
                 Für Gespräche zu Product Ownership, Informationsarchitektur,
                 Verwaltungsdigitalisierung oder KI-gestützten Systemen.
               </p>
@@ -487,7 +487,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
         {/* Aside TOC */}
         <aside className="sticky top-24 self-start max-[980px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">
               Inhalt
             </div>
             <ol className="list-none">
@@ -505,9 +505,9 @@ function GisDossier({ project }: { project: ProjectDetail }) {
                 <li key={id} className="border-t border-stone-100">
                   <a
                     href={`#${id}`}
-                    className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-400 hover:text-stone-900 transition-colors"
+                    className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-500 hover:text-stone-900 transition-colors"
                   >
-                    <span className="text-blue-700">{num}</span>
+                    <span className="text-blue-800">{num}</span>
                     {label}
                   </a>
                 </li>
@@ -580,7 +580,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
                   key={row.num}
                   className="grid grid-cols-[3.5rem_12rem_1fr] border-t border-stone-100 first:border-t-0 max-[760px]:grid-cols-[3.5rem_1fr]"
                 >
-                  <div className="p-[1rem_1.1rem] font-mono text-[0.62rem] tracking-[0.14em] text-blue-700">{row.num}</div>
+                  <div className="p-[1rem_1.1rem] font-mono text-[0.68rem] tracking-[0.14em] text-blue-800">{row.num}</div>
                   <div className="p-[1rem_1.1rem] border-l border-stone-100 text-[0.9rem] font-medium text-stone-900 max-[760px]:col-start-2">{row.title}</div>
                   <div className="p-[1rem_1.1rem] border-l border-stone-100 text-[0.9rem] leading-[1.62] text-stone-700 font-light max-[760px]:col-span-2 max-[760px]:border-l-0 max-[760px]:border-t max-[760px]:border-dashed">{row.text}</div>
                 </div>
@@ -607,7 +607,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
                 { kicker: 'Beitrag 04', title: 'Publikation', text: 'Aufbereitung der finalisierten GeoPackage-Datei und Publikation im Geodatenkatalog der Stadt Zürich.' },
               ].map((item) => (
                 <article key={item.kicker} className="bg-[#FBFAF7] p-[1.35rem_1.45rem]">
-                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-blue-700 mb-[0.55rem]">{item.kicker}</div>
+                  <div className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-blue-800 mb-[0.55rem]">{item.kicker}</div>
                   <h3 className="text-[0.96rem] leading-[1.35] font-medium text-stone-900 mb-[0.45rem]">{item.title}</h3>
                   <p className="text-[0.88rem] leading-[1.65] text-stone-700 font-light">{item.text}</p>
                 </article>
@@ -632,8 +632,8 @@ function GisDossier({ project }: { project: ProjectDetail }) {
                   key={layer.num}
                   className="grid grid-cols-[2rem_10rem_1fr] gap-5 border-t border-stone-100 first:border-t-0 p-[1.1rem_1.75rem] max-[600px]:grid-cols-1 max-[600px]:gap-[0.3rem]"
                 >
-                  <span className="font-mono text-[0.6rem] tracking-[0.18em] text-stone-400">{layer.num}</span>
-                  <span className="font-mono text-[0.75rem] tracking-[0.08em] text-blue-700">{layer.name}</span>
+                  <span className="font-mono text-[0.68rem] tracking-[0.18em] text-stone-500">{layer.num}</span>
+                  <span className="font-mono text-[0.75rem] tracking-[0.08em] text-blue-800">{layer.name}</span>
                   <span className="text-[0.85rem] text-stone-700 font-light">{layer.desc}</span>
                 </div>
               ))}
@@ -657,7 +657,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
                   key={step.num}
                   className="grid grid-cols-[3rem_1fr] gap-5 border-t border-stone-100 first:border-t-0 p-[1.4rem_1.75rem]"
                 >
-                  <span className="font-mono text-[0.65rem] tracking-[0.18em] text-gold-600 pt-[0.2rem]">{step.num}</span>
+                  <span className="font-mono text-[0.7rem] tracking-[0.18em] text-gold-700 pt-[0.2rem]">{step.num}</span>
                   <div>
                     <p className="text-[0.9rem] font-medium text-stone-900 mb-[0.35rem]">{step.title}</p>
                     <p className="text-[0.85rem] leading-[1.65] text-stone-700 font-light">{step.text}</p>
@@ -686,7 +686,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
               {['QGIS', 'SQL', 'Excel', 'GeoPackage', 'Geodatenmanagement', 'Business Analyse', 'Fachkoordination', 'Qualitätssicherung'].map((chip) => (
                 <span
                   key={chip}
-                  className="border border-stone-200 rounded-full px-[0.9rem] py-[0.4rem] font-mono text-[0.65rem] tracking-[0.1em] text-stone-400 bg-[#F8F7F3]"
+                  className="border border-stone-200 rounded-full px-[0.9rem] py-[0.4rem] font-mono text-[0.7rem] tracking-[0.1em] text-stone-500 bg-[#F8F7F3]"
                 >
                   {chip}
                 </span>
@@ -758,7 +758,7 @@ function GisDossier({ project }: { project: ProjectDetail }) {
               </h2>
             </div>
             <div>
-              <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light">
+              <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light">
                 Für Gespräche zu GIS-Umsetzung, Geodatenmodellierung, Verwaltungsdigitalisierung
                 oder räumlicher Datenstrukturierung.
               </p>

@@ -29,7 +29,7 @@ function TableBlock({ rows }: { rows: Array<{ key: string; val: string }> }) {
           key={row.key}
           className="grid grid-cols-[14rem_1fr] border-t border-stone-100 first:border-t-0 max-[650px]:grid-cols-1"
         >
-          <div className="p-[1rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.08em] text-blue-700 max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
+          <div className="p-[1rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.08em] text-blue-800 max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
             {row.key}
           </div>
           <div className="p-[1rem_1.1rem] text-[0.9rem] leading-[1.6] text-stone-700 font-light">
@@ -66,7 +66,7 @@ export default function GptStackDossier({ writing }: { writing: WritingDetail })
         {/* TOC Aside */}
         <aside className="sticky top-24 self-start max-[960px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">
               Inhalt
             </div>
             <ol className="list-none grid gap-[0.55rem] max-[960px]:grid-cols-2 max-[560px]:grid-cols-1">
@@ -85,9 +85,9 @@ export default function GptStackDossier({ writing }: { writing: WritingDetail })
                 <li key={id}>
                   <a
                     href={`#${id}`}
-                    className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-400 hover:text-stone-900 transition-colors"
+                    className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-500 hover:text-stone-900 transition-colors"
                   >
-                    <span className="text-blue-700">{num}</span>
+                    <span className="text-blue-800">{num}</span>
                     {label}
                   </a>
                 </li>
@@ -155,8 +155,8 @@ export default function GptStackDossier({ writing }: { writing: WritingDetail })
                 { num: 'Prinzip 03', title: 'Reflexion', text: 'Der Stack prüft nicht nur Ergebnisse, sondern auch Denkpfade, Grenzen und Einsatzlogik.' },
               ].map((p) => (
                 <div key={p.num} className="bg-[#FBFAF7] p-[1.35rem_1.45rem]">
-                  <div className="font-mono text-[0.58rem] tracking-[0.16em] text-gold-600 mb-[0.55rem]">{p.num}</div>
-                  <h3 className="font-mono text-[0.72rem] tracking-[0.14em] uppercase text-blue-700 mb-[0.55rem]">{p.title}</h3>
+                  <div className="font-mono text-[0.68rem] tracking-[0.16em] text-gold-700 mb-[0.55rem]">{p.num}</div>
+                  <h3 className="font-mono text-[0.72rem] tracking-[0.14em] uppercase text-blue-800 mb-[0.55rem]">{p.title}</h3>
                   <p className="text-[0.88rem] leading-[1.65] text-stone-700 font-light">{p.text}</p>
                 </div>
               ))}
@@ -329,7 +329,7 @@ export default function GptStackDossier({ writing }: { writing: WritingDetail })
               </h2>
             </div>
             <div>
-              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.72)] font-light max-w-[42ch]">
+              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.9)] font-light max-w-[42ch]">
                 Für Gespräche zu KI-Architektur, Promptsystemen, Governance und strukturiertem
                 KI-Einsatz in komplexen Umgebungen.
               </p>

@@ -39,15 +39,15 @@ function AccessCell({ level, sub }: { level: AccessLevel; sub?: string | null })
   const symbol = level === 'full' ? '●' : level === 'limited' ? '◐' : '–';
   const color =
     level === 'full'
-      ? 'text-blue-700'
+      ? 'text-blue-800'
       : level === 'limited'
-      ? 'text-gold-600'
-      : 'text-stone-400';
+      ? 'text-gold-700'
+      : 'text-stone-500';
   return (
     <td className="px-[0.55rem] py-[0.75rem] text-center border-b border-stone-100 text-[0.82rem] text-stone-700 last:border-b-0">
       <span className={`block font-mono text-base leading-none ${color}`}>{symbol}</span>
       {sub && (
-        <span className="block font-mono text-[0.56rem] tracking-[0.04em] text-stone-400 mt-[0.12rem]">
+        <span className="block font-mono text-[0.68rem] tracking-[0.04em] text-stone-500 mt-[0.12rem]">
           {sub}
         </span>
       )}
@@ -66,13 +66,13 @@ export default function MatrixTable() {
       <table className="w-full border-collapse" style={{ minWidth: 720 }}>
         <thead>
           <tr>
-            <th className="bg-[#F8F7F3] font-mono text-[0.58rem] tracking-[0.09em] uppercase font-medium text-stone-400 px-4 py-[0.78rem] text-left border-b border-stone-200 w-[25%]">
+            <th className="bg-[#F8F7F3] font-mono text-[0.68rem] tracking-[0.09em] uppercase font-medium text-stone-500 px-4 py-[0.78rem] text-left border-b border-stone-200 w-[25%]">
               Berechtigung
             </th>
             {roles.map((r) => (
               <th
                 key={r}
-                className="bg-[#F8F7F3] font-mono text-[0.58rem] tracking-[0.09em] uppercase font-medium text-stone-400 px-[0.55rem] py-[0.78rem] text-center border-b border-stone-200"
+                className="bg-[#F8F7F3] font-mono text-[0.68rem] tracking-[0.09em] uppercase font-medium text-stone-500 px-[0.55rem] py-[0.78rem] text-center border-b border-stone-200"
               >
                 {r}
               </th>
@@ -96,15 +96,15 @@ export default function MatrixTable() {
           ))}
         </tbody>
       </table>
-      <div className="flex gap-5 flex-wrap px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.62rem] tracking-[0.08em] text-stone-400">
+      <div className="flex gap-5 flex-wrap px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.68rem] tracking-[0.08em] text-stone-500">
         <span className="inline-flex items-center gap-[0.4rem]">
-          <span className="text-blue-700">●</span> Vollzugriff
+          <span className="text-blue-800">●</span> Vollzugriff
         </span>
         <span className="inline-flex items-center gap-[0.4rem]">
-          <span className="text-gold-600">◐</span> Eingeschränkt
+          <span className="text-gold-700">◐</span> Eingeschränkt
         </span>
         <span className="inline-flex items-center gap-[0.4rem]">
-          <span className="text-stone-400">–</span> Kein Zugriff
+          <span className="text-stone-500">–</span> Kein Zugriff
         </span>
       </div>
     </div>

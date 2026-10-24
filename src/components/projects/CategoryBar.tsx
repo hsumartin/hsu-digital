@@ -17,16 +17,16 @@ export default function CategoryBar({ items, meta }: CategoryBarProps) {
           className={[
             'flex items-baseline gap-[0.5rem] px-[1.15rem] py-[0.8rem]',
             i < items.length - 1 ? 'border-r border-stone-200' : '',
-            'font-mono text-[0.66rem] tracking-[0.12em] uppercase',
-            'text-stone-400 hover:text-stone-700 no-underline transition-colors',
+            'font-mono text-[0.7rem] tracking-[0.12em] uppercase',
+            'text-stone-500 hover:text-stone-700 no-underline transition-colors',
           ].join(' ')}
         >
-          <b className="text-[0.58rem] font-medium text-stone-400">{item.num}</b>
+          <b className="text-[0.68rem] font-medium text-stone-500">{item.num}</b>
           {item.label}
         </a>
       ))}
       {meta && (
-        <span className="ml-auto px-[1.15rem] py-[0.8rem] border-l border-stone-200 font-mono text-[0.66rem] tracking-[0.12em] uppercase text-stone-400">
+        <span className="ml-auto px-[1.15rem] py-[0.8rem] border-l border-stone-200 font-mono text-[0.7rem] tracking-[0.12em] uppercase text-stone-500">
           {meta}
         </span>
       )}

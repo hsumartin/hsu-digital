@@ -130,7 +130,7 @@ function Prose({
         switch (b.t) {
           case 'h3':
             return (
-              <h3 key={i} className="font-mono text-[0.72rem] tracking-[0.14em] uppercase text-blue-700 mt-8 mb-3 max-w-[66ch]">
+              <h3 key={i} className="font-mono text-[0.86rem] font-medium tracking-[0.1em] uppercase text-blue-800 mt-10 mb-4 max-w-[66ch]">
                 {b.text}
               </h3>
             );
@@ -162,7 +162,7 @@ function Prose({
                 className="border-l-2 border-gold-500 pl-6 my-8 max-w-[66ch] font-serif text-[1.05rem] italic leading-[1.75] tracking-[0.015em] text-stone-900"
               >
                 {labelled && (
-                  <span className="block not-italic font-mono text-[0.62rem] tracking-[0.18em] uppercase text-gold-600 mb-2">
+                  <span className="block not-italic font-mono text-[0.68rem] tracking-[0.18em] uppercase text-gold-700 mb-2">
                     {labelled[1]}
                   </span>
                 )}
@@ -228,7 +228,7 @@ function Prose({
                   <thead>
                     <tr>
                       {b.head.map((h, j) => (
-                        <th key={j} className="font-mono text-[0.58rem] tracking-[0.09em] uppercase font-medium text-stone-600 px-4 py-[0.78rem] text-left border-b border-stone-200">
+                        <th key={j} className="font-mono text-[0.68rem] tracking-[0.09em] uppercase font-medium text-stone-600 px-4 py-[0.78rem] text-left border-b border-stone-200">
                           <Inline text={h} />
                         </th>
                       ))}
@@ -291,14 +291,14 @@ export default function MarkdownDossier(props: MarkdownDossierProps) {
       <div className="grid grid-cols-[220px_1fr] gap-16 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.8rem] pb-24 max-[960px]:grid-cols-1 max-[960px]:gap-10">
         <aside className="sticky top-24 self-start max-[960px]:static" aria-label={ui.tocAria}>
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">{ui.toc}</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">{ui.toc}</div>
             <ol className="list-none grid gap-[0.3rem] max-[960px]:grid-cols-2 max-[560px]:grid-cols-1">
               {[...sections.map((s) => ({ id: s.id, num: s.num, text: s.title ?? s.label })),
                 ...(props.handoffs ? [{ id: 'weiterfuehrung', num: handoffsNum, text: ui.handoffs }] : []),
                 { id: 'verbindungen', num: connectionsNum, text: ui.connections }].map((item) => (
                 <li key={item.id}>
-                  <a href={`#${item.id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.65rem] tracking-[0.04em] text-stone-600 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700 shrink-0">{item.num}</span>
+                  <a href={`#${item.id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.7rem] tracking-[0.04em] text-stone-600 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800 shrink-0">{item.num}</span>
                     <span className="leading-tight">{item.text}</span>
                   </a>
                 </li>

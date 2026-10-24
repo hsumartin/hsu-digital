@@ -18,7 +18,7 @@ const BQ = ({ children }: { children: React.ReactNode }) => (
   </blockquote>
 );
 const H3 = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="font-mono text-[0.72rem] tracking-[0.14em] uppercase text-blue-700 mt-8 mb-3">
+  <h3 className="font-mono text-[0.86rem] font-medium tracking-[0.1em] uppercase text-blue-800 mt-10 mb-4">
     {children}
   </h3>
 );
@@ -31,7 +31,7 @@ function TableBlock({ rows }: { rows: Array<{ key: string; val: string }> }) {
           key={i}
           className="grid grid-cols-[14rem_1fr] border-t border-stone-100 first:border-t-0 max-[650px]:grid-cols-1"
         >
-          <div className="p-[0.7rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.06em] text-blue-700 font-medium max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
+          <div className="p-[0.7rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.06em] text-blue-800 font-medium max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
             {row.key}
           </div>
           <div className="p-[0.7rem_1.1rem] text-[0.88rem] leading-[1.6] text-stone-700 font-light">
@@ -87,12 +87,12 @@ export default function DecisionLayerDossier({ writing }: { writing: WritingDeta
         {/* TOC */}
         <aside className="sticky top-24 self-start max-[960px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">Inhalt</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">Inhalt</div>
             <ol className="list-none grid gap-[0.3rem] max-[960px]:grid-cols-2 max-[560px]:grid-cols-1">
               {tocItems.map(([id, num, label]) => (
                 <li key={id}>
-                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.65rem] tracking-[0.04em] text-stone-400 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700 shrink-0">{num}</span>
+                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.7rem] tracking-[0.04em] text-stone-500 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800 shrink-0">{num}</span>
                     <span className="leading-tight">{label}</span>
                   </a>
                 </li>
@@ -438,7 +438,7 @@ export default function DecisionLayerDossier({ writing }: { writing: WritingDeta
               </h2>
             </div>
             <div>
-              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.72)] font-light max-w-[42ch]">
+              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.9)] font-light max-w-[42ch]">
                 Für Gespräche zu KI-Entscheidungslogik, Governance-Frameworks und strategischem KI-Einsatz in Organisationen.
               </p>
               <div className="flex flex-col gap-3 mt-4">

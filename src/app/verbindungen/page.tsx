@@ -29,8 +29,8 @@ export default function VerbindungenPage() {
           }}
         />
         <div className="relative z-10 max-w-[90rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
-          <p className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-stone-400 mb-6">
-            <b className="text-gold-600 font-medium">Verbindungen</b>
+          <p className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-stone-500 mb-6">
+            <b className="text-gold-700 font-medium">Verbindungen</b>
             {' · '}Projekte · Schriften · Wissensfelder
           </p>
           <SectionLabel num="05">Verbindungen</SectionLabel>
@@ -69,13 +69,13 @@ export default function VerbindungenPage() {
                   i < arr.length - 1 ? 'border-r border-stone-200' : '',
                 ].join(' ')}
               >
-                <span className="block font-mono text-[0.56rem] tracking-[0.13em] uppercase text-stone-400 mb-[0.42rem]">
+                <span className="block font-mono text-[0.68rem] tracking-[0.13em] uppercase text-stone-500 mb-[0.42rem]">
                   {key}
                 </span>
                 <span
                   className={[
                     'block font-mono text-[0.76rem] leading-[1.45]',
-                    gold ? 'text-gold-600' : 'text-blue-800',
+                    gold ? 'text-gold-700' : 'text-blue-800',
                   ].join(' ')}
                 >
                   {val}
@@ -155,7 +155,7 @@ export default function VerbindungenPage() {
                 },
               ].map(({ title, items, link }) => (
                 <div key={title} className="bg-[#FBFAF7] px-[1.35rem] py-[1.25rem]">
-                  <h3 className="font-mono text-[0.62rem] tracking-[0.15em] uppercase text-gold-600 mb-[0.85rem]">
+                  <h3 className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-gold-700 mb-[0.85rem]">
                     {title}
                   </h3>
                   <ul className="list-none grid gap-[0.55rem]">
@@ -195,7 +195,7 @@ export default function VerbindungenPage() {
                 </h2>
               </div>
               <div>
-                <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light">
+                <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light">
                   Die Karte bleibt ruhig und funktional. Sie erweitert die Startseite, ohne eine
                   neue Anwendung oder ein zweites Designsystem zu eröffnen.
                 </p>

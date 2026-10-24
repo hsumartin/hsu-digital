@@ -62,7 +62,7 @@ export default function AlgorithmischeWaermeDossier({ project }: { project: Proj
       <div className="grid grid-cols-[220px_1fr] gap-16 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.8rem] pb-24 max-[980px]:grid-cols-1 max-[980px]:gap-10">
         <aside className="sticky top-24 self-start max-[980px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">Inhalt</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">Inhalt</div>
             <ol className="list-none">
               {[
                 ['ueberblick', '01', 'Überblick'],
@@ -73,8 +73,8 @@ export default function AlgorithmischeWaermeDossier({ project }: { project: Proj
                 ['verbindungen', '06', 'Verbindungen'],
               ].map(([id, num, label]) => (
                 <li key={id} className="border-t border-stone-100">
-                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-400 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700">{num}</span>{label}
+                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-500 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800">{num}</span>{label}
                   </a>
                 </li>
               ))}
@@ -141,19 +141,19 @@ export default function AlgorithmischeWaermeDossier({ project }: { project: Proj
             <div className="grid gap-px bg-stone-200 border border-stone-200">
               {experiments.map((exp) => (
                 <div key={exp.num} className="bg-[#FBFAF7] p-[1.35rem_1.45rem]">
-                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-blue-700 mb-[0.35rem]">
+                  <div className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-blue-800 mb-[0.35rem]">
                     Experiment {exp.num}
                   </div>
                   <h3 className="text-[0.96rem] leading-[1.35] font-medium text-stone-900 mb-[0.2rem]">
                     {exp.title}
                   </h3>
-                  <div className="font-mono text-[0.6rem] tracking-[0.1em] text-stone-400 mb-[0.7rem]">
+                  <div className="font-mono text-[0.68rem] tracking-[0.1em] text-stone-500 mb-[0.7rem]">
                     {exp.meta}
                   </div>
                   <p className="text-[0.88rem] leading-[1.65] text-stone-700 font-light mb-[0.6rem]">
                     {exp.text}
                   </p>
-                  <div className="border-l-2 border-stone-200 pl-3 font-mono text-[0.7rem] text-stone-400 italic">
+                  <div className="border-l-2 border-stone-200 pl-3 font-mono text-[0.7rem] text-stone-500 italic">
                     {exp.observation}
                   </div>
                 </div>
@@ -200,7 +200,7 @@ export default function AlgorithmischeWaermeDossier({ project }: { project: Proj
                 { cat: 'Werkzeuge', tool: 'Heissluftpistole · Holzstab · Eiswasser · Eis' },
               ].map((row) => (
                 <div key={row.cat} className="grid grid-cols-[14rem_1fr] border-t border-stone-100 first:border-t-0 max-[650px]:grid-cols-1">
-                  <div className="p-[1rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.08em] text-blue-700 max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
+                  <div className="p-[1rem_1.1rem] border-r border-stone-100 font-mono text-[0.72rem] tracking-[0.08em] text-blue-800 max-[650px]:border-r-0 max-[650px]:border-b max-[650px]:border-dashed">
                     {row.cat}
                   </div>
                   <div className="p-[1rem_1.1rem] text-[0.9rem] leading-[1.6] text-stone-700 font-light">

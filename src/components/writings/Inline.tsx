@@ -5,7 +5,7 @@ const TOKEN =
   /(\*\*[^*]+\*\*|\*[^*\s][^*]*\*|`[^`]+`|\[[^\]]+\]\([^)\s]+\)|https?:\/\/[^\s)]+[^\s).,;])/g;
 
 const linkClass =
-  'text-blue-700 no-underline border-b border-blue-700/[0.22] hover:text-stone-900 transition-colors break-words';
+  'text-blue-800 no-underline border-b border-blue-700/[0.22] hover:text-stone-900 transition-colors break-words';
 
 function renderLink(label: ReactNode, href: string, key: number): ReactNode {
   if (href.startsWith('/')) {

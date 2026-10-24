@@ -27,15 +27,15 @@ export default function GraphFilterBar({ value, onChange }: GraphFilterBarProps)
           className={[
             'flex items-baseline gap-[0.5rem] px-[1.15rem] py-[0.8rem]',
             i < FILTERS.length - 1 ? 'border-r border-stone-200' : '',
-            'font-mono text-[0.66rem] tracking-[0.12em] uppercase transition-colors',
-            value === f.value ? 'text-ink' : 'text-stone-400 hover:text-stone-700',
+            'font-mono text-[0.7rem] tracking-[0.12em] uppercase transition-colors',
+            value === f.value ? 'text-ink' : 'text-stone-500 hover:text-stone-700',
           ].join(' ')}
           aria-pressed={value === f.value}
         >
           <b
             className={[
-              'text-[0.58rem] font-medium',
-              value === f.value ? 'text-gold-600' : 'text-stone-400',
+              'text-[0.68rem] font-medium',
+              value === f.value ? 'text-gold-700' : 'text-stone-500',
             ].join(' ')}
           >
             {f.num}
@@ -43,7 +43,7 @@ export default function GraphFilterBar({ value, onChange }: GraphFilterBarProps)
           {f.label}
         </button>
       ))}
-      <span className="ml-auto px-[1.15rem] py-[0.8rem] border-l border-stone-200 font-mono text-[0.66rem] tracking-[0.12em] uppercase text-stone-400 hidden md:block">
+      <span className="ml-auto px-[1.15rem] py-[0.8rem] border-l border-stone-200 font-mono text-[0.7rem] tracking-[0.12em] uppercase text-stone-500 hidden md:block">
         Knoten wählen · ziehen · zoomen
       </span>
     </div>

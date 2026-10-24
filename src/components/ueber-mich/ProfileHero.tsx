@@ -37,14 +37,14 @@ export default function ProfileHero() {
 
       {/* Text */}
       <div className="flex flex-col justify-center px-[clamp(2rem,5vw,5rem)] py-[clamp(3rem,6vw,6rem)] max-[900px]:px-[clamp(1.5rem,6vw,4rem)] max-[900px]:pt-10">
-        <p className="font-mono text-[0.68rem] tracking-[0.22em] uppercase text-gold-600 mb-6">
+        <p className="font-mono text-[0.68rem] tracking-[0.22em] uppercase text-gold-700 mb-6">
           Profil · Martin Hsu
         </p>
         <h1 className="font-serif font-normal text-[clamp(2.4rem,4.5vw,4rem)] leading-[1.05] tracking-[-0.025em] text-ink max-w-[16ch]">
           Informationsarchitekt{' '}
           <em className="italic text-gold-500">für Systeme und Denkstrukturen</em>
         </h1>
-        <p className="font-mono text-[0.76rem] tracking-[0.14em] uppercase text-stone-400 mt-3">
+        <p className="font-mono text-[0.76rem] tracking-[0.14em] uppercase text-stone-500 mt-3">
           Digitalisierung · Verwaltung · KI
         </p>
         <p className="mt-8 text-[1rem] leading-[1.8] text-stone-600 font-light max-w-[34rem]">

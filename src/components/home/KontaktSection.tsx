@@ -16,7 +16,7 @@ export default function KontaktSection() {
       aria-label="Kontakt"
     >
       {/* Bridge line */}
-      <div className="max-w-[84rem] mx-auto flex items-center gap-4 font-mono text-[0.66rem] tracking-[0.14em] uppercase text-text-muted py-[2.6rem]">
+      <div className="max-w-[84rem] mx-auto flex items-center gap-4 font-mono text-[0.7rem] tracking-[0.14em] uppercase text-text-muted py-[2.6rem]">
         <span>
           Aus <b className="text-stone-700 font-normal">05 Verbindungen</b>
         </span>
@@ -38,13 +38,13 @@ export default function KontaktSection() {
               Was ich aufbaue, soll auch{' '}
               <em className="italic text-gold-200">nach mir tragen.</em>
             </h2>
-            <p className="mt-7 text-[1.06rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light max-w-[46ch]">
+            <p className="mt-7 text-[1.06rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light max-w-[46ch]">
               Dieselbe Haltung, die Projekte strukturiert und KI bewusst begrenzt, gilt für die
               Zusammenarbeit: Ich entwerfe Systeme, die{' '}
               <b className="text-[#F4F2EC] font-normal">übergebbar sind und ohne mich weiterlaufen</b>
               . Was bleibt, ist die Struktur — nicht die Abhängigkeit.
             </p>
-            <p className="mt-[1.1rem] text-[1.06rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light">
+            <p className="mt-[1.1rem] text-[1.06rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light">
               <span className="font-serif italic text-[1.18rem] text-[#E7EDF2]">
                 Ich freue mich auf Projekte, die Bestand haben sollen.
               </span>
@@ -71,10 +71,10 @@ export default function KontaktSection() {
           {/* Right record */}
           <aside className="border border-[rgba(244,242,236,0.18)] bg-blue-900">
             <div className="flex justify-between items-baseline px-[1.1rem] py-[0.85rem] border-b border-[rgba(244,242,236,0.18)]">
-              <span className="font-mono text-[0.64rem] tracking-[0.14em] uppercase text-blue-300">
+              <span className="font-mono text-[0.7rem] tracking-[0.14em] uppercase text-[#D9E8F3]">
                 Zusammenarbeit · Index
               </span>
-              <span className="font-mono text-[0.6rem] tracking-[0.1em] text-[rgba(244,242,236,0.66)]">
+              <span className="font-mono text-[0.68rem] tracking-[0.1em] text-[rgba(244,242,236,0.9)]">
                 REC-06
               </span>
             </div>
@@ -83,7 +83,7 @@ export default function KontaktSection() {
                 key={label}
                 className="flex justify-between gap-4 px-[1.1rem] py-[0.72rem] border-b border-[rgba(244,242,236,0.10)] last:border-b-0"
               >
-                <span className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-blue-300 pt-[0.15rem] whitespace-nowrap">
+                <span className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-[#D9E8F3] pt-[0.15rem] whitespace-nowrap">
                   {label}
                 </span>
                 {live ? (

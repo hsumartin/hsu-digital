@@ -25,7 +25,7 @@ export default function DatenschutzPage() {
       <main className="max-w-[56rem] mx-auto px-[clamp(1.5rem,5vw,4rem)] pt-20 pb-24">
 
         {/* ── Header ── */}
-        <p className="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-gold-600 mb-6">
+        <p className="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-gold-700 mb-6">
           Rechtliche Angaben
         </p>
         <h1 className="font-serif font-normal text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.05] tracking-[-0.025em] text-ink mb-3">
@@ -34,7 +34,7 @@ export default function DatenschutzPage() {
         <p className="font-serif italic text-[1.2rem] text-stone-500 mb-2">
           Information gemäss revidiertem Schweizer Datenschutzgesetz (revDSG) sowie DSGVO
         </p>
-        <p className="font-mono text-[0.65rem] tracking-[0.18em] uppercase text-stone-400 mb-12">
+        <p className="font-mono text-[0.7rem] tracking-[0.18em] uppercase text-stone-500 mb-12">
           Stand: Juni 2026
         </p>
 
@@ -43,13 +43,13 @@ export default function DatenschutzPage() {
           aria-label="Inhaltsübersicht Datenschutz"
           className="border border-stone-200 bg-[#F8F7F3] p-6 mb-16"
         >
-          <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-gold-600 mb-4">
+          <p className="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-gold-700 mb-4">
             Übersicht
           </p>
           <ol className="list-none space-y-1">
             {TOC_ITEMS.map(({ href, label }, i) => (
               <li key={href} className="flex gap-3 items-baseline">
-                <span className="font-mono text-[0.65rem] text-stone-400 shrink-0">
+                <span className="font-mono text-[0.7rem] text-stone-500 shrink-0">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <a
@@ -84,7 +84,7 @@ export default function DatenschutzPage() {
                 className="grid grid-cols-[10rem_1fr] border-b border-stone-100 last:border-b-0
                            max-[520px]:grid-cols-1"
               >
-                <div className="px-4 py-3 font-mono text-[0.65rem] tracking-[0.14em] uppercase text-stone-400
+                <div className="px-4 py-3 font-mono text-[0.7rem] tracking-[0.14em] uppercase text-stone-500
                                 border-r border-stone-100 max-[520px]:border-r-0 max-[520px]:border-b max-[520px]:pb-1">
                   {key}
                 </div>
@@ -92,7 +92,7 @@ export default function DatenschutzPage() {
                   {href ? (
                     <a
                       href={href}
-                      className="text-gold-600 no-underline border-b border-gold-500/30 pb-px
+                      className="text-gold-700 no-underline border-b border-gold-500/30 pb-px
                                  hover:border-gold-500 transition-colors duration-200"
                     >
                       {val}

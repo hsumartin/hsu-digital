@@ -31,7 +31,7 @@ export default function MittenmangDossier({ project }: { project: ProjectDetail 
       <div className="grid grid-cols-[220px_1fr] gap-16 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.8rem] pb-24 max-[980px]:grid-cols-1 max-[980px]:gap-10">
         <aside className="sticky top-24 self-start max-[980px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">Inhalt</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">Inhalt</div>
             <ol className="list-none">
               {[
                 ['ueberblick', '01', 'Überblick'],
@@ -41,8 +41,8 @@ export default function MittenmangDossier({ project }: { project: ProjectDetail 
                 ['verbindungen', '05', 'Verbindungen'],
               ].map(([id, num, label]) => (
                 <li key={id} className="border-t border-stone-100">
-                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-400 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700">{num}</span>{label}
+                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-500 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800">{num}</span>{label}
                   </a>
                 </li>
               ))}

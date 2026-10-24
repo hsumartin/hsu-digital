@@ -187,12 +187,12 @@ export default function VerbindungenHomeSection() {
       aria-label="Verbindungen"
     >
       <div className="max-w-[88rem] mx-auto">
-        <p className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-text-muted mb-6">
-          <b className="text-gold-600 font-medium">Editorial Architecture</b>
+        <p className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-text-muted mb-6">
+          <b className="text-gold-700 font-medium">Editorial Architecture</b>
           {' '}×{' '}
-          <b className="text-gold-600 font-medium">Civic Digital</b>
+          <b className="text-gold-700 font-medium">Civic Digital</b>
           {' '}×{' '}
-          <b className="text-gold-600 font-medium">AI Clarity</b>
+          <b className="text-gold-700 font-medium">AI Clarity</b>
         </p>
         <SectionLabel num="05">Verbindungen</SectionLabel>
 
@@ -301,7 +301,7 @@ export default function VerbindungenHomeSection() {
 
           {/* Readout panel */}
           <div className="flex flex-col px-6 py-[1.6rem] border-t border-stone-200 md:border-t-0 md:border-l md:border-stone-200">
-            <div className="font-mono text-[0.6rem] tracking-[0.16em] uppercase text-blue-800 mb-3">
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-blue-800 mb-3">
               {readout.kind}
             </div>
             <div
@@ -313,14 +313,14 @@ export default function VerbindungenHomeSection() {
             </p>
             {readout.principles.length > 0 && (
               <div className="mt-5">
-                <div className="font-mono text-[0.58rem] tracking-[0.12em] uppercase text-text-muted mb-2">
+                <div className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-text-muted mb-2">
                   Verbunden über
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {readout.principles.map((p) => (
                     <span
                       key={p}
-                      className="font-mono text-[0.6rem] tracking-[0.06em] text-gold-600 border border-[rgba(201,169,75,0.45)] rounded-full px-[0.6rem] py-[0.22rem]"
+                      className="font-mono text-[0.68rem] tracking-[0.06em] text-gold-700 border border-[rgba(201,169,75,0.45)] rounded-full px-[0.6rem] py-[0.22rem]"
                     >
                       {p}
                     </span>
@@ -328,7 +328,7 @@ export default function VerbindungenHomeSection() {
                 </div>
               </div>
             )}
-            <p className="mt-auto pt-6 font-mono text-[0.6rem] tracking-[0.06em] text-text-muted leading-[1.7]">
+            <p className="mt-auto pt-6 font-mono text-[0.68rem] tracking-[0.06em] text-text-muted leading-[1.7]">
               Knoten anklicken zum Fixieren · daneben klicken zum Lösen
             </p>
           </div>
@@ -337,7 +337,7 @@ export default function VerbindungenHomeSection() {
         {/* Legend */}
         <div className="flex flex-wrap gap-5 mt-5">
           {LEGEND_ITEMS.map(({ type, label }) => (
-            <span key={type} className="flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.08em] uppercase text-text-muted">
+            <span key={type} className="flex items-center gap-2 font-mono text-[0.68rem] tracking-[0.08em] uppercase text-text-muted">
               {type === 'core' ? (
                 <span className="w-[11px] h-[11px] rounded-full shrink-0 border-2 border-gold-600" />
               ) : (

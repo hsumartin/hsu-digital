@@ -135,10 +135,10 @@ export default function SchriftenSection() {
       />
 
       <div className="relative z-10 max-w-[84rem] mx-auto">
-        <p className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-text-muted mb-6">
-          <b className="text-gold-600 font-medium">Editorial Architecture</b>
+        <p className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-text-muted mb-6">
+          <b className="text-gold-700 font-medium">Editorial Architecture</b>
           {' '}× Civic Digital ×{' '}
-          <b className="text-gold-600 font-medium">AI Clarity</b>
+          <b className="text-gold-700 font-medium">AI Clarity</b>
         </p>
         <SectionLabel num="04">Schriften</SectionLabel>
 
@@ -172,12 +172,12 @@ export default function SchriftenSection() {
               ].join(' ')}
             >
               {label}{' '}
-              <span className={['text-[0.6rem]', active ? 'text-gold-600' : 'text-text-muted'].join(' ')}>
+              <span className={['text-[0.68rem]', active ? 'text-gold-700' : 'text-text-muted'].join(' ')}>
                 {count}
               </span>
             </span>
           ))}
-          <span className="ml-auto px-[1.3rem] py-[0.8rem] font-mono text-[0.62rem] tracking-[0.1em] text-text-muted">
+          <span className="ml-auto px-[1.3rem] py-[0.8rem] font-mono text-[0.68rem] tracking-[0.1em] text-text-muted">
             Index · Schriften · 2025–2026
           </span>
         </div>
@@ -191,11 +191,11 @@ export default function SchriftenSection() {
             >
               {/* Category col */}
               <div className="px-[1.4rem] py-6 border-b border-stone-200 md:border-b-0 md:border-r md:border-stone-200">
-                <div className="font-mono text-[0.66rem] tracking-[0.14em] text-blue-800 mb-[0.9rem]">{id}</div>
-                <span className="inline-block font-mono text-[0.58rem] tracking-[0.1em] uppercase border border-[rgba(43,104,149,0.30)] bg-[rgba(43,104,149,0.05)] rounded-full px-[0.65rem] py-[0.22rem] text-blue-800 mb-3">
+                <div className="font-mono text-[0.7rem] tracking-[0.14em] text-blue-800 mb-[0.9rem]">{id}</div>
+                <span className="inline-block font-mono text-[0.68rem] tracking-[0.1em] uppercase border border-[rgba(43,104,149,0.30)] bg-[rgba(43,104,149,0.05)] rounded-full px-[0.65rem] py-[0.22rem] text-blue-800 mb-3">
                   {type}
                 </span>
-                <div className="font-mono text-[0.62rem] tracking-[0.1em] text-text-muted">{year}</div>
+                <div className="font-mono text-[0.68rem] tracking-[0.1em] text-text-muted">{year}</div>
               </div>
 
               {/* Main col */}
@@ -217,7 +217,7 @@ export default function SchriftenSection() {
 
               {/* Connection col */}
               <div className="flex flex-col px-6 py-6 border-t border-stone-200 md:border-t-0 md:border-l md:border-stone-200">
-                <div className="font-mono text-[0.58rem] tracking-[0.12em] uppercase text-text-muted mb-3">
+                <div className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-text-muted mb-3">
                   Wirkt in
                 </div>
                 <div className="flex flex-col gap-2">
@@ -234,7 +234,7 @@ export default function SchriftenSection() {
                 </div>
                 <Link
                   href={href}
-                  className="mt-auto pt-[1.1rem] font-mono text-[0.66rem] tracking-[0.1em] uppercase text-gold-600 no-underline inline-flex items-center gap-[0.45rem] transition-all duration-200 hover:gap-3"
+                  className="mt-auto pt-[1.1rem] font-mono text-[0.7rem] tracking-[0.1em] uppercase text-gold-700 no-underline inline-flex items-center gap-[0.45rem] transition-all duration-200 hover:gap-3"
                 >
                   Lesen →
                 </Link>
@@ -245,7 +245,7 @@ export default function SchriftenSection() {
 
         {/* Principles */}
         <div className="border-t border-stone-200 pt-10 mt-[3.6rem]">
-          <div className="font-mono text-[0.66rem] tracking-[0.2em] uppercase text-gold-600 mb-2">
+          <div className="font-mono text-[0.7rem] tracking-[0.2em] uppercase text-gold-700 mb-2">
             Ein Prinzipienkern
           </div>
           <p className="text-[0.96rem] text-stone-700 font-light max-w-[60ch] mb-[1.6rem]">
@@ -265,7 +265,7 @@ export default function SchriftenSection() {
                   {tags.map((t) => (
                     <span
                       key={t}
-                      className="font-mono text-[0.56rem] tracking-[0.08em] uppercase text-blue-800 border border-[rgba(43,104,149,0.32)] bg-[rgba(43,104,149,0.06)] rounded-sm px-2 py-[0.25rem]"
+                      className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-blue-800 border border-[rgba(43,104,149,0.32)] bg-[rgba(43,104,149,0.06)] rounded-sm px-2 py-[0.25rem]"
                     >
                       {t}
                     </span>
@@ -273,7 +273,7 @@ export default function SchriftenSection() {
                   {(inactive as readonly string[]).map((t) => (
                     <span
                       key={t}
-                      className="font-mono text-[0.56rem] tracking-[0.08em] uppercase text-text-muted border border-stone-200 rounded-sm px-2 py-[0.25rem]"
+                      className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-text-muted border border-stone-200 rounded-sm px-2 py-[0.25rem]"
                     >
                       {t}
                     </span>

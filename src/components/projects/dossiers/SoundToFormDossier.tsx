@@ -31,7 +31,7 @@ export default function SoundToFormDossier({ project }: { project: ProjectDetail
       <div className="grid grid-cols-[220px_1fr] gap-16 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.8rem] pb-24 max-[980px]:grid-cols-1 max-[980px]:gap-10">
         <aside className="sticky top-24 self-start max-[980px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">Inhalt</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">Inhalt</div>
             <ol className="list-none">
               {[
                 ['ueberblick', '01', 'Überblick'],
@@ -42,8 +42,8 @@ export default function SoundToFormDossier({ project }: { project: ProjectDetail
                 ['verbindungen', '06', 'Verbindungen'],
               ].map(([id, num, label]) => (
                 <li key={id} className="border-t border-stone-100">
-                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-400 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700">{num}</span>{label}
+                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-500 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800">{num}</span>{label}
                   </a>
                 </li>
               ))}
@@ -104,7 +104,7 @@ export default function SoundToFormDossier({ project }: { project: ProjectDetail
                 { num: '03', tool: 'Maya', step: 'Animation: Schichtaufbau synchron zur Komposition' },
               ].map((item) => (
                 <div key={item.num} className="bg-[#FBFAF7] p-[1.35rem_1.45rem]">
-                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-blue-700 mb-[0.55rem]">Schritt {item.num}</div>
+                  <div className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-blue-800 mb-[0.55rem]">Schritt {item.num}</div>
                   <h3 className="text-[0.96rem] leading-[1.35] font-medium text-stone-900 mb-[0.45rem]">{item.tool}</h3>
                   <p className="text-[0.88rem] leading-[1.65] text-stone-700 font-light">{item.step}</p>
                 </div>
@@ -126,8 +126,8 @@ export default function SoundToFormDossier({ project }: { project: ProjectDetail
 
             {/* Formmodelle als Paar — wie in HTML (img-pair) */}
             <figure className="my-12 border border-stone-200 bg-[#FBFAF7]">
-              <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.6rem] tracking-[0.14em] uppercase text-stone-400">
-                <b className="text-gold-600 font-medium">ABB. 02 · Formmodell Ansichten 1 & 2</b>
+              <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.68rem] tracking-[0.14em] uppercase text-stone-500">
+                <b className="text-gold-700 font-medium">ABB. 02 · Formmodell Ansichten 1 & 2</b>
                 <span>FigurePlate · Modell</span>
               </div>
               <div className="grid grid-cols-2 gap-px bg-stone-200 p-px max-[560px]:grid-cols-1">
@@ -147,7 +147,7 @@ export default function SoundToFormDossier({ project }: { project: ProjectDetail
                   </div>
                 ))}
               </div>
-              <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.62rem] tracking-[0.08em] leading-[1.55] text-stone-400">
+              <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.68rem] tracking-[0.08em] leading-[1.55] text-stone-500">
                 Formmodell, zwei Ansichten. Schichtaufbau aus extrahierten Zeitschnitten der Komposition. Rhino 3D, TU Braunschweig 2014.
               </figcaption>
             </figure>

@@ -32,8 +32,8 @@ export default function ProjektePage() {
           }}
         />
         <div className="relative z-10 max-w-[90rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
-          <div className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-stone-400 mb-6">
-            <b className="text-gold-600 font-medium">Projekte</b> · Dossierkatalog · Systeme &amp; Studien
+          <div className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-stone-500 mb-6">
+            <b className="text-gold-700 font-medium">Projekte</b> · Dossierkatalog · Systeme &amp; Studien
           </div>
           <SectionLabel num="01">Projektindex</SectionLabel>
           <div className="grid grid-cols-[minmax(0,1.45fr)_minmax(18rem,0.8fr)] gap-12 items-end max-[860px]:grid-cols-1 max-[860px]:gap-6">
@@ -67,12 +67,12 @@ export default function ProjektePage() {
                 key={item.key}
                 className="p-[0.95rem_1.1rem] border-r border-stone-100 min-h-[4.9rem] last:border-r-0"
               >
-                <span className="block font-mono text-[0.56rem] tracking-[0.13em] uppercase text-stone-400 mb-[0.42rem]">
+                <span className="block font-mono text-[0.68rem] tracking-[0.13em] uppercase text-stone-500 mb-[0.42rem]">
                   {item.key}
                 </span>
                 <span
                   className={`block font-mono text-[0.76rem] leading-[1.45] ${
-                    item.gold ? 'text-gold-600' : 'text-blue-700'
+                    item.gold ? 'text-gold-700' : 'text-blue-800'
                   }`}
                 >
                   {item.val}
@@ -178,7 +178,7 @@ export default function ProjektePage() {
                   },
                 ].map((col) => (
                   <div key={col.title} className="bg-[#FBFAF7] p-[1.25rem_1.35rem]">
-                    <h3 className="font-mono text-[0.62rem] tracking-[0.15em] uppercase text-gold-600 mb-[0.85rem]">
+                    <h3 className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-gold-700 mb-[0.85rem]">
                       {col.title}
                     </h3>
                     <ul className="list-none grid gap-[0.55rem]">
@@ -208,7 +208,7 @@ export default function ProjektePage() {
                 </h2>
               </div>
               <div>
-                <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light">
+                <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light">
                   Der Index bleibt erweiterbar: Neue Projekte werden als strukturierte Datensätze
                   ergänzt. Layout, Komponenten und Designsystem bleiben unverändert.
                 </p>

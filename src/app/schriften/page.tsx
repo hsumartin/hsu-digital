@@ -31,10 +31,10 @@ export default function SchriftenPage() {
           }}
         />
         <div className="relative z-10 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
-          <p className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-stone-400 mb-6">
-            <b className="text-gold-600 font-medium">Editorial Architecture</b>
+          <p className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-stone-500 mb-6">
+            <b className="text-gold-700 font-medium">Editorial Architecture</b>
             {' × '}Civic Digital{' × '}
-            <b className="text-gold-600 font-medium">AI Clarity</b>
+            <b className="text-gold-700 font-medium">AI Clarity</b>
           </p>
           <SectionLabel num="04">Schriften</SectionLabel>
           <div className="grid grid-cols-[minmax(0,1.45fr)_minmax(18rem,0.8fr)] gap-12 items-end max-[860px]:grid-cols-1 max-[860px]:gap-6">
@@ -69,12 +69,12 @@ export default function SchriftenPage() {
                 key={item.key}
                 className="p-[0.95rem_1.1rem] border-r border-stone-100 min-h-[4.9rem] last:border-r-0"
               >
-                <span className="block font-mono text-[0.56rem] tracking-[0.13em] uppercase text-stone-400 mb-[0.42rem]">
+                <span className="block font-mono text-[0.68rem] tracking-[0.13em] uppercase text-stone-500 mb-[0.42rem]">
                   {item.key}
                 </span>
                 <span
                   className={`block font-mono text-[0.76rem] leading-[1.45] ${
-                    item.gold ? 'text-gold-600' : 'text-blue-700'
+                    item.gold ? 'text-gold-700' : 'text-blue-800'
                   }`}
                 >
                   {item.val}
@@ -107,10 +107,10 @@ export default function SchriftenPage() {
                 <div key={w.slug}>
                   <WritingIndexCard writing={w} />
                   {w.slug === 'denkarchitektur' && (
-                    <p className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-stone-400 mt-[0.45rem] pl-[0.1rem]">
+                    <p className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-stone-500 mt-[0.45rem] pl-[0.1rem]">
                       <Link
                         href="/en/whitepaper/architecture-of-thinking"
-                        className="text-blue-700 no-underline border-b border-blue-700/20 pb-[2px] hover:border-blue-700/60 transition-colors"
+                        className="text-blue-800 no-underline border-b border-blue-700/20 pb-[2px] hover:border-blue-700/60 transition-colors"
                       >
                         English whitepaper version
                       </Link>
@@ -128,7 +128,7 @@ export default function SchriftenPage() {
             <SectionLabel num="03">Routing &amp; Skalierung</SectionLabel>
             <div className="border border-stone-200 bg-[#F8F7F3]">
               <div className="p-[1.65rem_1.85rem] border-b border-stone-100">
-                <div className="font-mono text-[0.62rem] tracking-[0.15em] uppercase text-gold-600 mb-[0.65rem]">
+                <div className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-gold-700 mb-[0.65rem]">
                   Routing-Kette
                 </div>
                 <h2 className="font-serif font-normal text-[clamp(1.6rem,3vw,2.2rem)] leading-[1.25] tracking-[-0.01em] mb-[0.8rem]">
@@ -148,7 +148,7 @@ export default function SchriftenPage() {
                   { title: '/schriften/[slug]', text: 'Trägt die Tiefe: Abstract, Kapitel, Modelle, Diagramme, Downloads und Verbindungen.' },
                 ].map((col) => (
                   <div key={col.title} className="bg-[#FBFAF7] p-[1.25rem_1.35rem]">
-                    <h3 className="font-mono text-[0.62rem] tracking-[0.15em] uppercase text-gold-600 mb-[0.65rem]">
+                    <h3 className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-gold-700 mb-[0.65rem]">
                       {col.title}
                     </h3>
                     <p className="text-[0.88rem] leading-[1.62] text-stone-700 font-light">
@@ -174,7 +174,7 @@ export default function SchriftenPage() {
                 </h2>
               </div>
               <div>
-                <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.72)] font-light">
+                <p className="text-[1rem] leading-[1.72] text-[rgba(244,242,236,0.9)] font-light">
                   Die Schriften machen sichtbar, welche Prinzipien hinter Projekten, KI-Haltung
                   und Informationsarchitektur stehen. Sie dienen als Referenzebene, nicht als
                   laufender Blog.

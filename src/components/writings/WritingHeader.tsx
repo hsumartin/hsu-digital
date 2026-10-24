@@ -48,8 +48,8 @@ export default function WritingHeader({
         }}
       />
       <div className="relative z-10 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
-        <div className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-stone-400 mb-6">
-          <b className="text-gold-600 font-medium">{labels.kicker}</b> · {eyebrow}
+        <div className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-stone-500 mb-6">
+          <b className="text-gold-700 font-medium">{labels.kicker}</b> · {eyebrow}
         </div>
 
         <SectionLabel num="01">{labels.section}</SectionLabel>
@@ -80,12 +80,12 @@ export default function WritingHeader({
                   <span
                     key={t.label}
                     className={[
-                      'inline-flex items-center border rounded-full px-[0.78rem] py-[0.34rem] font-mono text-[0.6rem] tracking-[0.13em] uppercase',
+                      'inline-flex items-center border rounded-full px-[0.78rem] py-[0.34rem] font-mono text-[0.68rem] tracking-[0.13em] uppercase',
                       t.variant === 'gold'
-                        ? 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]'
+                        ? 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]'
                         : t.variant === 'blue'
-                        ? 'border-blue-300/50 text-blue-700 bg-blue-700/[0.04]'
-                        : 'border-stone-200 text-stone-400 bg-[#F8F7F3]',
+                        ? 'border-blue-300/50 text-blue-800 bg-blue-700/[0.04]'
+                        : 'border-stone-200 text-stone-500 bg-[#F8F7F3]',
                     ].join(' ')}
                   >
                     {t.label}
@@ -112,7 +112,7 @@ export default function WritingHeader({
             <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2 mt-[1.4rem]">
               <Link
                 href={labels.backHref ?? '/schriften'}
-                className="inline-flex font-mono text-[0.64rem] tracking-[0.12em] uppercase text-blue-700 no-underline border-b border-blue-700/25 pb-[2px]"
+                className="inline-flex font-mono text-[0.7rem] tracking-[0.12em] uppercase text-blue-800 no-underline border-b border-blue-700/25 pb-[2px]"
               >
                 {labels.back}
               </Link>
@@ -121,7 +121,7 @@ export default function WritingHeader({
                   href={alternate.href}
                   lang={alternate.lang}
                   hrefLang={alternate.lang}
-                  className="inline-flex font-mono text-[0.64rem] tracking-[0.12em] uppercase text-blue-700 no-underline border-b border-blue-700/25 pb-[2px]"
+                  className="inline-flex font-mono text-[0.7rem] tracking-[0.12em] uppercase text-blue-800 no-underline border-b border-blue-700/25 pb-[2px]"
                 >
                   {alternate.label}
                 </Link>

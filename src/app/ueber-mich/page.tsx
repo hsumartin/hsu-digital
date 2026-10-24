@@ -44,10 +44,10 @@ export default function UeberMichPage() {
 
               {/* Mensch · System · KI-Block */}
               <div className="mt-8 border border-stone-200 bg-[#F8F7F3] p-10">
-                <p className="font-mono text-[0.65rem] tracking-[0.2em] uppercase text-gold-600 mb-1">
+                <p className="font-mono text-[0.7rem] tracking-[0.2em] uppercase text-gold-700 mb-1">
                   Mensch · System · KI
                 </p>
-                <p className="font-mono text-[0.62rem] tracking-[0.12em] text-stone-400 mb-4">
+                <p className="font-mono text-[0.68rem] tracking-[0.12em] text-stone-500 mb-4">
                   Digital Intelligence Collaboration
                 </p>
                 <p className="text-[0.95rem] leading-[1.8] text-stone-600 font-light max-w-[44rem]">
@@ -92,7 +92,7 @@ export default function UeberMichPage() {
             Zukunft entsteht dort, wo Intelligenz, Struktur und Gestaltung bewusst
             miteinander verbunden werden.
           </p>
-          <p className="font-mono text-[0.65rem] tracking-[0.18em] uppercase text-gold-200 mt-6">
+          <p className="font-mono text-[0.7rem] tracking-[0.18em] uppercase text-gold-200 mt-6">
             Leitsatz
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function UeberMichPage() {
               </p>
               <a
                 href="mailto:kontakt@martinhsu.digital"
-                className="font-mono text-[0.85rem] tracking-[0.08em] text-gold-600
+                className="font-mono text-[0.85rem] tracking-[0.08em] text-gold-700
                            border-b border-gold-500/40 pb-[2px] hover:border-gold-500
                            transition-colors duration-200 no-underline"
               >

@@ -506,7 +506,7 @@ export default function GraphCanvas({ readout, onReadout }: GraphCanvasProps) {
           aria-label="Interaktive Themenkarte"
         >
           <canvas ref={canvasRef} className="absolute inset-0 z-10 w-full h-full block" />
-          <div className="absolute left-4 bottom-4 z-20 font-mono text-[0.58rem] tracking-[0.12em] uppercase text-stone-400 bg-[rgba(248,247,243,0.82)] border border-stone-200 px-[0.65rem] py-[0.45rem] backdrop-blur-sm pointer-events-none">
+          <div className="absolute left-4 bottom-4 z-20 font-mono text-[0.68rem] tracking-[0.12em] uppercase text-stone-500 bg-[rgba(248,247,243,0.82)] border border-stone-200 px-[0.65rem] py-[0.45rem] backdrop-blur-sm pointer-events-none">
             Scroll · Zoom · Drag · Klick
           </div>
         </div>
@@ -516,7 +516,7 @@ export default function GraphCanvas({ readout, onReadout }: GraphCanvasProps) {
           className="flex flex-col px-[1.5rem] py-[1.6rem] bg-[#FBFAF7]"
           aria-live="polite"
         >
-          <div className="font-mono text-[0.6rem] tracking-[0.16em] uppercase text-blue-800 mb-[0.7rem]">
+          <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-blue-800 mb-[0.7rem]">
             {readout.type}
           </div>
           <div className="font-serif text-[1.72rem] leading-[1.32] text-ink mb-[1.25rem] pb-[0.25em]">
@@ -530,7 +530,7 @@ export default function GraphCanvas({ readout, onReadout }: GraphCanvasProps) {
               {readout.tags.map((t) => (
                 <span
                   key={t}
-                  className="font-mono text-[0.58rem] tracking-[0.06em] text-gold-600 border border-[rgba(201,169,75,0.45)] rounded-full px-[0.6rem] py-[0.22rem]"
+                  className="font-mono text-[0.68rem] tracking-[0.06em] text-gold-700 border border-[rgba(201,169,75,0.45)] rounded-full px-[0.6rem] py-[0.22rem]"
                 >
                   {t}
                 </span>
@@ -540,12 +540,12 @@ export default function GraphCanvas({ readout, onReadout }: GraphCanvasProps) {
           {readout.url && (
             <a
               href={readout.url}
-              className="inline-flex w-max mt-[1.2rem] font-mono text-[0.62rem] tracking-[0.12em] uppercase text-gold-600 border-b border-[rgba(201,169,75,0.28)] pb-[2px] hover:text-ink transition-colors"
+              className="inline-flex w-max mt-[1.2rem] font-mono text-[0.68rem] tracking-[0.12em] uppercase text-gold-700 border-b border-[rgba(201,169,75,0.28)] pb-[2px] hover:text-ink transition-colors"
             >
               Detail öffnen
             </a>
           )}
-          <p className="mt-auto pt-[1.6rem] font-mono text-[0.6rem] tracking-[0.06em] text-stone-400 leading-[1.7]">
+          <p className="mt-auto pt-[1.6rem] font-mono text-[0.68rem] tracking-[0.06em] text-stone-500 leading-[1.7]">
             Die Karte ist keine neue Anwendung, sondern die vertiefte Variante der Verbindungssektion der Startseite.
           </p>
         </aside>
@@ -559,7 +559,7 @@ export default function GraphCanvas({ readout, onReadout }: GraphCanvasProps) {
           { cls: 'bg-blue-700', label: 'Schriften' },
           { cls: 'bg-stone-400 border border-[rgba(14,17,22,0.18)]', label: 'Themen' },
         ].map(({ cls, label }) => (
-          <span key={label} className="flex items-center gap-[0.5rem] font-mono text-[0.62rem] tracking-[0.08em] uppercase text-stone-400">
+          <span key={label} className="flex items-center gap-[0.5rem] font-mono text-[0.68rem] tracking-[0.08em] uppercase text-stone-500">
             <span className={`w-[11px] h-[11px] rounded-full shrink-0 ${cls}`} />
             {label}
           </span>

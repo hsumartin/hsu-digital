@@ -8,11 +8,11 @@ interface ProjectIndexCardProps {
 }
 
 const tagVariants: Record<string, string> = {
-  Requirements: 'border-blue-300/50 text-blue-700 bg-blue-700/[0.04]',
-  GIS: 'border-blue-300/50 text-blue-700 bg-blue-700/[0.04]',
-  Datenmodell: 'border-blue-300/50 text-blue-700 bg-blue-700/[0.04]',
-  Referenzfall: 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]',
-  Geodaten: 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]',
+  Requirements: 'border-blue-300/50 text-blue-800 bg-blue-700/[0.04]',
+  GIS: 'border-blue-300/50 text-blue-800 bg-blue-700/[0.04]',
+  Datenmodell: 'border-blue-300/50 text-blue-800 bg-blue-700/[0.04]',
+  Referenzfall: 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]',
+  Geodaten: 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]',
 };
 
 function tagClass(tag: string) {
@@ -52,7 +52,7 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
       {/* Marker */}
       <div className="border-r border-stone-100 bg-[#F8F7F3] p-[1.25rem_1.35rem] flex flex-col justify-between gap-4 max-sm:border-r-0 max-sm:border-b">
         <div>
-          <div className="font-mono text-[0.6rem] tracking-[0.16em] uppercase text-gold-600 mb-1">
+          <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-1">
             {project.kicker}
           </div>
           <div
@@ -64,7 +64,7 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
             {numStr}
           </div>
         </div>
-        <span className="inline-flex w-max border border-blue-700/[0.28] rounded-full px-[0.65rem] py-[0.26rem] font-mono text-[0.56rem] tracking-[0.12em] uppercase text-blue-700 bg-blue-700/[0.04]">
+        <span className="inline-flex w-max border border-blue-700/[0.28] rounded-full px-[0.65rem] py-[0.26rem] font-mono text-[0.68rem] tracking-[0.12em] uppercase text-blue-800 bg-blue-700/[0.04]">
           {project.status}
         </span>
       </div>
@@ -99,7 +99,7 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
             {project.tags.map((t) => (
               <span
                 key={t}
-                className={`inline-flex items-center border rounded-full px-[0.72rem] py-[0.3rem] font-mono text-[0.58rem] tracking-[0.12em] uppercase ${tagClass(t)}`}
+                className={`inline-flex items-center border rounded-full px-[0.72rem] py-[0.3rem] font-mono text-[0.68rem] tracking-[0.12em] uppercase ${tagClass(t)}`}
               >
                 {t}
               </span>
@@ -110,13 +110,13 @@ export default function ProjectIndexCard({ project, num, compact = false }: Proj
         {/* Footer */}
         <div className="grid grid-cols-[1fr_auto] gap-5 items-end border-t border-stone-100 pt-4 mt-4 max-sm:grid-cols-1">
           <div className="font-mono text-[0.68rem] tracking-[0.08em] leading-[1.6] text-stone-600">
-            <b className="text-blue-700 font-medium">{compact ? 'Detail:' : 'Artefakte:'}</b>{' '}
+            <b className="text-blue-800 font-medium">{compact ? 'Detail:' : 'Artefakte:'}</b>{' '}
             {project.artifacts}
           </div>
           {project.hasDetail && (
             <Link
               href={`/projekte/${project.slug}`}
-              className="font-mono text-[0.64rem] tracking-[0.12em] uppercase text-gold-600 no-underline border-b border-gold-400/[0.28] pb-[2px] whitespace-nowrap hover:text-stone-900 transition-colors"
+              className="font-mono text-[0.7rem] tracking-[0.12em] uppercase text-gold-700 no-underline border-b border-gold-400/[0.28] pb-[2px] whitespace-nowrap hover:text-stone-900 transition-colors"
             >
               {compact ? 'Öffnen' : 'Dossier lesen'}
             </Link>

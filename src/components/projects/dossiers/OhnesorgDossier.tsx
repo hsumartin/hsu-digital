@@ -59,7 +59,7 @@ export default function OhnesorgDossier({ project }: { project: ProjectDetail })
       <div className="grid grid-cols-[220px_1fr] gap-16 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)] py-[4.8rem] pb-24 max-[980px]:grid-cols-1 max-[980px]:gap-10">
         <aside className="sticky top-24 self-start max-[980px]:static" aria-label="Inhaltsnavigation">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">Inhalt</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">Inhalt</div>
             <ol className="list-none">
               {[
                 ['ueberblick', '01', 'Überblick'],
@@ -71,8 +71,8 @@ export default function OhnesorgDossier({ project }: { project: ProjectDetail })
                 ['verbindungen', '07', 'Verbindungen'],
               ].map(([id, num, label]) => (
                 <li key={id} className="border-t border-stone-100">
-                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-400 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700">{num}</span>{label}
+                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.58rem] no-underline font-mono text-[0.68rem] tracking-[0.05em] text-stone-500 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800">{num}</span>{label}
                   </a>
                 </li>
               ))}
@@ -187,8 +187,8 @@ export default function OhnesorgDossier({ project }: { project: ProjectDetail })
 
             {/* Grundrisse UG 01–04 als 2×2-Grid */}
             <figure className="my-12 border border-stone-200 bg-[#FBFAF7]">
-              <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.6rem] tracking-[0.14em] uppercase text-stone-400">
-                <b className="text-gold-600 font-medium">ABB. 07 · Grundrisse UG 01–04</b>
+              <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.68rem] tracking-[0.14em] uppercase text-stone-500">
+                <b className="text-gold-700 font-medium">ABB. 07 · Grundrisse UG 01–04</b>
                 <span>FigurePlate · Pläne</span>
               </div>
               <div className="grid grid-cols-2 gap-px bg-stone-200 p-px max-[560px]:grid-cols-1">
@@ -201,13 +201,13 @@ export default function OhnesorgDossier({ project }: { project: ProjectDetail })
                       className="block w-full h-auto"
                       loading="lazy"
                     />
-                    <p className="font-mono text-[0.56rem] tracking-[0.1em] text-stone-400 mt-2">
+                    <p className="font-mono text-[0.68rem] tracking-[0.1em] text-stone-500 mt-2">
                       UG {n}
                     </p>
                   </div>
                 ))}
               </div>
-              <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.62rem] tracking-[0.08em] leading-[1.55] text-stone-400">
+              <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.68rem] tracking-[0.08em] leading-[1.55] text-stone-500">
                 Grundrisse UG 01–04 — Abstieg und Verdichtung über vier Ebenen. Mit jeder Ebene nimmt die Grundrissfläche ab.
               </figcaption>
             </figure>
@@ -222,7 +222,7 @@ export default function OhnesorgDossier({ project }: { project: ProjectDetail })
             <div className="grid gap-px bg-stone-200 border border-stone-200">
               {akte.map((akt) => (
                 <div key={akt.num} className="bg-[#FBFAF7] p-[1.35rem_1.45rem]">
-                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-blue-700 mb-[0.35rem]">
+                  <div className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-blue-800 mb-[0.35rem]">
                     Akt {akt.num}
                   </div>
                   <h3 className="text-[0.96rem] leading-[1.35] font-medium text-stone-900 mb-[0.55rem]">
@@ -250,8 +250,8 @@ export default function OhnesorgDossier({ project }: { project: ProjectDetail })
             />
             {/* Vergleich Original 2017/18 vs. KI-Aufbereitung 2026 */}
             <figure className="my-12 border border-stone-200 bg-[#FBFAF7]">
-              <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.6rem] tracking-[0.14em] uppercase text-stone-400">
-                <b className="text-gold-600 font-medium">ABB. 10 · Vergleich: Original und KI-Aufbereitung</b>
+              <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.68rem] tracking-[0.14em] uppercase text-stone-500">
+                <b className="text-gold-700 font-medium">ABB. 10 · Vergleich: Original und KI-Aufbereitung</b>
                 <span>FigurePlate · Vergleich</span>
               </div>
               <div className="grid grid-cols-2 gap-px bg-stone-200 p-px max-[560px]:grid-cols-1">
@@ -268,11 +268,11 @@ export default function OhnesorgDossier({ project }: { project: ProjectDetail })
                       style={{ maxHeight: 420, height: 'auto' }}
                       loading="lazy"
                     />
-                    <p className="font-mono text-[0.56rem] tracking-[0.1em] text-stone-400 mt-2">{img.label}</p>
+                    <p className="font-mono text-[0.68rem] tracking-[0.1em] text-stone-500 mt-2">{img.label}</p>
                   </div>
                 ))}
               </div>
-              <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.62rem] tracking-[0.08em] leading-[1.55] text-stone-400">
+              <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.68rem] tracking-[0.08em] leading-[1.55] text-stone-500">
                 Direkter Vergleich: Gleiche Raumsequenz, unterschiedliche Darstellungsmittel. Entwurf und Raumlogik unverändert.
               </figcaption>
             </figure>

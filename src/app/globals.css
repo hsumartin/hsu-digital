@@ -38,27 +38,27 @@
 /* 4-col cards: 1 → 2 → 4 */
 .grid-4col-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
 }
 @media (min-width: 640px) {
   .grid-4col-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (min-width: 1024px) {
   .grid-4col-cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
 /* Case card: 1 → 300px + 1fr at lg */
 .grid-case-card {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
 }
 @media (min-width: 1024px) {
   .grid-case-card {
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 300px minmax(0, 1fr);
   }
 }
 
@@ -243,14 +243,15 @@
 
   /* ── Text ── */
   --color-text: #EDE9E3;
-  --color-text-muted: #6E7A85;
+  --color-text-muted: #5E6772; /* 5.4:1 on paper; dark blocks use #6E7A85 explicitly */
   --color-text-faint: #3A4450;
 
   /* ── Gold ── */
   --color-gold-200: #F0E1B5;
   --color-gold-400: #D8BB6A;
   --color-gold-500: #C9A94B;
-  --color-gold-600: #A88E3D;
+  --color-gold-600: #A38A3B; /* display text and accents only; 3.05:1 on paper (was 2.9) */
+  --color-gold-700: #7F6A2A; /* small gold text, 4.9:1 on paper */
 
   /* ── Blue ── */
   --color-blue-300: #BFD8EA;
@@ -265,6 +266,8 @@
   --color-stone-100: #F0EEE8;
   --color-stone-200: #E5E1D8;
   --color-stone-300: #C9C7C1;
+  --color-stone-500: #5E6772; /* secondary small text, 5.4:1 on paper */
+  --color-stone-600: #4A5260;
   --color-stone-700: #343B48;
   --color-stone-800: #202632;
   --color-stone-900: #151922;

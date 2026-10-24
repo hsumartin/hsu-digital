@@ -14,7 +14,7 @@ export default function ImpressumPage() {
       <main className="max-w-[56rem] mx-auto px-[clamp(1.5rem,5vw,4rem)] pt-20 pb-24">
 
         {/* ── Header ── */}
-        <p className="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-gold-600 mb-6">
+        <p className="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-gold-700 mb-6">
           Rechtliche Angaben
         </p>
         <h1 className="font-serif font-normal text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.05] tracking-[-0.025em] text-ink mb-3">
@@ -41,7 +41,7 @@ export default function ImpressumPage() {
                 className="grid grid-cols-[10rem_1fr] border-b border-stone-100 last:border-b-0
                            max-[520px]:grid-cols-1"
               >
-                <div className="px-4 py-3 font-mono text-[0.65rem] tracking-[0.14em] uppercase text-stone-400
+                <div className="px-4 py-3 font-mono text-[0.7rem] tracking-[0.14em] uppercase text-stone-500
                                 border-r border-stone-100 max-[520px]:border-r-0 max-[520px]:border-b max-[520px]:pb-1">
                   {key}
                 </div>
@@ -49,7 +49,7 @@ export default function ImpressumPage() {
                   {href ? (
                     <a
                       href={href}
-                      className="text-gold-600 no-underline border-b border-gold-500/30 pb-px
+                      className="text-gold-700 no-underline border-b border-gold-500/30 pb-px
                                  hover:border-gold-500 transition-colors duration-200"
                     >
                       {val}

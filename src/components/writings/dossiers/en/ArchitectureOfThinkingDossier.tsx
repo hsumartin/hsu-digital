@@ -14,7 +14,7 @@ const BQ = ({ children }: { children: React.ReactNode }) => (
   </blockquote>
 );
 const H3 = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="font-mono text-[0.72rem] tracking-[0.14em] uppercase text-blue-700 mt-8 mb-3">
+  <h3 className="font-mono text-[0.86rem] font-medium tracking-[0.1em] uppercase text-blue-800 mt-10 mb-4">
     {children}
   </h3>
 );
@@ -31,7 +31,7 @@ function TableBlock({ rows, headers }: { rows: string[][]; headers: string[] }) 
         <thead>
           <tr>
             {headers.map((h) => (
-              <th key={h} className="bg-[#F8F7F3] font-mono text-[0.58rem] tracking-[0.09em] uppercase font-medium text-stone-400 px-4 py-[0.78rem] text-left border-b border-stone-200">
+              <th key={h} className="bg-[#F8F7F3] font-mono text-[0.68rem] tracking-[0.09em] uppercase font-medium text-stone-500 px-4 py-[0.78rem] text-left border-b border-stone-200">
                 {h}
               </th>
             ))}
@@ -85,8 +85,8 @@ export default function ArchitectureOfThinkingDossier() {
           }}
         />
         <div className="relative z-10 max-w-[88rem] mx-auto px-[clamp(1.5rem,4vw,4rem)]">
-          <div className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-stone-400 mb-6">
-            <b className="text-gold-600 font-medium">Whitepaper · Concept and Framework</b> · Artificial Intelligence
+          <div className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-stone-500 mb-6">
+            <b className="text-gold-700 font-medium">Whitepaper · Concept and Framework</b> · Artificial Intelligence
           </div>
           <div className="grid grid-cols-[minmax(0,1.42fr)_minmax(18rem,0.8fr)] gap-12 items-end max-[880px]:grid-cols-1 max-[880px]:gap-6">
             <div>
@@ -108,12 +108,12 @@ export default function ArchitectureOfThinkingDossier() {
                   <span
                     key={t.label}
                     className={[
-                      'inline-flex items-center border rounded-full px-[0.78rem] py-[0.34rem] font-mono text-[0.6rem] tracking-[0.13em] uppercase',
+                      'inline-flex items-center border rounded-full px-[0.78rem] py-[0.34rem] font-mono text-[0.68rem] tracking-[0.13em] uppercase',
                       t.variant === 'gold'
-                        ? 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]'
+                        ? 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]'
                         : t.variant === 'blue'
-                        ? 'border-blue-300/50 text-blue-700 bg-blue-700/[0.04]'
-                        : 'border-stone-200 text-stone-400 bg-[#F8F7F3]',
+                        ? 'border-blue-300/50 text-blue-800 bg-blue-700/[0.04]'
+                        : 'border-stone-200 text-stone-500 bg-[#F8F7F3]',
                     ].join(' ')}
                   >
                     {t.label}
@@ -129,7 +129,7 @@ export default function ArchitectureOfThinkingDossier() {
               <div className="mt-[1.4rem]">
                 <Link
                   href="/schriften"
-                  className="inline-flex font-mono text-[0.64rem] tracking-[0.12em] uppercase text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] w-fit"
+                  className="inline-flex font-mono text-[0.7rem] tracking-[0.12em] uppercase text-blue-800 no-underline border-b border-blue-700/25 pb-[2px] w-fit"
                 >
                   Back to writings
                 </Link>
@@ -147,10 +147,10 @@ export default function ArchitectureOfThinkingDossier() {
           { key: 'Artifacts', value: 'Stack Poster · USE+ Cycle · PromptPilot · Agent Loop' },
           { key: 'Works in',  value: 'Systems Thinking · PromptPilot · Agency' },
         ]} />
-        <p className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-stone-400 mt-[0.9rem]">
+        <p className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-stone-500 mt-[0.9rem]">
           <Link
             href="/schriften/denkarchitektur"
-            className="text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
+            className="text-blue-800 no-underline border-b border-blue-700/25 pb-[2px] hover:border-blue-700/60 transition-colors"
           >
             German dossier version
           </Link>
@@ -161,12 +161,12 @@ export default function ArchitectureOfThinkingDossier() {
         {/* TOC */}
         <aside className="sticky top-24 self-start max-[960px]:static" aria-label="Table of contents">
           <div className="border border-stone-200 bg-[#F8F7F3] p-[1.1rem_1.15rem]">
-            <div className="font-mono text-[0.58rem] tracking-[0.16em] uppercase text-gold-600 mb-[0.85rem]">Contents</div>
+            <div className="font-mono text-[0.68rem] tracking-[0.16em] uppercase text-gold-700 mb-[0.85rem]">Contents</div>
             <ol className="list-none grid gap-[0.3rem] max-[960px]:grid-cols-2 max-[560px]:grid-cols-1">
               {tocItems.map(([id, num, label]) => (
                 <li key={id}>
-                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.65rem] tracking-[0.04em] text-stone-400 hover:text-stone-900 transition-colors">
-                    <span className="text-blue-700 shrink-0">{num}</span>
+                  <a href={`#${id}`} className="flex gap-[0.65rem] items-baseline py-[0.4rem] no-underline font-mono text-[0.7rem] tracking-[0.04em] text-stone-500 hover:text-stone-900 transition-colors">
+                    <span className="text-blue-800 shrink-0">{num}</span>
                     <span className="leading-tight">{label}</span>
                   </a>
                 </li>
@@ -181,7 +181,7 @@ export default function ArchitectureOfThinkingDossier() {
           {/* 01 Abstract */}
           <WritingSection id="abstract" num="01" label="Abstract">
             <div className="bg-[#F8F7F3] border border-stone-200 px-[1.85rem] py-[1.65rem] mb-12 max-w-[66ch]">
-              <p className="font-mono text-[0.62rem] tracking-[0.18em] uppercase text-gold-600 mb-[0.9rem]">Key idea</p>
+              <p className="font-mono text-[0.68rem] tracking-[0.18em] uppercase text-gold-700 mb-[0.9rem]">Key idea</p>
               <p className="text-[1rem] leading-[1.82] text-stone-700 font-light mb-4">
                 AI does not realize its potential in a single prompt but in the <strong className="text-stone-900 font-medium">architecture of thinking</strong>.
                 This whitepaper shows how a deliberately designed <strong className="text-stone-900 font-medium">GPT Stack</strong> makes thinking{' '}
@@ -381,7 +381,7 @@ export default function ArchitectureOfThinkingDossier() {
                 },
               ].map((step) => (
                 <div key={step.key} className="bg-[#FBFAF7] p-[1.5rem]">
-                  <p className="font-mono text-[0.72rem] tracking-[0.2em] text-gold-600 font-medium mb-[0.6rem]">{step.key}</p>
+                  <p className="font-mono text-[0.72rem] tracking-[0.2em] text-gold-700 font-medium mb-[0.6rem]">{step.key}</p>
                   <h4 className="text-[0.9rem] font-medium text-stone-900 mb-[0.4rem]">{step.title}</h4>
                   <p className="text-[0.88rem] leading-[1.65] text-stone-700 font-light m-0">{step.text}</p>
                 </div>
@@ -740,7 +740,7 @@ export default function ArchitectureOfThinkingDossier() {
                 { time: '180 days', text: 'Atlas as knowledge graph; expansion to further domains; ethics markers active (audits passed); continuous-improvement backlog.' },
               ].map((step) => (
                 <div key={step.time} className="flex gap-6 items-baseline border-t border-stone-100 first:border-t-0 px-6 py-5">
-                  <span className="font-mono text-[0.65rem] tracking-[0.15em] text-gold-600 shrink-0 w-24">{step.time}</span>
+                  <span className="font-mono text-[0.7rem] tracking-[0.15em] text-gold-700 shrink-0 w-24">{step.time}</span>
                   <p className="text-[0.88rem] text-stone-700 font-light m-0">{step.text}</p>
                 </div>
               ))}
@@ -750,11 +750,11 @@ export default function ArchitectureOfThinkingDossier() {
                 Reflection replaces reaction. The system does not react; it recognizes. Those who build now do not build tools alone — they build
                 spaces for insight.
               </BQ>
-              <p className="text-[0.8rem] text-stone-400 italic mt-8 pt-6 border-t border-stone-100">
+              <p className="text-[0.8rem] text-stone-500 italic mt-8 pt-6 border-t border-stone-100">
                 <strong className="not-italic font-medium text-stone-500">Trademarks:</strong>{' '}
                 &ldquo;USE+ Framework™&rdquo; is a trademark of Martin Hsu. Use of the name and/or logo without prior written consent is not permitted.
               </p>
-              <p className="text-[0.8rem] text-stone-400 italic mt-3">
+              <p className="text-[0.8rem] text-stone-500 italic mt-3">
                 <strong className="not-italic font-medium text-stone-500">Copyright:</strong>{' '}
                 Texts, diagrams, and visuals of this whitepaper are protected by copyright (© 2025 Martin Hsu). Quotations with source attribution
                 are permitted; reproductions or derivatives require a license.
@@ -774,7 +774,7 @@ export default function ArchitectureOfThinkingDossier() {
               </h2>
             </div>
             <div>
-              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.72)] font-light max-w-[42ch]">
+              <p className="text-[1rem] leading-[1.75] text-[rgba(244,242,236,0.9)] font-light max-w-[42ch]">
                 For conversations about GPT Stack, USE+ Framework™, PromptPilot, and system architecture for structured AI thinking.
               </p>
               <div className="flex flex-col gap-3 mt-4">
@@ -786,7 +786,7 @@ export default function ArchitectureOfThinkingDossier() {
           </section>
 
           {/* Footer */}
-          <p className="font-mono text-[0.62rem] tracking-[0.08em] text-stone-400 mt-10 pt-6 border-t border-stone-100">
+          <p className="font-mono text-[0.68rem] tracking-[0.08em] text-stone-500 mt-10 pt-6 border-t border-stone-100">
             © 2025 Martin Hsu · All rights reserved. USE+ Framework™ is a trademark of Martin Hsu.
           </p>
         </div>

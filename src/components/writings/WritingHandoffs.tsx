@@ -15,7 +15,7 @@ export default function WritingHandoffs({ items }: { items: Handoff[] }) {
           <p className="text-[0.95rem] leading-[1.75] text-stone-700 font-light mb-3">{item.text}</p>
           <Link
             href={item.href}
-            className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-blue-700 no-underline border-b border-blue-700/25 pb-[2px] hover:text-stone-900 transition-colors"
+            className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-blue-800 no-underline border-b border-blue-700/25 pb-[2px] hover:text-stone-900 transition-colors"
           >
             {item.label} →
           </Link>

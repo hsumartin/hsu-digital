@@ -57,7 +57,7 @@ export default function HeroSection() {
         {/* ── INDEX RAIL ── */}
         <aside className="sticky top-24 self-start hidden lg:block">
           <div className="font-mono text-[0.7rem] tracking-[0.14em] text-text-muted">
-            <b className="text-gold-600 font-medium">MH</b> / Index
+            <b className="text-gold-700 font-medium">MH</b> / Index
           </div>
           <div className="mt-5 mb-6 w-20 h-20 rounded-sm overflow-hidden border border-stone-200">
             <Image
@@ -80,13 +80,13 @@ export default function HeroSection() {
                     i === 0 ? 'text-ink' : 'text-text-muted hover:text-ink',
                   ].join(' ')}
                 >
-                  <span className={i === 0 ? 'text-gold-600' : 'text-blue-700'}>{num}</span>
+                  <span className={i === 0 ? 'text-gold-700' : 'text-blue-800'}>{num}</span>
                   <span>{label}</span>
                 </a>
               </li>
             ))}
           </ul>
-          <div className="mt-6 font-mono text-[0.62rem] tracking-[0.1em] text-text-muted leading-[1.9]">
+          <div className="mt-6 font-mono text-[0.68rem] tracking-[0.1em] text-text-muted leading-[1.9]">
             EDITORIAL<br />ARCHITECTURE<br />× CIVIC × AI
           </div>
         </aside>
@@ -94,7 +94,7 @@ export default function HeroSection() {
         {/* ── HERO CONTENT ── */}
         <div className="max-w-[42rem]" id="section-00">
           <p className="font-mono text-[0.72rem] tracking-[0.16em] uppercase text-text-muted mb-6">
-            <b className="text-gold-600 font-medium">Editorial Architecture</b>
+            <b className="text-gold-700 font-medium">Editorial Architecture</b>
             {' '}× Civic Digital × AI Clarity
           </p>
 
@@ -157,7 +157,7 @@ export default function HeroSection() {
                 key={k}
                 className={['px-[1.1rem] py-[0.95rem] border-stone-200', mob, desk].join(' ')}
               >
-                <div className="font-mono text-[0.58rem] tracking-[0.14em] uppercase text-text-muted mb-[0.45rem]">
+                <div className="font-mono text-[0.68rem] tracking-[0.14em] uppercase text-text-muted mb-[0.45rem]">
                   {k}
                 </div>
                 <div className="text-[0.82rem] text-stone-700 leading-[1.4]">{v}</div>
@@ -167,7 +167,7 @@ export default function HeroSection() {
 
           <a
             href="#section-01"
-            className="inline-flex items-center gap-[0.6rem] mt-10 font-mono text-[0.66rem]
+            className="inline-flex items-center gap-[0.6rem] mt-10 font-mono text-[0.7rem]
                        tracking-[0.14em] uppercase text-text-muted no-underline
                        transition-colors duration-200 hover:text-gold-600"
           >
@@ -181,17 +181,17 @@ export default function HeroSection() {
           {/* Blue record card */}
           <div className="border border-blue-900 bg-blue-800 shadow-[0_18px_40px_-24px_rgba(16,38,54,0.55)]">
             <div className="flex justify-between items-baseline px-[1.1rem] py-[0.9rem] border-b border-white/18">
-              <span className="font-mono text-[0.64rem] tracking-[0.14em] uppercase text-blue-300">
+              <span className="font-mono text-[0.7rem] tracking-[0.14em] uppercase text-[#D9E8F3]">
                 Profil · Index
               </span>
-              <span className="font-mono text-[0.6rem] tracking-[0.1em] text-text/66">REC-00</span>
+              <span className="font-mono text-[0.68rem] tracking-[0.1em] text-text/90">REC-00</span>
             </div>
             {RECORD_ROWS.map(({ label, value }) => (
               <div
                 key={label}
                 className="flex justify-between gap-4 px-[1.1rem] py-[0.72rem] border-b border-white/12 last:border-b-0"
               >
-                <span className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-blue-300 pt-[0.15rem] whitespace-nowrap">
+                <span className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-[#D9E8F3] pt-[0.15rem] whitespace-nowrap">
                   {label}
                 </span>
                 <span className="text-[0.8rem] text-[#F4F2EC] text-right leading-[1.4]">
@@ -200,7 +200,7 @@ export default function HeroSection() {
               </div>
             ))}
             <div className="flex justify-between gap-4 px-[1.1rem] py-[0.72rem]">
-              <span className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-blue-300 pt-[0.15rem] whitespace-nowrap">
+              <span className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-[#D9E8F3] pt-[0.15rem] whitespace-nowrap">
                 Status
               </span>
               <span className="inline-flex items-center gap-[0.4rem] text-gold-200 font-mono text-[0.7rem] tracking-[0.04em]">
@@ -212,18 +212,18 @@ export default function HeroSection() {
 
           {/* Layer map */}
           <div className="border border-stone-200 bg-paper-soft px-[1.1rem] py-4">
-            <div className="flex justify-between font-mono text-[0.6rem] tracking-[0.12em] uppercase text-text-muted mb-3">
+            <div className="flex justify-between font-mono text-[0.68rem] tracking-[0.12em] uppercase text-text-muted mb-3">
               <span>Systemkarte</span>
-              <b className="text-blue-700 font-normal">4 Ebenen</b>
+              <b className="text-blue-800 font-normal">4 Ebenen</b>
             </div>
             {LAYER_ITEMS.map((layer, i) => (
               <div key={layer} className="flex items-center gap-[0.7rem] py-[0.4rem]">
-                <span className="font-mono text-[0.58rem] text-blue-700 w-[1.1rem]">
+                <span className="font-mono text-[0.68rem] text-blue-800 w-[1.1rem]">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <span
                   className="flex-1 h-[26px] border border-stone-200 flex items-center
-                             px-[0.7rem] font-mono text-[0.62rem] tracking-[0.08em] text-stone-700"
+                             px-[0.7rem] font-mono text-[0.68rem] tracking-[0.08em] text-stone-700"
                   style={{
                     background: `linear-gradient(90deg, rgba(43,104,149,${0.10 + i * 0.08}), transparent)`,
                   }}
@@ -232,7 +232,7 @@ export default function HeroSection() {
                 </span>
               </div>
             ))}
-            <p className="font-mono text-[0.56rem] tracking-[0.06em] text-text-muted mt-3">
+            <p className="font-mono text-[0.68rem] tracking-[0.06em] text-text-muted mt-3">
               Jedes Projekt durchläuft dieselben Schichten.
             </p>
           </div>

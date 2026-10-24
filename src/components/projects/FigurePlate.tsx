@@ -24,8 +24,8 @@ export default function FigurePlate({
 }: FigurePlateProps) {
   return (
     <figure className="my-12 border border-stone-200 bg-[#FBFAF7]">
-      <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.6rem] tracking-[0.14em] uppercase text-stone-400">
-        <b className="text-gold-600 font-medium">{label}</b>
+      <div className="flex items-center justify-between gap-4 px-4 py-[0.72rem] border-b border-stone-100 font-mono text-[0.68rem] tracking-[0.14em] uppercase text-stone-500">
+        <b className="text-gold-700 font-medium">{label}</b>
         <span>{type}</span>
       </div>
       <div className={`p-4 ${darkInset ? 'bg-stone-950' : 'bg-[#F8F7F3]'}`}>
@@ -43,7 +43,7 @@ export default function FigurePlate({
           unoptimized
         />
       </div>
-      <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.62rem] tracking-[0.08em] leading-[1.55] text-stone-400">
+      <figcaption className="px-4 py-[0.8rem] border-t border-stone-100 font-mono text-[0.68rem] tracking-[0.08em] leading-[1.55] text-stone-500">
         {caption}
       </figcaption>
     </figure>

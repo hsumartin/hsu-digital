@@ -14,7 +14,7 @@ export default function ProjectConnections({ cols }: ProjectConnectionsProps) {
     <div className="border border-stone-200 bg-[#F8F7F3] grid grid-cols-3 gap-px mt-[1.8rem] max-[760px]:grid-cols-1">
       {cols.map((col) => (
         <div key={col.title} className="bg-[#FBFAF7] p-[1.25rem_1.35rem]">
-          <h3 className="font-mono text-[0.62rem] tracking-[0.15em] uppercase text-gold-600 mb-[0.85rem]">
+          <h3 className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-gold-700 mb-[0.85rem]">
             {col.title}
           </h3>
           <ul className="list-none grid gap-[0.55rem]">
@@ -23,7 +23,7 @@ export default function ProjectConnections({ cols }: ProjectConnectionsProps) {
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className="text-blue-700 no-underline border-b border-blue-700/[0.22]"
+                    className="text-blue-800 no-underline border-b border-blue-700/[0.22]"
                   >
                     {item.label}
                   </Link>

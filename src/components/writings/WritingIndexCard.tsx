@@ -7,15 +7,15 @@ interface WritingIndexCardProps {
 }
 
 const tagVariants: Record<string, string> = {
-  Methode: 'border-blue-300/50 text-blue-700 bg-blue-700/[0.04]',
-  Governance: 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]',
-  'KI-Haltung': 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]',
-  Kontrolle: 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]',
-  Denkmodell: 'border-gold-400/45 text-gold-600 bg-gold-500/[0.06]',
+  Methode: 'border-blue-300/50 text-blue-800 bg-blue-700/[0.04]',
+  Governance: 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]',
+  'KI-Haltung': 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]',
+  Kontrolle: 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]',
+  Denkmodell: 'border-gold-400/45 text-gold-700 bg-gold-500/[0.06]',
 };
 
 function tagClass(tag: string) {
-  return tagVariants[tag] ?? 'border-stone-200 text-stone-400 bg-[#F8F7F3]';
+  return tagVariants[tag] ?? 'border-stone-200 text-stone-500 bg-[#F8F7F3]';
 }
 
 export default function WritingIndexCard({ writing, featured = false }: WritingIndexCardProps) {
@@ -44,21 +44,21 @@ export default function WritingIndexCard({ writing, featured = false }: WritingI
     >
       {/* Meta column */}
       <div className="border-r border-stone-100 p-[1.35rem_1.45rem] flex flex-col gap-3 max-[720px]:border-r-0 max-[720px]:border-b">
-        <div className="font-mono text-[0.62rem] tracking-[0.14em] uppercase text-stone-400">
+        <div className="font-mono text-[0.68rem] tracking-[0.14em] uppercase text-stone-500">
           {writing.id}
         </div>
         <div
-          className={`font-mono text-[0.62rem] tracking-[0.12em] uppercase ${
+          className={`font-mono text-[0.68rem] tracking-[0.12em] uppercase ${
             writing.type === 'Denkmodell'
-              ? 'text-gold-600'
+              ? 'text-gold-700'
               : writing.type === 'Framework'
-              ? 'text-blue-700'
-              : 'text-stone-400'
+              ? 'text-blue-800'
+              : 'text-stone-500'
           }`}
         >
           {writing.type}
         </div>
-        <div className="font-mono text-[0.58rem] tracking-[0.1em] text-stone-300 mt-auto">
+        <div className="font-mono text-[0.68rem] tracking-[0.1em] text-stone-500 mt-auto">
           {writing.year}
         </div>
       </div>
@@ -86,14 +86,14 @@ export default function WritingIndexCard({ writing, featured = false }: WritingI
       {/* Side column */}
       <div className="border-l border-stone-100 p-[1.35rem_1.45rem] flex flex-col justify-between max-[1040px]:col-span-full max-[1040px]:border-l-0 max-[1040px]:border-t max-[720px]:border-t">
         <div>
-          <div className="font-mono text-[0.58rem] tracking-[0.14em] uppercase text-stone-400 mb-[0.7rem]">
+          <div className="font-mono text-[0.68rem] tracking-[0.14em] uppercase text-stone-500 mb-[0.7rem]">
             Wirkt in
           </div>
           <div className="flex flex-wrap gap-2">
             {writing.tags.map((tag) => (
               <span
                 key={tag}
-                className={`inline-flex items-center border rounded-full px-[0.65rem] py-[0.26rem] font-mono text-[0.58rem] tracking-[0.12em] uppercase ${tagClass(tag)}`}
+                className={`inline-flex items-center border rounded-full px-[0.65rem] py-[0.26rem] font-mono text-[0.68rem] tracking-[0.12em] uppercase ${tagClass(tag)}`}
               >
                 {tag}
               </span>
@@ -103,7 +103,7 @@ export default function WritingIndexCard({ writing, featured = false }: WritingI
         {writing.hasDetail && (
           <Link
             href={`/schriften/${writing.slug}`}
-            className="inline-flex mt-4 font-mono text-[0.64rem] tracking-[0.12em] uppercase text-gold-600 no-underline border-b border-gold-400/[0.28] pb-[2px] w-max hover:text-stone-900 transition-colors"
+            className="inline-flex mt-4 font-mono text-[0.7rem] tracking-[0.12em] uppercase text-gold-700 no-underline border-b border-gold-400/[0.28] pb-[2px] w-max hover:text-stone-900 transition-colors"
           >
             Lesen →
           </Link>

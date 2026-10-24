@@ -77,9 +77,9 @@ export default function MethodeKiSection() {
           }}
         />
         <div className="relative z-10 max-w-[84rem] mx-auto">
-          <p className="font-mono text-[0.66rem] tracking-[0.16em] uppercase text-text-muted mb-6">
+          <p className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-text-muted mb-6">
             Editorial Architecture × Civic Digital ×{' '}
-            <b className="text-gold-600 font-medium">AI Clarity</b>
+            <b className="text-gold-700 font-medium">AI Clarity</b>
           </p>
           <SectionLabel num="03">Methode &amp; Haltung zu KI</SectionLabel>
 
@@ -107,7 +107,7 @@ export default function MethodeKiSection() {
                 key={k}
                 className="flex-1 min-w-[170px] flex flex-col gap-1 px-[1.1rem] py-[0.8rem] border-r border-stone-200 last:border-r-0"
               >
-                <span className="font-mono text-[0.56rem] tracking-[0.12em] uppercase text-text-muted">{k}</span>
+                <span className="font-mono text-[0.68rem] tracking-[0.12em] uppercase text-text-muted">{k}</span>
                 <span className="font-mono text-[0.76rem] text-blue-800">{v}</span>
               </div>
             ))}
@@ -118,7 +118,7 @@ export default function MethodeKiSection() {
       {/* DECISION PROCESS */}
       <div className="px-[clamp(1.5rem,4vw,4rem)] max-w-[84rem] mx-auto">
         <div className="pt-[3.4rem]">
-          <div className="font-mono text-[0.66rem] tracking-[0.2em] uppercase text-gold-600 mb-[0.4rem]">
+          <div className="font-mono text-[0.7rem] tracking-[0.2em] uppercase text-gold-700 mb-[0.4rem]">
             Der Entscheidungsweg
           </div>
           <p className="text-[0.92rem] text-text-muted font-light mb-[1.6rem] max-w-[56ch]">
@@ -143,19 +143,19 @@ export default function MethodeKiSection() {
                     aria-hidden="true"
                     className="absolute right-[-8px] top-1/2 -translate-y-1/2 z-20 w-[15px] h-[15px]
                                rounded-full bg-paper border border-stone-200 flex items-center
-                               justify-center text-blue-800 font-mono text-[0.6rem]"
+                               justify-center text-blue-800 font-mono text-[0.68rem]"
                   >
                     →
                   </div>
                 )}
-                <div className="font-mono text-[0.62rem] tracking-[0.12em] text-blue-800 mb-2">{num}</div>
+                <div className="font-mono text-[0.68rem] tracking-[0.12em] text-blue-800 mb-2">{num}</div>
                 <h4 className="font-serif font-normal text-[1.4rem] leading-[1.18] mb-2">{title}</h4>
                 <p className="text-[0.84rem] text-stone-700 font-light leading-[1.55]">{body}</p>
               </div>
             ))}
           </div>
 
-          <div className="flex items-center gap-3 justify-center my-6 font-mono text-[0.66rem] tracking-[0.16em] uppercase text-text-muted">
+          <div className="flex items-center gap-3 justify-center my-6 font-mono text-[0.7rem] tracking-[0.16em] uppercase text-text-muted">
             <span className="h-px w-12 bg-stone-200" />
             Ergebnis der Bewertung
             <span className="h-px w-12 bg-stone-200" />
@@ -163,7 +163,7 @@ export default function MethodeKiSection() {
 
           <div className="grid-2col gap-5">
             <div className="border border-[rgba(201,169,75,0.4)] bg-gradient-to-b from-[rgba(201,169,75,0.07)] to-transparent p-[1.5rem] flex gap-[1.1rem] items-start">
-              <span className="font-mono text-[0.7rem] tracking-[0.08em] text-gold-600 border border-[rgba(201,169,75,0.5)] bg-[rgba(201,169,75,0.08)] rounded-sm px-2 py-[0.3rem] whitespace-nowrap">
+              <span className="font-mono text-[0.7rem] tracking-[0.08em] text-gold-700 border border-[rgba(201,169,75,0.5)] bg-[rgba(201,169,75,0.08)] rounded-sm px-2 py-[0.3rem] whitespace-nowrap">
                 KI
               </span>
               <div>
@@ -209,10 +209,10 @@ export default function MethodeKiSection() {
           }}
         />
         <div className="relative z-10 max-w-[84rem] mx-auto">
-          <span className="inline-block font-mono text-[0.58rem] tracking-[0.1em] uppercase text-blue-300 border border-[rgba(191,216,234,0.25)] rounded-full px-[0.7rem] py-[0.25rem] mb-[1.4rem]">
+          <span className="inline-block font-mono text-[0.68rem] tracking-[0.1em] uppercase text-[#D9E8F3] border border-[rgba(191,216,234,0.25)] rounded-full px-[0.7rem] py-[0.25rem] mb-[1.4rem]">
             AI Clarity · der Kern der Haltung
           </span>
-          <div className="font-mono text-[0.66rem] tracking-[0.2em] uppercase text-gold-200 mb-[0.4rem]">
+          <div className="font-mono text-[0.7rem] tracking-[0.2em] uppercase text-gold-200 mb-[0.4rem]">
             Decision Layer — die drei Fragen an der Bewertung
           </div>
           <p className="text-[0.92rem] text-[rgba(237,234,227,0.62)] font-light mb-[1.6rem] max-w-[56ch]">
@@ -226,7 +226,7 @@ export default function MethodeKiSection() {
             {CRITERIA.map(({ idx, title, body, q }) => (
               <div key={idx} className="px-6 py-[1.6rem]" style={{ background: '#102234' }}>
                 <div className="flex items-start gap-[0.6rem] mb-[1.05rem]">
-                  <span className="font-mono text-[0.62rem] text-blue-300 pt-[0.55rem]">{idx}</span>
+                  <span className="font-mono text-[0.68rem] text-[#D9E8F3] pt-[0.55rem]">{idx}</span>
                   <span className="font-serif text-[1.5rem] leading-[1.05] text-[#EDEAE3] whitespace-nowrap">
                     {title}
                   </span>
@@ -234,7 +234,7 @@ export default function MethodeKiSection() {
                 <p className="text-[0.88rem] text-[rgba(237,234,227,0.62)] font-light leading-[1.6]">
                   {body}
                 </p>
-                <div className="font-mono text-[0.6rem] tracking-[0.06em] text-gold-200 mt-[0.9rem]">
+                <div className="font-mono text-[0.68rem] tracking-[0.06em] text-gold-200 mt-[0.9rem]">
                   {q}
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function MethodeKiSection() {
       {/* EVIDENCE */}
       <div className="px-[clamp(1.5rem,4vw,4rem)] max-w-[84rem] mx-auto">
         <div className="pt-[3.4rem]">
-          <div className="font-mono text-[0.66rem] tracking-[0.2em] uppercase text-gold-600 mb-[0.4rem]">
+          <div className="font-mono text-[0.7rem] tracking-[0.2em] uppercase text-gold-700 mb-[0.4rem]">
             Belegt an realen Projekten
           </div>
           <p className="text-[0.92rem] text-text-muted font-light mb-[1.6rem] max-w-[56ch]">
@@ -262,9 +262,9 @@ export default function MethodeKiSection() {
                   </span>
                   <span
                     className={[
-                      'font-mono text-[0.6rem] tracking-[0.1em] uppercase border rounded-full px-[0.7rem] py-[0.26rem] whitespace-nowrap',
+                      'font-mono text-[0.68rem] tracking-[0.1em] uppercase border rounded-full px-[0.7rem] py-[0.26rem] whitespace-nowrap',
                       roleVariant === 'gold'
-                        ? 'text-gold-600 border-[rgba(201,169,75,0.45)] bg-[rgba(201,169,75,0.08)]'
+                        ? 'text-gold-700 border-[rgba(201,169,75,0.45)] bg-[rgba(201,169,75,0.08)]'
                         : 'text-blue-800 border-[rgba(43,104,149,0.32)] bg-[rgba(43,104,149,0.06)]',
                     ].join(' ')}
                   >
@@ -272,7 +272,7 @@ export default function MethodeKiSection() {
                   </span>
                 </div>
                 <p className="text-[0.88rem] text-stone-700 font-light leading-[1.6]">{body}</p>
-                <div className="mt-[0.9rem] font-mono text-[0.58rem] tracking-[0.08em] uppercase text-text-muted">
+                <div className="mt-[0.9rem] font-mono text-[0.68rem] tracking-[0.08em] uppercase text-text-muted">
                   {src.label} ·{' '}
                   {src.href ? (
                     <Link href={src.href} className="text-blue-800 no-underline hover:underline">
@@ -289,7 +289,7 @@ export default function MethodeKiSection() {
 
         {/* Closing quote */}
         <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8 border-t border-stone-200 pt-10 pb-16 mt-[3.4rem]">
-          <div className="font-mono text-[0.64rem] tracking-[0.16em] uppercase text-text-muted whitespace-nowrap pt-[0.6rem]">
+          <div className="font-mono text-[0.7rem] tracking-[0.16em] uppercase text-text-muted whitespace-nowrap pt-[0.6rem]">
             Haltung
           </div>
           <div>
@@ -299,9 +299,9 @@ export default function MethodeKiSection() {
                 Struktur, innerhalb derer Modelle eingesetzt werden.
               </em>
             </blockquote>
-            <div className="font-mono text-[0.66rem] tracking-[0.1em] text-text-muted mt-4">
+            <div className="font-mono text-[0.7rem] tracking-[0.1em] text-text-muted mt-4">
               Aus dem Whitepaper &bdquo;GPT-Stack&ldquo; ·{' '}
-              <Link href="/schriften" className="text-gold-600 no-underline hover:underline">
+              <Link href="/schriften" className="text-gold-700 no-underline hover:underline">
                 Schriften ansehen →
               </Link>
             </div>

@@ -23,12 +23,12 @@ export default function ProjectRecord({ items }: ProjectRecordProps) {
                      max-[900px]:[&:nth-child(2n)]:border-r-0
                      max-[520px]:border-r-0"
         >
-          <span className="block font-mono text-[0.56rem] tracking-[0.13em] uppercase text-stone-400 mb-[0.42rem]">
+          <span className="block font-mono text-[0.68rem] tracking-[0.13em] uppercase text-stone-500 mb-[0.42rem]">
             {item.key}
           </span>
           <span
             className={`block font-mono text-[0.76rem] leading-[1.45] ${
-              item.gold ? 'text-gold-600' : 'text-blue-700'
+              item.gold ? 'text-gold-700' : 'text-blue-800'
             }`}
           >
             {item.value}

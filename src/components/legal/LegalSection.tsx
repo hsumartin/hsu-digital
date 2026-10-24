@@ -14,7 +14,7 @@ export default function LegalSection({ num, title, id, children }: LegalSectionP
       className="pt-10 mt-10 border-t border-stone-100 scroll-mt-24 first:border-t-0 first:mt-0 first:pt-0"
       aria-labelledby={id ? `${id}-heading` : undefined}
     >
-      <p className="font-mono text-[0.62rem] tracking-[0.22em] uppercase text-blue-700 mb-2">
+      <p className="font-mono text-[0.68rem] tracking-[0.22em] uppercase text-blue-800 mb-2">
         {num}
       </p>
       <h2
