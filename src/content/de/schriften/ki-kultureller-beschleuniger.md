@@ -466,7 +466,7 @@ KI als kultureller Beschleuniger zu betrachten, heisst daher nicht, ihren Nutzen
 
 Die entscheidende Frage ist deshalb nicht, wie schnell künstliche Intelligenz wird. Sie lautet, **welche menschlichen und gesellschaftlichen Möglichkeiten durch ihre bewusste Gestaltung tatsächlich entstehen und woran wir erkennen können, ob diese Möglichkeiten einen Fortschritt darstellen.**
 
-## Literatur und Nachweisgrundlagen (Quellenintegration, Arbeitsstand)
+## Literatur und Nachweisgrundlagen
 
 Die Kurzverweise im Haupttext führen zu öffentlich auffindbaren Forschungsarbeiten beziehungsweise institutionellen Originalquellen. Wo eine zuvor analysierte Preprintfassung und eine später erschienene Journalfassung existieren, wird die Versionsbeziehung ausdrücklich kenntlich gemacht. Die Integration ist keine erneute unabhängige Auswertung aller zugrunde liegenden Datensätze.
 

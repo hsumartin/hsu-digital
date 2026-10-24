@@ -42,7 +42,7 @@ export default function ProfileHero() {
         </p>
         <h1 className="font-serif font-normal text-[clamp(2.4rem,4.5vw,4rem)] leading-[1.05] tracking-[-0.025em] text-ink max-w-[16ch]">
           Informationsarchitekt{' '}
-          <em className="italic text-gold-500">für Systeme und Denkstrukturen</em>
+          <em className="italic text-gold-600">für Systeme und Denkstrukturen</em>
         </h1>
         <p className="font-mono text-[0.76rem] tracking-[0.14em] uppercase text-stone-500 mt-3">
           Digitalisierung · Verwaltung · KI

@@ -2,6 +2,16 @@
 
 *Societal Conditions for Expanding Human Knowledge, Collaboration, and Development*
 
+## Overview
+
+> **Key message**
+> It is not the raw performance of AI that determines its societal value. What matters are the conditions under which individual assistance can give rise to verifiable knowledge, collective knowledge and collectively usable possibilities for action.
+
+- This whitepaper examines AI not primarily as a productivity tool, but as a possible expansion of human possibilities for knowledge and practical creation.
+- At its centre is the question of the conditions under which technical assistance can give rise to verifiable knowledge, collective knowledge and societal benefit.
+- The paper deliberately distinguishes between individual performance, exploration, verified knowledge, collective knowledge and normative evaluation.
+- The societal and institutional perspective is central. Education, scientific criticism, digital sovereignty and institutional incentives are not side issues but mediating conditions.
+
 ## Methodological approach and scope
 
 This whitepaper presents an interdisciplinary, research-informed argument. It is neither an original empirical investigation nor an exhaustive systematic literature review. Its starting point is a question that emerged from personal exploration, rather than a hypothesis derived from the studies discussed here. Empirical research is used to examine selected assumptions and identify counterevidence. Institutional recommendations and normative positions are treated separately. The framework proposed in this paper is a conceptual synthesis; its relationships have not been validated as a single empirical model.
@@ -386,7 +396,7 @@ The most defensible conclusion is therefore conditional. **AI's possible contrib
 
 The decisive question is not simply how fast AI becomes. It is **which human and societal possibilities emerge through its deliberate design and use, and how we can determine whether those possibilities represent progress.**
 
-## Literature and Evidence Base (Working Bibliography)
+## Literature and Evidence Base
 
 The short citations in the main text refer to publicly identifiable scientific publications or institutional sources. Where the project examined a preprint and a subsequent journal version exists, the distinction is made explicit. The inclusion of a later publication record should not be mistaken for an independent re-analysis of all underlying datasets or tables.
 
