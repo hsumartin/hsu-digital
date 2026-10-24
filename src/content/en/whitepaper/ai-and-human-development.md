@@ -128,13 +128,6 @@ The capacity for sound judgement remains essential. When people do not fully mas
 
 An expanded scope for action is therefore neither equivalent to independent expertise nor inherently less valuable. Both forms of human capability matter, but they serve different purposes.
 
-<!-- FIGURE 1: Dimensions of human development opportunities
-Placement: Chapter 3, immediately after "The Difference Between Being Able to Do Something and Having It Made Possible".
-Source file: 01_dimensionen_menschlicher_entwicklung(2).svg
-Alt text: Three distinct, equally important dimensions: personal competence, instrumental empowerment, and new interests and perspectives. They may influence each other but are not interchangeable.
-Note: Conceptual distinction, not quantitative evidence. The SVG itself contains German labels; an English-labelled version is required for the English website.
--->
-
 ![Three distinct, equally important dimensions: personal competence, instrumental empowerment, and new interests and perspectives. They may influence each other but are not interchangeable.](/assets/writings/ai-and-human-development/01_dimensions_of_human_development.svg)
 
 **Figure 1: Three dimensions of human development opportunities.** Independent competence, instrumental empowerment, and new interests or developmental directions should be distinguished. They may interact, but need not do so.
@@ -220,13 +213,6 @@ The central feedback mechanism is that **experiences may do more than produce re
 Across several such steps, individual developmental paths could emerge that were neither planned nor foreseeable at the beginning.
 
 This does not establish that AI promotes such processes over the long term. The proposed mechanism does, however, show why the successful completion of an individual task may capture only part of its possible significance.
-
-<!-- FIGURE 2: Feedback in individual developmental pathways
-Placement: Chapter 4, immediately after "When New Abilities Open Up Further Possibilities".
-Source file: 02_rueckkopplung_entwicklungswege(2).svg
-Alt text: A possible cycle from an initial idea through AI-assisted exploration and new experiences to changed interests, knowledge, and perspectives. These may lead to different questions and decisions, setting another cycle in motion.
-Note: Conceptual hypothesis; arrows do not indicate empirically established causal relationships. The SVG itself contains German labels; an English-labelled version is required for the English website.
--->
 
 ![A possible cycle from an initial idea through AI-assisted exploration and new experiences to changed interests, knowledge, and perspectives. These may lead to different questions and decisions, setting another cycle in motion.](/assets/writings/ai-and-human-development/02_feedback_developmental_pathways.svg)
 

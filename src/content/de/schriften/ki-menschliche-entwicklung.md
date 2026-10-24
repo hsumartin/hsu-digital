@@ -1,58 +1,3 @@
----
-title: "Künstliche Intelligenz und die Erweiterung menschlicher Entwicklungsmöglichkeiten"
-subtitle: "Wie neue Werkzeuge nicht nur unsere heutigen Fähigkeiten ergänzen, sondern auch zukünftige Interessen, Erfahrungen und Denkweisen beeinflussen könnten."
-slug: "ki-menschliche-entwicklung"
-contentType: "fachartikel"
-section: "schriften"
-locale: "de-CH"
-author: "Martin Hsu"
-version: "1.4"
-status: "draft"
-publishedAt: null
-updatedAt: null
-category: "Künstliche Intelligenz und Gesellschaft"
-keywords:
-  - "Künstliche Intelligenz"
-  - "Menschliche Entwicklung"
-  - "Menschliches Potenzial"
-  - "Mensch-KI-Zusammenarbeit"
-  - "Entwicklungsoffenheit"
-  - "Instrumentelle Befähigung"
-  - "Interessenentwicklung"
-  - "Erfahrungsbasiertes Lernen"
-  - "Interdisziplinarität"
-  - "Kritisches Denken"
-  - "Kognitive Auslagerung"
-  - "Wissenschaftliche Evidenz"
-knowledgeGraph:
-  integrationStatus: "proposed_not_mapped"
-  proposedConcepts:
-    - "Künstliche Intelligenz"
-    - "Menschliche Entwicklung"
-    - "Menschliches Potenzial"
-    - "Mensch-KI-Zusammenarbeit"
-    - "Entwicklungsoffenheit"
-    - "Instrumentelle Befähigung"
-    - "Interessenentwicklung"
-    - "Erfahrungsbasiertes Lernen"
-    - "Kritisches Denken"
-    - "Kognitive Auslagerung"
-  proposedRelatedWritingSlugs:
-    - "denkarchitektur"
-  notes: "Vorschlag für redaktionelle Verschlagwortung und spätere Graph-Zuordnung; keine bestätigten Knoten, Kanten oder Ontologie-IDs."
-figures:
-  - id: "abbildung-01"
-    status: "placeholder"
-    filename: "01_dimensionen_menschlicher_entwicklung.svg"
-    placement: "Kapitel 3, nach 'Der Unterschied zwischen Können und Ermöglichen'"
-    caption: "Drei Dimensionen menschlicher Entwicklungsmöglichkeiten"
-  - id: "abbildung-02"
-    status: "placeholder"
-    filename: "02_rueckkopplung_entwicklungswege.svg"
-    placement: "Kapitel 4, nach 'Wenn Fähigkeiten neue Möglichkeiten eröffnen'"
-    caption: "Mögliche Rückkopplung KI-gestützter Erfahrungen"
----
-
 # Künstliche Intelligenz und die Erweiterung menschlicher Entwicklungsmöglichkeiten
 
 *Wie neue Werkzeuge nicht nur unsere heutigen Fähigkeiten ergänzen, sondern auch zukünftige Interessen, Erfahrungen und Denkweisen beeinflussen könnten.*
@@ -183,15 +128,7 @@ Eine wichtige Voraussetzung bleibt die Urteilskompetenz. Gerade wenn Menschen be
 
 Die Erweiterung des Handlungsspielraums ist somit weder mit eigenständiger Fachkompetenz gleichzusetzen noch ihr grundsätzlich untergeordnet. Beide Formen menschlicher Befähigung besitzen einen Wert, erfüllen aber unterschiedliche Funktionen.
 
-<!-- ABBILDUNG 1: Dimensionen menschlicher Entwicklungsmöglichkeiten
-Position: Kapitel 3, direkt nach «Der Unterschied zwischen Können und Ermöglichen».
-Datei: 01_dimensionen_menschlicher_entwicklung.svg
-Alternativtext: Drei unterschiedliche, gleichrangige Dimensionen: persönliche Kompetenz, instrumentelle Befähigung sowie neue Interessen und Perspektiven. Die Dimensionen können sich beeinflussen, sind aber nicht gleichbedeutend.
-Hinweis: konzeptionelle Unterscheidung, keine quantitative Evidenz.
--->
-
 ![Drei unterschiedliche, gleichrangige Dimensionen: persönliche Kompetenz, instrumentelle Befähigung sowie neue Interessen und Perspektiven. Die Dimensionen können sich beeinflussen, sind aber nicht gleichbedeutend.](/assets/writings/ki-menschliche-entwicklung/01_dimensionen_menschlicher_entwicklung.svg)
-
 
 **Abbildung 1: Drei Dimensionen menschlicher Entwicklungsmöglichkeiten.** Eigenständige Kompetenz, instrumentelle Befähigung und neue Interessen bzw. Entwicklungsrichtungen sind zu unterscheiden. Sie können zusammenwirken, müssen es aber nicht.
 
@@ -279,15 +216,7 @@ Die eigentliche Rückkopplung liegt darin, dass **Erfahrungen nicht nur Ergebnis
 
 Ob KI solche Prozesse langfristig tatsächlich begünstigt, ist damit noch nicht bewiesen. Der mögliche Mechanismus zeigt jedoch, weshalb die erfolgreiche Bearbeitung einer einzelnen Aufgabe nur einen Teil ihrer denkbaren Bedeutung erfasst.
 
-<!-- ABBILDUNG 2: Rückkopplung individueller Entwicklungswege
-Position: Kapitel 4, unmittelbar nach «Wenn Fähigkeiten neue Möglichkeiten eröffnen».
-Datei: 02_rueckkopplung_entwicklungswege.svg
-Alternativtext: Möglicher Zyklus von einer Ausgangsidee über KI-gestützte Erkundung und neue Erfahrungen zu veränderten Interessen, Kenntnissen und Perspektiven. Daraus können andere Fragen und Entscheidungen entstehen, die einen weiteren Durchlauf anstossen.
-Hinweis: konzeptionelle Hypothese; Pfeile bezeichnen keine empirisch nachgewiesenen Kausalbeziehungen.
--->
-
 ![Möglicher Zyklus von einer Ausgangsidee über KI-gestützte Erkundung und neue Erfahrungen zu veränderten Interessen, Kenntnissen und Perspektiven. Daraus können andere Fragen und Entscheidungen entstehen, die einen weiteren Durchlauf anstossen.](/assets/writings/ki-menschliche-entwicklung/02_rueckkopplung_entwicklungswege.svg)
-
 
 **Abbildung 2: Mögliche Rückkopplung KI-gestützter Erfahrungen.** Neue Erfahrungen können persönliche Voraussetzungen und spätere Entscheidungen beeinflussen. Der dargestellte Verlauf ist eine Hypothese, kein zwangsläufiger oder empirisch belegter Langzeiteffekt.
 

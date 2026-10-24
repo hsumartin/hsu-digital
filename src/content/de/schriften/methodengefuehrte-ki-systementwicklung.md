@@ -1,15 +1,3 @@
----
-title: "Von der Problemstellung zur eigenständigen Systemkonzeption"
-subtitle: "Eine quellengebundene Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems"
-documentType: "Methodisches Whitepaper / explorative retrospektive Einzelfallstudie"
-version: "Öffentliche Arbeitsfassung V1.6.1 (auditgebundene Präzisierung; Basis: öffentliche V1.6)"
-date: "2026-10-23"
-locale: "de-CH"
-status: "Öffentlicher Publikationsentwurf – redaktionell vorbereitet, nicht freigegeben"
-sourcePolicy: "Historische Unterlagen bleiben historische Belege; keine Übernahme als aktuelle Architekturautorität"
-implementationStatus: "Die MVP-Implementierung und deren technische Prüfungen werden in diesem Dokument nicht nachgewiesen"
----
-
 # Von der Problemstellung zur eigenständigen Systemkonzeption
 
 *Eine Fallstudie zur methodengeführten, KI-gestützten Entwicklung eines lokalen Agentensystems*
@@ -88,7 +76,6 @@ Die Auswertung unterscheidet die Art des Materials, den konkreten dokumentierten
 Ausgewählte zentrale Aussagen wurden innerhalb der internen Arbeitsfassung konkreten Fundstellen zugeordnet; für einen Teil dieser Zuordnungen wurden die historischen Originalstellen unmittelbar abgeglichen. Dazu gehören unter anderem Rollen- und Modulbeschreibungen der frühen Custom GPTs, die Trennung der konzeptionellen Rollen Nova und Nadia, die Vorgabe einer entscheidungsfreien Phase-1-Recherche und das historische Vorgehensmodell für Phase 2. Im Scan-Register wurden **35 Einträge** überprüft: 31 reguläre Nummern und vier ergänzende Vertiefungseinträge. Die Zahl belegt einen Registerbestand, weder die Qualität aller Scans noch deren vollständige Durchführung.
 
 Die detaillierten Dateipfade, Abschnittsverweise und Prüfstatus sind in der **nicht veröffentlichten Masterfassung V1.2** dokumentiert. Der öffentlich zugängliche Text beschreibt in Anhang B stattdessen die jeweiligen Materialklassen, ihre Belegfunktion und ihre Zugänglichkeitsgrenzen. Ohne Einsicht in das Archiv können externe Leserinnen und Leser nicht sämtliche Einzelstellen unabhängig prüfen. Die persönliche Aussage zur ursprünglichen Urheberschaft der Systemvision bleibt ausdrücklich eine retrospektive Auskunft und wird nicht durch eine spätere Rollenbeschreibung in einen unabhängigen Erstbeleg umgedeutet.
-
 
 Die Einordnung als Fallstudie ist dabei methodologisch zu begrenzen. Yin (2018, Vorwort, S. 21–22 der bereitgestellten Ausgabe; Abschnitt «A Trilogy: Case Study Research, Case Studies, and the Case(s)») unterscheidet systematische Fallstudienforschung von Fallgeschichten, die vorrangig der Darstellung dienen. Die vorliegende Untersuchung nutzt historische Dokumente für eine explizit beschriebene retrospektive Analyse; sie beansprucht weder, das ursprüngliche Entwicklungsprojekt nach einem vorab definierten Fallstudienprotokoll durchgeführt zu haben, noch, alle Anforderungen eines vollständigen Forschungsdesigns nach Yin zu erfüllen. Die Bezugnahme dient der transparenten Einordnung des heutigen Vorgehens und seiner Grenzen.
 
@@ -212,7 +199,6 @@ Auch die geplante Prozessfolge ist historisch aufschlussreich: Nicht nur die Sys
 
 Die fachliche Auseinandersetzung sollte nicht als schon abgeschlossene technische Realisierung beschrieben werden. Ihre konkrete Quellennutzung und allfällige Publikationsrechte wären für öffentlich zitierte Details separat zu prüfen.
 
-
 Eine externe Vergleichsperspektive bietet das Requirements Engineering: Nuseibeh und Easterbrook (2000, Abschnitte 1–2 und 9) beschreiben die Ermittlung, Modellierung, Analyse, Kommunikation, Abstimmung und Weiterentwicklung von Anforderungen als zusammenhängende Aufgaben. Der dokumentierte Übergang von einem konkreten Handoff-Problem zu Fragen der Informationskontinuität, von Arbeitszuständen und der Abgrenzung technischer Entscheidungen lässt sich damit methodisch vergleichen. Die Parallele bezeichnet eine Nähe der Problem- und Anforderungsklärung; weder belegt sie die vollständige Anwendung eines bestimmten RE-Verfahrens noch die Durchführung sämtlicher im Phase-2-Modell vorgesehenen Aktivitäten.
 
 <figure class="whitepaper-illustration whitepaper-illustration--entwicklungsweg">
@@ -241,7 +227,6 @@ Aus den historischen Erfahrungen ergeben sich drei Qualitätsfragen: Sind releva
 ### 9.4 Menschliche Kontrolle ist mehr als ein instruiertes Modellverhalten
 
 Sokratischer Dialog und getrennte Orchestrierung können den Arbeitsprozess sinnvoll strukturieren. Sie ersetzen aber keine technischen Berechtigungen, Prüfverfahren oder menschliche Freigaben. Gerade ein System, das menschliche Handlungsmöglichkeiten erweitern soll, muss unterscheiden zwischen vorgeschlagener Entscheidung, autorisierter Handlung und tatsächlich geprüftem Resultat. Die historische Vision formuliert solche Kontrollansprüche; ihre spätere Durchsetzung bleibt separat zu belegen.
-
 
 Eine ergänzende Perspektive liefern die Gestaltungsrichtlinien von Amershi et al. (2019, Tabelle 1, Richtlinien G9 und G15). Sie betonen unter anderem effiziente Korrekturen und differenzierte Rückmeldungen durch Nutzende in KI-gestützten Anwendungen. Damit lässt sich der historische Anspruch auf menschliche Einflussnahme in Beziehung setzen. Die konzeptionelle Trennung von Reflexion und Orchestrierung ist jedoch weder ein Nachweis implementierter Korrekturmechanismen noch gleichbedeutend mit den technischen Anforderungen an Berechtigungen, Sicherheit und Governance.
 

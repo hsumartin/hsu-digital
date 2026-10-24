@@ -1,15 +1,3 @@
----
-title: "From Problem Framing towards Independent System Design"
-subtitle: "A source-grounded case study of a method-driven, AI-assisted approach to developing a local agent system"
-documentType: "Methodological whitepaper / exploratory retrospective single-case study"
-version: "English parallel edition of public working draft V1.6.1"
-date: "2026-10-23"
-locale: "en"
-status: "Public publication draft – editorially prepared, not approved for publication"
-sourcePolicy: "Historical materials remain historical evidence and do not constitute current architectural authority"
-implementationStatus: "MVP implementation and technical verification are not demonstrated in this paper"
----
-
 # From Problem Framing towards Independent System Design
 
 *A Case Study of a Method-Driven, AI-Assisted Approach to Developing a Local Agent System*
@@ -221,8 +209,6 @@ Requirements engineering offers a useful external comparison. Nuseibeh and Easte
 ### 8.4 Phase 3: Technical implementation as a planned stage of verification
 
 The documents envisage Phase 3 as a later stage of implementation, integration and testing. The historical material currently supplied does not permit a conclusive assessment of implemented functions, security guarantees or MVP acceptance status. Those results belong in a separate technical whitepaper based on current authoritative implementation and verification reports.
-
-
 
 ## 9. Analytical Discussion: What This Case Allows Us to Examine
 
